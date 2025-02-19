@@ -1,5 +1,5 @@
 from espn_api.football import League
-#import pandas as pd
+import pandas as pd
 #import dash
 #from dash import html, dcc, dash_table
 #import plotly.graph_objects as go
@@ -13,5 +13,22 @@ league = League(
     swid='{CDA2BA80-43BE-41FB-9AB1-C8BE52DD4C45}'
 )
 
-print(league.teams)
-print(league.scoreboard())
+
+def getRecords():
+    #Creates a DataFrame with columns 'Team Name', 'Record', and 'Points For'. The DataFrame is sorted by best record to worst.
+    teams = league.teams
+
+    standings = [
+        {
+            'Team Name': team.team_name,
+            'Record': f"{team.wins}-{team.losses}",
+            'Points For': (team.points_for),
+        }
+        for team in teams
+    ]
+
+    df = pd.DataFrame(standings)
+    
+    return df.sort_values(by='Record',ascending=False)
+
+print(getRecords())
