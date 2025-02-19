@@ -14,7 +14,7 @@ league = League(
 )
 
 
-def getRecords():
+def getStandings():
     #Creates a DataFrame with columns 'Team Name', 'Record', and 'Points For'. The DataFrame is sorted by best record to worst.
     teams = league.teams
 
@@ -31,4 +31,4 @@ def getRecords():
     
     return df.sort_values(by='Record',ascending=False)
 
-print(getRecords())
+print(getStandings())
