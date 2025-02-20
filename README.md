@@ -41,7 +41,7 @@ Replace the placeholders in the code with your league's credentials:
 
 ```python
 league = League(
-    league_id=42024189,  # Replace with your league ID
+    league_id=12345678,  # Replace with your league ID
     year=2024,           # Replace with the current year
     espn_s2='YOUR_ESPN_S2_COOKIE',  # Replace with your ESPN S2 cookie
     swid='{YOUR_SWID_COOKIE}'        # Replace with your SWID cookie
@@ -78,14 +78,6 @@ The script pulls ESPN's power rankings for your league and displays them alongsi
 ### **3. Advanced Metrics**
 - **Luck**: Calculated using the Pythagorean expectation formula, adjusted for a 14-week season.
 - **PF/G** and **PA/G**: Points For and Points Against per game, useful for comparing team performance over time.
-
----
-
-## **Customization**
-You can easily add or remove metrics by editing the `standings` list comprehension in the `getStandings()` function. For example:
-- Add **Streak**: `'Streak': team.streak`
-- Add **Total Moves**: `'Total Moves': team.acquisitions + team.drops`
-- Add **Best/Worst Week**: `'Best Week': max(team.scores)`, `'Worst Week': min(team.scores)`
 
 ---
 
