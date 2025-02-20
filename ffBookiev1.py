@@ -16,13 +16,27 @@ league = League(
 
 def getStandings():
     #Creates a DataFrame with columns 'Team Name', 'Record', and 'Points For'. The DataFrame is sorted by best record to worst.
+
     teams = league.teams
+    power_rankings = league.power_rankings()
+    luckExp = 2.37
+
+    # Create a dictionary to map team names to their power rankings
+    power_rankings_dict = {team.team_name: rank for rank, team in power_rankings}
 
     standings = [
         {
             'Team Name': team.team_name,
             'Record': f"{team.wins}-{team.losses}",
-            'Points For': (team.points_for),
+            'Points For(PF)': team.points_for,
+            'Points Against(PA)': team.points_against,
+            'PF/G': round((team.points_for) / 14, 2), #change to league.current_week when in season
+            'PA/G' : round((team.points_against) / 14, 2), #change to league.current_week when in season
+            'DIFF': round((team.points_for / 14) - (team.points_against / 14), 2), #change to league.current_week when in season
+            'Power Ranking': power_rankings_dict.get(team.team_name, 'N/A'),
+            'Expected Wins': round((team.points_for ** luckExp) / (team.points_for ** luckExp + team.points_against ** luckExp) * (team.wins + team.losses), 2),
+            'Luck': round(team.wins - (team.points_for ** luckExp) / (team.points_for ** luckExp + team.points_against ** luckExp) * (team.wins + team.losses), 2),
+            
         }
         for team in teams
     ]

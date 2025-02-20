@@ -4,8 +4,8 @@ from espn_api.football import League
 league = League(
     league_id=42024189,
     year=2024,
-    espn_s2='AEAfislB6w%2BkwexCDx2g%2FTi3thxNSwE6%2BzPWVCMqnHPNGAm4DBwg4A9WY4L1euJ0umT%2FbVXUCBkyQHrhOtaWM4RrdWdQPdhNxrKBhH4a8bhO90Apuf7lubbmClqBubEJbyFxYvePyZxyBK57%2FVNUqtESc%2Fe882gjWi%2BNx7SrUxhPNUxEl51VIIVjxJyepn7oQ2Xj8WnEAlcnBjjCspWjUEib6%2FiYzDez1Qe1DEmd3CzdjEDtJuIMYwXs3QgGgZVa6ki7jqBCPQ5taoFSAWkn0FP3YoNz78XTBE%2F4mlgXRLt%2FhTXQB53phgURTeCkbxdKsTg%3D',
-    swid='{CDF3A8EC-BC64-49D3-9D3D-58B609C22AA8}'
+    espn_s2='AECycM1RSKC9H6KO4Qw7b0ZKIaa417A48498axeqW12XB0VFyWXroqy%2BFzAdJFMJUqxu4t05etxquUZYQ92C7V8N%2BzGT48zFtm4IJM04CG%2FG7zrSRXMBsqrw219pF4k7L0BYwwHr1om5AQNTKViQ5YJhH9SFEmGo03L1NTeuQSPy3Ws6HpQs2pfnZKuddHWxNUwH9HVOxVkOc4nSbCn8LPm2c1lsCAuuH26Z4laiqV2e0MCjMNizTi%2FS8VFHmVCXcPVejE3reh1JRyiHuKp1gE14',
+    swid='{CDA2BA80-43BE-41FB-9AB1-C8BE52DD4C45}'
 )
 
 def get_projected_scores(week):
@@ -47,3 +47,5 @@ def get_projected_scores(week):
         })
 
     return projected_scores
+
+print(get_projected_scores(16))
