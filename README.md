@@ -1,5 +1,3 @@
-Absolutely! Below is a sample **README.md** file for your Fantasy Football League Bookie project. This file explains what the project does, how to set it up, and how to use it. You can customize it further to match your league's specific details.
-
 ---
 
 # Fantasy Football League Bookie
