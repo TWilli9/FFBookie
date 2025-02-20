@@ -92,13 +92,6 @@ Here’s an example of what the output might look like:
 
 ---
 
-## **Contributing**
-If you’d like to contribute to this project, feel free to fork the repository and submit a pull request. Here are some ideas for improvements:
-- Add support for head-to-head records.
-- Include playoff probability calculations.
-- Add visualizations using `matplotlib` or `plotly`.
-
----
 
 ## **License**
 This project is open-source and available under the [MIT License](LICENSE).
