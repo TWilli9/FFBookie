@@ -1,5 +1,6 @@
 from espn_api.football import League
 import pandas as pd
+from ffProjScore import getProjectedScores
 #import dash
 #from dash import html, dcc, dash_table
 #import plotly.graph_objects as go
@@ -15,25 +16,28 @@ league = League(
 
 
 def getStandings():
-    #Creates a DataFrame with columns 'Team Name', 'Record', and 'Points For'. The DataFrame is sorted by best record to worst.
+    #Creates a DataFrame with columns 'Team Name', 'Record', 'Points For', etc. The DataFrame is sorted by best record to worst.
 
+    currentWeek = 14 #change to league.current_week when in season
     teams = league.teams
-    power_rankings = league.power_rankings()
-    luckExp = 2.37
+    powerRankings = league.power_rankings()
+    luckExp = 2.37 #exponent variable to calcualte expected wins and luck
 
     # Create a dictionary to map team names to their power rankings
-    power_rankings_dict = {team.team_name: rank for rank, team in power_rankings}
+    powerRankingsDict = {team.team_name: rank for rank, team in powerRankings}
+    projectedScores = getProjectedScores(currentWeek)
 
     standings = [
         {
             'Team Name': team.team_name,
+            'Projected Scores': projectedScores.get(team.team_name, 'N/A'),
             'Record': f"{team.wins}-{team.losses}",
             'Points For(PF)': team.points_for,
             'Points Against(PA)': team.points_against,
-            'PF/G': round((team.points_for) / 14, 2), #change to league.current_week when in season
-            'PA/G' : round((team.points_against) / 14, 2), #change to league.current_week when in season
-            'DIFF': round((team.points_for / 14) - (team.points_against / 14), 2), #change to league.current_week when in season
-            'Power Ranking': power_rankings_dict.get(team.team_name, 'N/A'),
+            'PF/G': round((team.points_for) / currentWeek, 2),
+            'PA/G' : round((team.points_against) / currentWeek, 2),
+            'DIFF': round((team.points_for / currentWeek) - (team.points_against / currentWeek), 2),
+            'Power Ranking': powerRankingsDict.get(team.team_name, 'N/A'),
             'Expected Wins': round((team.points_for ** luckExp) / (team.points_for ** luckExp + team.points_against ** luckExp) * (team.wins + team.losses), 2),
             'Luck': round(team.wins - (team.points_for ** luckExp) / (team.points_for ** luckExp + team.points_against ** luckExp) * (team.wins + team.losses), 2),
             
