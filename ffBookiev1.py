@@ -112,15 +112,13 @@ def getMatchups(week):
 
     return df
         
-
-
-
-
-
-print(getStandings())
-print(getMatchups(currentWeek))
-
 def exportDF(df, filename='export.csv'):
     df.to_csv(filename, index = False)
+
+
+
+
+#print(getStandings())
+#print(getMatchups(currentWeek))
 
 
