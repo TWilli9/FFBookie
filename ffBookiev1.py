@@ -14,11 +14,11 @@ league = League(
     swid='{CDA2BA80-43BE-41FB-9AB1-C8BE52DD4C45}'
 )
 
+currentWeek = 14 #change to league.current_week when in season
 
 def getStandings():
     #Creates a DataFrame with columns 'Team Name', 'Record', 'Points For', etc. The DataFrame is sorted by best record to worst.
 
-    currentWeek = 14 #change to league.current_week when in season
     teams = league.teams
     powerRankings = league.power_rankings()
     luckExp = 2.37 #exponent variable to calcualte expected wins and luck
@@ -49,4 +49,76 @@ def getStandings():
     
     return df.sort_values(by='Record',ascending=False)
 
+
+def getMatchups(week):
+    matchups = league.scoreboard(week=week)
+    projectedScores = getProjectedScores(week)
+    matchupDetails = []
+
+    for matchup in matchups:
+
+        homeTeam = matchup.home_team
+        homeTeamName = homeTeam.team_name if homeTeam else "N/A"
+        homeProj = projectedScores.get(homeTeamName, "N/A")
+        homeActual = matchup.home_score if hasattr(matchup, 'home_score') else "N/A"
+
+        awayTeam = matchup.away_team
+        awayTeamName = awayTeam.team_name if awayTeam else "N/A"
+        awayProj = projectedScores.get(awayTeamName, "N/A")
+        awayActual = matchup.away_score if hasattr(matchup, 'away_score') else "N/A"
+
+        if homeProj != "N/A" and awayProj != "N/A":
+            if homeProj > awayProj:
+                predictedWinner = homeTeamName
+                margin = round(homeProj - awayProj, 2)
+            else:
+                predictedWinner = awayTeamName
+                margin = round(awayProj - homeProj, 2)
+        else:
+            predictedWinner = "N/A"
+            margin = "N/A"
+        
+        def getTopPlayers(team, week):
+            if not team:
+                return []
+            roster = team.roster
+            topPlayers = sorted(
+                [player for player in roster if player.lineupSlot not in ['BE','IR']],
+                key=lambda p: p.stats.get(week,{}).get('projected_points', 0),
+                reverse=True
+            )[:3]
+            return[(player.name, player.stats.get(week, {}).get('projected_points',0)) for player in topPlayers]
+        
+        homeTopPlayers = getTopPlayers(homeTeam, week)
+        awayTopPlayers = getTopPlayers(awayTeam,week)
+
+        matchupDetails.append({
+            'Week': week,
+            'Home Team': homeTeamName,
+            'Away Team': awayTeamName,
+            'Home Projected Score': homeProj,
+            'Away Projected Score': awayProj,
+            'Home Actual Score': homeActual,
+            'Away Actual Score': awayActual,
+            'Predicted Winner': predictedWinner,
+            'Projected Margin': margin,
+            'Home Top Players': homeTopPlayers,
+            'Away Top Players': awayTopPlayers,
+        })
+
+        df = pd.DataFrame(matchupDetails)
+
+    return df
+        
+
+
+
+
+
 print(getStandings())
+print(getMatchups(currentWeek))
+
+def exportDF(df, filename='export.csv'):
+    df.to_csv(filename, index = False)
+
+
