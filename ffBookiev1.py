@@ -1,6 +1,8 @@
 from espn_api.football import League
 import pandas as pd
-from ffProjScore import getProjectedScores
+from ffHistoricalData import *
+from ffStandMatchData import *
+import matplotlib.pyplot as plt
 #import dash
 #from dash import html, dcc, dash_table
 #import plotly.graph_objects as go
@@ -15,110 +17,47 @@ league = League(
 )
 
 currentWeek = 14 #change to league.current_week when in season
-
-def getStandings():
-    #Creates a DataFrame with columns 'Team Name', 'Record', 'Points For', etc. The DataFrame is sorted by best record to worst.
-
-    teams = league.teams
-    powerRankings = league.power_rankings()
-    luckExp = 2.37 #exponent variable to calcualte expected wins and luck
-
-    # Create a dictionary to map team names to their power rankings
-    powerRankingsDict = {team.team_name: rank for rank, team in powerRankings}
-    #Call getProjectedScores from ffProjScore
-    projectedScores = getProjectedScores(currentWeek)
-
-    standings = [
-        {
-            'Team Name': team.team_name,
-            'Projected Scores': projectedScores.get(team.team_name, 'N/A'),
-            'Record': f"{team.wins}-{team.losses}",
-            'Points For(PF)': team.points_for,
-            'Points Against(PA)': team.points_against,
-            'PF/G': round((team.points_for) / currentWeek, 2),
-            'PA/G' : round((team.points_against) / currentWeek, 2),
-            'DIFF': round((team.points_for / currentWeek) - (team.points_against / currentWeek), 2),
-            'Power Ranking': powerRankingsDict.get(team.team_name, 'N/A'),
-            'Expected Wins': round((team.points_for ** luckExp) / (team.points_for ** luckExp + team.points_against ** luckExp) * (team.wins + team.losses), 2),
-            'Luck': round(team.wins - (team.points_for ** luckExp) / (team.points_for ** luckExp + team.points_against ** luckExp) * (team.wins + team.losses), 2),
-            
-        }
-        for team in teams
-    ]
-
-    df = pd.DataFrame(standings)
-    
-    return df.sort_values(by='Record',ascending=False)
-
-
-def getMatchups(week):
-    #Creates a DataFrame with the matchups and their data for a given week
-    matchups = league.scoreboard(week=week)
-    projectedScores = getProjectedScores(week)
-    matchupDetails = []
-
-    for matchup in matchups:
-
-        homeTeam = matchup.home_team
-        homeTeamName = homeTeam.team_name if homeTeam else "N/A"
-        homeProj = projectedScores.get(homeTeamName, "N/A")
-        homeActual = matchup.home_score if hasattr(matchup, 'home_score') else "N/A"
-
-        awayTeam = matchup.away_team
-        awayTeamName = awayTeam.team_name if awayTeam else "N/A"
-        awayProj = projectedScores.get(awayTeamName, "N/A")
-        awayActual = matchup.away_score if hasattr(matchup, 'away_score') else "N/A"
-
-        if homeProj != "N/A" and awayProj != "N/A":
-            if homeProj > awayProj:
-                predictedWinner = homeTeamName
-                margin = round(homeProj - awayProj, 2)
-            else:
-                predictedWinner = awayTeamName
-                margin = round(awayProj - homeProj, 2)
-        else:
-            predictedWinner = "N/A"
-            margin = "N/A"
-        
-        def getTopPlayers(team, week):
-            if not team:
-                return []
-            roster = team.roster
-            topPlayers = sorted(
-                [player for player in roster if player.lineupSlot not in ['BE','IR']],
-                key=lambda p: p.stats.get(week,{}).get('projected_points', 0),
-                reverse=True
-            )[:3]
-            return[(player.name, player.stats.get(week, {}).get('projected_points',0)) for player in topPlayers]
-        
-        homeTopPlayers = getTopPlayers(homeTeam, week)
-        awayTopPlayers = getTopPlayers(awayTeam,week)
-
-        matchupDetails.append({
-            'Week': week,
-            'Home Team': homeTeamName,
-            'Away Team': awayTeamName,
-            'Home Projected Score': homeProj,
-            'Away Projected Score': awayProj,
-            'Home Actual Score': homeActual,
-            'Away Actual Score': awayActual,
-            'Predicted Winner': predictedWinner,
-            'Projected Margin': margin,
-            'Home Top Players': homeTopPlayers,
-            'Away Top Players': awayTopPlayers,
-        })
-
-        df = pd.DataFrame(matchupDetails)
-
-    return df
         
 def exportDF(df, filename='export.csv'):
     df.to_csv(filename, index = False)
 
+import matplotlib.pyplot as plt
+
+def plot_team_points_vs_average(standings):
+    """
+    Creates a bar chart comparing each team's total points to the league average.
+
+    Args:
+        standings (pd.DataFrame): A DataFrame containing team standings.
+    """
+    # Calculate the league average points
+    league_avg_points = standings['Points For(PF)'].mean()
+
+    # Create the plot
+    plt.figure(figsize=(10, 6))
+    bars = plt.bar(standings['Team Name'], standings['Points For(PF)'], color='blue', label='Team Points')
+    plt.axhline(league_avg_points, color='red', linestyle='--', label='League Average')
+
+    # Add labels and title
+    plt.xlabel('Team Name')
+    plt.ylabel('Points For (PF)')
+    plt.title('Team Points vs League Average')
+    plt.xticks(rotation=45, ha='right')  # Rotate team names for better readability
+    plt.legend()
+
+    # Add value labels on top of each bar
+    for bar in bars:
+        height = bar.get_height()
+        plt.text(bar.get_x() + bar.get_width() / 2, height, f'{height:.1f}', ha='center', va='bottom')
+
+    # Show the plot
+    plt.tight_layout()
+    plt.show()
 
 
-
-#print(getStandings())
+#print(getStandings(league))
 #print(getMatchups(currentWeek))
-
+#print(getAllTimeData().sort_values(by = 'All-Time Record', ascending= False))
+#print(getStandingsForYear(2021))
+#plot_team_points_vs_average(getStandings(league))
 

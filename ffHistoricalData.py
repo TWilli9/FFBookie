@@ -1,7 +1,6 @@
 from espn_api.football import League
 import pandas as pd
-from ffBookiev1 import getStandings
-
+from ffStandMatchData import getStandings
 
 #Initalize league helper function
 def initializeLeague(year):
@@ -15,21 +14,45 @@ def initializeLeague(year):
 
 def getStandingsForYear(year):
     league = initializeLeague(year)
-    return getStandings()
+    return getStandings(league)
 
 def getAllTimeData():
     currentLeague = initializeLeague(2024)
     previousSeasons = currentLeague.previousSeasons
 
+    members = currentLeague.members
+    memberIDs = {member['id']: member for member in members}
+
     allTimeData = {}
 
     for year in previousSeasons + [2024]:
         try:
-            standings = getStandingsForYear(year)
+            league = initializeLeague(year)
+            standings = getStandings(league)
+
+            teamToUser = {}
+            for team in league.teams:
+                if team.owners:
+                    ownerId = team.owners[0].get('id')
+                    teamToUser[team.team_name] = ownerId
+
             for _, row in standings.iterrows():
-                teamName = row['Team Name']
-                if teamName not in allTimeData:
-                    allTimeData[teamName] = {
+                team_name = row['Team Name']
+                userID = teamToUser.get(team_name)
+
+                if not userID:
+                    continue
+
+                user = memberIDs.get(userID)
+                if not user:
+                    continue
+
+                firstName = user.get('firstName', 'Unknown')
+                lastName = user.get('lastName', '')
+                fullName = f"{firstName} {lastName}".strip()
+
+                if fullName not in allTimeData:
+                    allTimeData[fullName] = {
                         'Total Points For': 0,
                         'Total Points Against': 0,
                         'Total Games': 0,
@@ -39,27 +62,30 @@ def getAllTimeData():
                         'Total Luck': 0,
                     }
 
+                record = row['Record']
+                wins, losses = map(int, record.split('-'))
+
                     # Update all-time metrics
-                allTimeData[teamName]['Total Points For'] += row['Points For(PF)']
-                allTimeData[teamName]['Total Points Against'] += row['Points Against(PA)']
-                allTimeData[teamName]['Total Games'] += (row['Wins'] + row['Losses'])
-                allTimeData[teamName]['Total Wins'] += row['Wins']
-                allTimeData[teamName]['Total Losses'] += row['Losses']
-                allTimeData[teamName]['Total Expected Wins'] += row['Expected Wins']
-                allTimeData[teamName]['Total Luck'] += row['Luck']
+                allTimeData[fullName]['Total Points For'] += row['Points For(PF)']
+                allTimeData[fullName]['Total Points Against'] += row['Points Against(PA)']
+                allTimeData[fullName]['Total Games'] += (wins+ losses)
+                allTimeData[fullName]['Total Wins'] += wins
+                allTimeData[fullName]['Total Losses'] += losses
+                allTimeData[fullName]['Total Expected Wins'] += row['Expected Wins']
+                allTimeData[fullName]['Total Luck'] += row['Luck']
         except Exception as e:
             print(f"Error retriving data for {year}: {e}")
 
     #Calculate all-time metrics for each of the teams
     allTimeStandings = []
-    for teamName, data in allTimeData.items():
+    for fullName, data in allTimeData.items():
         totalGames = data['Total Games']
         if totalGames == 0:
             continue
 
         allTimeStandings.append({
            
-            'Team Name': teamName,
+            'User Name': fullName,
             'All-Time Record': f"{data['Total Wins']}-{data['Total Losses']}",
             'All-Time PF/G': round(data['Total Points For'] / totalGames, 2),
             'All-Time PA/G': round(data['Total Points Against'] / totalGames, 2),
@@ -69,4 +95,3 @@ def getAllTimeData():
         })
 
     return pd.DataFrame(allTimeStandings)
-
