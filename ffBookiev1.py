@@ -25,6 +25,7 @@ def getStandings():
 
     # Create a dictionary to map team names to their power rankings
     powerRankingsDict = {team.team_name: rank for rank, team in powerRankings}
+    #Call getProjectedScores from ffProjScore
     projectedScores = getProjectedScores(currentWeek)
 
     standings = [
@@ -51,6 +52,7 @@ def getStandings():
 
 
 def getMatchups(week):
+    #Creates a DataFrame with the matchups and their data for a given week
     matchups = league.scoreboard(week=week)
     projectedScores = getProjectedScores(week)
     matchupDetails = []
