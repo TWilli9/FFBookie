@@ -58,6 +58,5 @@ def plot_team_points_vs_average(standings):
 #print(getStandings(league))
 #print(getMatchups(currentWeek))
 #print(getAllTimeData().sort_values(by = 'All-Time Record', ascending= False))
-#print(getStandingsForYear(2021))
+#print(getStandingsForYear(2023))
 #plot_team_points_vs_average(getStandings(league))
-

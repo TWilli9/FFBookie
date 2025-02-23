@@ -11,6 +11,33 @@ league = League(
 
 currentWeek = 14 # change to league.current_week when season is active
 
+def calculateSOS(league,currentWeek):
+    #Calculates the Strength of Schedule (SOS) for each team
+    teams = league.teams
+    sosData = []
+
+    for team in teams:
+        matchups = []
+        for week in range(1, currentWeek + 1):
+            for matchup in league.scoreboard(week=week):
+                if matchup.home_team == team:
+                    matchups.append(matchup.away_team)
+                elif matchup.away_team == team:
+                    matchups.append(matchup.home_team)
+
+        totalOppPoints = sum(opponent.points_for for opponent in matchups)
+        avgOppPoints = totalOppPoints / len(matchups) if matchups else 0
+
+        sosData.append({
+
+            'Team Name' : team.team_name,
+            'SOS' : round(avgOppPoints, 2),
+
+        })
+    return pd.DataFrame(sosData)
+
+
+
 def getStandings(league):
     #Creates a DataFrame with columns 'Team Name', 'Record', 'Points For', etc. The DataFrame is sorted by best record to worst.
 
@@ -22,6 +49,9 @@ def getStandings(league):
     powerRankingsDict = {team.team_name: rank for rank, team in powerRankings}
     #Call getProjectedScores from ffProjScore
     projectedScores = getProjectedScores(currentWeek)
+
+    sosDf = calculateSOS(league, currentWeek)
+    sosDict = sosDf.set_index('Team Name')['SOS'].to_dict()
 
     standings = [
         {
@@ -36,7 +66,8 @@ def getStandings(league):
             'Power Ranking': powerRankingsDict.get(team.team_name, 'N/A'),
             'Expected Wins': round((team.points_for ** luckExp) / (team.points_for ** luckExp + team.points_against ** luckExp) * (team.wins + team.losses), 2),
             'Luck': round(team.wins - (team.points_for ** luckExp) / (team.points_for ** luckExp + team.points_against ** luckExp) * (team.wins + team.losses), 2),
-            
+            'SOS' : sosDict.get(team.team_name, 'N/A'),
+
         }
         for team in teams
     ]
