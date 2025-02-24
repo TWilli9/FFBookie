@@ -23,20 +23,14 @@ def exportDF(df, filename='export.csv'):
 
 import matplotlib.pyplot as plt
 
-def plot_team_points_vs_average(standings):
-    """
-    Creates a bar chart comparing each team's total points to the league average.
-
-    Args:
-        standings (pd.DataFrame): A DataFrame containing team standings.
-    """
+def plotTeamPointsVAverage(standings):
     # Calculate the league average points
-    league_avg_points = standings['Points For(PF)'].mean()
+    leagueAvgPoints = standings['Points For(PF)'].mean()
 
     # Create the plot
     plt.figure(figsize=(10, 6))
     bars = plt.bar(standings['Team Name'], standings['Points For(PF)'], color='blue', label='Team Points')
-    plt.axhline(league_avg_points, color='red', linestyle='--', label='League Average')
+    plt.axhline(leagueAvgPoints, color='red', linestyle='--', label='League Average')
 
     # Add labels and title
     plt.xlabel('Team Name')
@@ -55,8 +49,35 @@ def plot_team_points_vs_average(standings):
     plt.show()
 
 
+def getExpectedVsActualWins(standingsDf):
+    # Extract the 'Record' column to get actual wins
+    standingsDf['Actual Wins'] = standingsDf['Record'].apply(lambda x: int(x.split('-')[0]))
+    
+    # Select the relevant columns
+    resultDf = standingsDf[['Team Name', 'Expected Wins', 'Actual Wins']]
+    
+    # Plotting the data
+    plt.figure(figsize=(10, 6))
+    plt.bar(resultDf['Team Name'], resultDf['Expected Wins'], color='blue', alpha=0.6, label='Expected Wins')
+    plt.bar(resultDf['Team Name'], resultDf['Actual Wins'], color='orange', alpha=0.6, label='Actual Wins')
+    plt.xlabel('Team Name')
+    plt.ylabel('Wins')
+    plt.title('Expected Wins vs Actual Wins')
+    plt.xticks(rotation=45, ha='right')
+    plt.legend()
+    plt.tight_layout()
+    plt.show()
+    
+    return resultDf
+
+
+
+
+
+
 #print(getStandings(league))
 #print(getMatchups(currentWeek))
 #print(getAllTimeData().sort_values(by = 'All-Time Record', ascending= False))
 #print(getStandingsForYear(2023))
 #plot_team_points_vs_average(getStandings(league))
+#get_expected_vs_actual_wins(getStandingsForYear(2023))
