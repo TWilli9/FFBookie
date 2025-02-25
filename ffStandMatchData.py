@@ -137,3 +137,20 @@ def getMatchups(week):
         df = pd.DataFrame(matchupDetails)
 
     return df
+
+def getTeamOwners(league):
+    # Creates a dictionary with team names as keys and owner names as values
+    teams = league.teams
+    teamOwners = {}
+
+    for team in teams:
+        if hasattr(team, 'owners') and team.owners:
+            owner = team.owners[0]
+            firstName = owner.get('firstName', 'Unknown')
+            lastName = owner.get('lastName', '')
+            fullName = f"{firstName} {lastName}".strip()
+            teamOwners[team.team_name] = fullName
+        else:
+            teamOwners[team.team_name] = 'Unknown'
+            
+    return teamOwners

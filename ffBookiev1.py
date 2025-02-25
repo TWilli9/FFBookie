@@ -81,3 +81,5 @@ def getExpectedVsActualWins(standingsDf):
 #print(getStandingsForYear(2023))
 #plot_team_points_vs_average(getStandings(league))
 #get_expected_vs_actual_wins(getStandingsForYear(2023))
+
+exportDF(getStandings(league))
