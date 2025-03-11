@@ -15,4 +15,6 @@ currentData['Owner Name'] = currentData['Team Name'].map(teamOwners)
 
 mergedData = pd.merge(currentData,historicalData, left_on = 'Owner Name', right_on= 'User Name', how='left')
 
+#**Username and owner name are in the middle of the dataframe and not really needed
+
 print(mergedData)

@@ -2,6 +2,7 @@ from espn_api.football import League
 import pandas as pd
 from ffHistoricalData import *
 from ffStandMatchData import *
+from ffMLModel import *
 import matplotlib.pyplot as plt
 #import dash
 #from dash import html, dcc, dash_table
@@ -71,7 +72,7 @@ def getExpectedVsActualWins(standingsDf):
     return resultDf
 
 
-
+# **make a seperate file just for plots
 
 
 
@@ -82,4 +83,4 @@ def getExpectedVsActualWins(standingsDf):
 #plot_team_points_vs_average(getStandings(league))
 #get_expected_vs_actual_wins(getStandingsForYear(2023))
 
-exportDF(getStandings(league))
+#exportDF(getMergedData(),'export.csv')
