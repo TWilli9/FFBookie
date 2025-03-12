@@ -4,6 +4,8 @@ from ffHistoricalData import *
 from ffStandMatchData import *
 from ffMLModel import *
 import matplotlib.pyplot as plt
+import json
+
 #import dash
 #from dash import html, dcc, dash_table
 #import plotly.graph_objects as go
@@ -21,8 +23,6 @@ currentWeek = 14 #change to league.current_week when in season
         
 def exportDF(df, filename='export.csv'):
     df.to_csv(filename, index = False)
-
-import matplotlib.pyplot as plt
 
 def plotTeamPointsVAverage(standings):
     # Calculate the league average points
@@ -74,6 +74,22 @@ def getExpectedVsActualWins(standingsDf):
 
 # **make a seperate file just for plots
 
+def exportDFtoJSON(df, filename):
+    df.to_json(filename, orient = 'records', index = 4)
+
+# Generate and export matchups data
+matchupsDf = getMatchups(currentWeek)
+exportDFtoJSON(matchupsDf, 'matchups.json')
+
+# Generate and export standings data
+standingsDf = getStandings(league)
+exportDFtoJSON(standingsDf, 'standings.json')
+
+# Generate and export historical data
+historicalDf = getAllTimeData()
+exportDFtoJSON(historicalDf, 'historical.json')
+
+print("JSON files generated successfully!")
 
 
 #print(getStandings(league))

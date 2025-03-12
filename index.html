@@ -4,13 +4,162 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fantasy Football Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+    </style>
 </head>
 <body>
     <h1>Fantasy Football Dashboard</h1>
-    <ul>
-        <li><a href="/standings">Current Season Standings</a></li>
-        <li><a href="/alltime">All-Time Data</a></li>
-        <li><a href="/matchups">Weekly Matchups</a></li>
-    </ul>
+
+    <!-- Weekly Matchups Section -->
+    <div class="section">
+        <h2>Weekly Matchups</h2>
+        <table id="matchups">
+            <thead>
+                <tr>
+                    <th>Home Team</th>
+                    <th>Away Team</th>
+                    <th>Home Projected Score</th>
+                    <th>Away Projected Score</th>
+                    <th>Predicted Winner</th>
+                    <th>Projected Margin</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Matchup data will be populated here -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Current Standings Section -->
+    <div class="section">
+        <h2>Current Standings</h2>
+        <table id="standings">
+            <thead>
+                <tr>
+                    <th>Team Name</th>
+                    <th>Record</th>
+                    <th>Points For (PF)</th>
+                    <th>Points Against (PA)</th>
+                    <th>PF/G</th>
+                    <th>PA/G</th>
+                    <th>DIFF</th>
+                    <th>Power Ranking</th>
+                    <th>Expected Wins</th>
+                    <th>Luck</th>
+                    <th>SOS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Standings data will be populated here -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Historical Data Section -->
+    <div class="section">
+        <h2>All-Time Historical Data</h2>
+        <table id="historical">
+            <thead>
+                <tr>
+                    <th>User Name</th>
+                    <th>All-Time Record</th>
+                    <th>All-Time PF/G</th>
+                    <th>All-Time PA/G</th>
+                    <th>All-Time DIFF</th>
+                    <th>All-Time Expected Wins</th>
+                    <th>All-Time Luck</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Historical data will be populated here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        // Function to fetch and populate data
+        async function fetchAndPopulateData() {
+            try {
+                // Fetch matchups data
+                const matchupsResponse = await fetch('matchups.json');
+                const matchupsData = await matchupsResponse.json();
+                const matchupsTbody = document.querySelector("#matchups tbody");
+                matchupsTbody.innerHTML = matchupsData.map(matchup => `
+                    <tr>
+                        <td>${matchup['Home Team']}</td>
+                        <td>${matchup['Away Team']}</td>
+                        <td>${matchup['Home Projected Score']}</td>
+                        <td>${matchup['Away Projected Score']}</td>
+                        <td>${matchup['Predicted Winner']}</td>
+                        <td>${matchup['Projected Margin']}</td>
+                    </tr>
+                `).join("");
+
+                // Fetch standings data
+                const standingsResponse = await fetch('standings.json');
+                const standingsData = await standingsResponse.json();
+                const standingsTbody = document.querySelector("#standings tbody");
+                standingsTbody.innerHTML = standingsData.map(team => `
+                    <tr>
+                        <td>${team['Team Name']}</td>
+                        <td>${team['Record']}</td>
+                        <td>${team['Points For(PF)']}</td>
+                        <td>${team['Points Against(PA)']}</td>
+                        <td>${team['PF/G']}</td>
+                        <td>${team['PA/G']}</td>
+                        <td>${team['DIFF']}</td>
+                        <td>${team['Power Ranking']}</td>
+                        <td>${team['Expected Wins']}</td>
+                        <td>${team['Luck']}</td>
+                        <td>${team['SOS']}</td>
+                    </tr>
+                `).join("");
+
+                // Fetch historical data
+                const historicalResponse = await fetch('historical.json');
+                const historicalData = await historicalResponse.json();
+                const historicalTbody = document.querySelector("#historical tbody");
+                historicalTbody.innerHTML = historicalData.map(user => `
+                    <tr>
+                        <td>${user['User Name']}</td>
+                        <td>${user['All-Time Record']}</td>
+                        <td>${user['All-Time PF/G']}</td>
+                        <td>${user['All-Time PA/G']}</td>
+                        <td>${user['All-Time DIFF']}</td>
+                        <td>${user['All-Time Expected Wins']}</td>
+                        <td>${user['All-Time Luck']}</td>
+                    </tr>
+                `).join("");
+            } catch (error) {
+                console.error("Error fetching data:", error);
+            }
+        }
+
+        // Populate data on page load
+        fetchAndPopulateData();
+    </script>
 </body>
 </html>
