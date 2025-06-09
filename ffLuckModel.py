@@ -111,7 +111,7 @@ def calculateLuckScore(matchups_df):
     df = pd.DataFrame(allScores)
 
 
-    df = calcOpponentLuck
+    df = calcOpponentLuck(df)
     df = calcMarginLuck(df)
     df = calcAvgLuck(df)
     df["Luck Score"] = (round(
