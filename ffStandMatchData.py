@@ -93,7 +93,7 @@ def getStandings(league):
     try:
         luckdf = getLuckScoresAcrossWeeks(startweek=1, endweek=14) # change endweek to league.current_week when season is active
         avg_luck_df = luckdf.groupby("Team")["Luck Score"].mean().reset_index()
-        avg_luck_df.columns = ["Team Name", "Luck"]  # Rename to "Luck" to fully replace old column
+        avg_luck_df.columns = ["Team Name", "Luck Score (%)"]  # Rename to "Luck" to fully replace old column
 
         df = df.merge(avg_luck_df, on="Team Name", how="left")
     except Exception as e:
