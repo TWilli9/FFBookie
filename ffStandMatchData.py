@@ -1,6 +1,7 @@
 from espn_api.football import League
 import pandas as pd
 from ffProjScore import getProjectedScores
+from ffLuckModel import calculateLuckScore
 
 league = League(
     league_id=42024189,
@@ -37,13 +38,30 @@ def calculateSOS(league,currentWeek):
     return pd.DataFrame(sosData)
 
 
+def getLuckScoresAcrossWeeks(startweek = 1, endweek = 14): #change endweek to league.current_week when season is active
+    #Calculates the luck scores for each team across multiple weeks
+    allWeeks = []
+
+    for week in range(startweek, endweek + 1):
+        try:
+            matchups_df = getMatchups(week)
+            weekScores = calculateLuckScore(matchups_df)
+            allWeeks.append(weekScores)
+        except Exception as e:
+            print(f"Error processing week {week}: {e}")
+            
+    if allWeeks:
+        return pd.concat(allWeeks, ignore_index=True)
+    else:
+        return pd.DataFrame()
+
+
 
 def getStandings(league):
     #Creates a DataFrame with columns 'Team Name', 'Record', 'Points For', etc. The DataFrame is sorted by best record to worst.
 
     teams = league.teams
     powerRankings = league.power_rankings()
-    luckExp = 2.37 #exponent variable to calcualte expected wins and luck
 
     # Create a dictionary to map team names to their power rankings
     powerRankingsDict = {team.team_name: rank for rank, team in powerRankings}
@@ -64,8 +82,6 @@ def getStandings(league):
             'PA/G' : round((team.points_against) / currentWeek, 2),
             'DIFF': round((team.points_for / currentWeek) - (team.points_against / currentWeek), 2),
             'Power Ranking': powerRankingsDict.get(team.team_name, 'N/A'),
-            'Expected Wins': round((team.points_for ** luckExp) / (team.points_for ** luckExp + team.points_against ** luckExp) * (team.wins + team.losses), 2),
-            'Luck': round(team.wins - (team.points_for ** luckExp) / (team.points_for ** luckExp + team.points_against ** luckExp) * (team.wins + team.losses), 2),
             'SOS' : sosDict.get(team.team_name, 'N/A'),
 
         }
@@ -73,6 +89,16 @@ def getStandings(league):
     ]
 
     df = pd.DataFrame(standings)
+
+    try:
+        luckdf = getLuckScoresAcrossWeeks(startweek=1, endweek=14) # change endweek to league.current_week when season is active
+        avg_luck_df = luckdf.groupby("Team")["Luck Score"].mean().reset_index()
+        avg_luck_df.columns = ["Team Name", "Luck"]  # Rename to "Luck" to fully replace old column
+
+        df = df.merge(avg_luck_df, on="Team Name", how="left")
+    except Exception as e:
+        print("Could not calculate advanced luck:", e)
+        df["Luck"] = None
     
     return df.sort_values(by='Record',ascending=False)
 
