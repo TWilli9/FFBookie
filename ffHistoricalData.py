@@ -59,7 +59,6 @@ def getAllTimeData():
                         'Total Wins': 0,
                         'Total Losses': 0,
                         'Total Luck': 0,
-                        'Total Advanced Luck': 0.0,   # new field
                     }
 
                 record = row['Record']
@@ -72,7 +71,6 @@ def getAllTimeData():
                 allTimeData[fullName]['Total Wins'] += wins
                 allTimeData[fullName]['Total Losses'] += losses
                 allTimeData[fullName]['Total Luck'] += row.get("Total Luck", 0)
-                allTimeData[fullName]['Total Advanced Luck'] += row.get("Total Luck", 0)
         except Exception as e:
             print(f"Error retriving data for {year}: {e}")
 
@@ -91,7 +89,6 @@ def getAllTimeData():
             'All-Time PA/G': round(data['Total Points Against'] / totalGames, 2),
             'All-Time DIFF': round((data['Total Points For'] - data['Total Points Against']) / totalGames, 2),
             'All-Time Luck': round(data['Total Luck'], 2),
-            'All-Time Avg Luck %': round(data['Total Advanced Luck'] / totalGames, 2),
         })
 
     return pd.DataFrame(allTimeStandings)
