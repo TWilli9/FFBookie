@@ -1,6 +1,7 @@
 from espn_api.football import League
 import pandas as pd
 from ffStandMatchData import getStandings
+import re
 
 #Initalize league helper function
 def initializeLeague(year):
@@ -16,8 +17,15 @@ def getStandingsForYear(year):
     league = initializeLeague(year)
     return getStandings(league)
 
+def cleanTeamName(name):
+    """Cleans team name for consistent comparison."""
+    name = name.lower().strip()
+    name = re.sub(r'[^\w\s]', '', name)  # Remove special characters and emojis
+    name = re.sub(r'\s+', ' ', name)  # Collapse multiple spaces
+    return name    
+
 def getAllTimeData():
-    currentLeague = initializeLeague(2024)
+    currentLeague = initializeLeague(2024)          #Change for current year
     previousSeasons = currentLeague.previousSeasons
 
     members = currentLeague.members
@@ -34,11 +42,13 @@ def getAllTimeData():
             for team in league.teams:
                 if team.owners:
                     ownerId = team.owners[0].get('id')
-                    teamToUser[team.team_name] = ownerId
+                    cleanedName = cleanTeamName(team.team_name)
+                    teamToUser[cleanedName] = ownerId
 
             for _, row in standings.iterrows():
-                team_name = row['Team Name']
-                userID = teamToUser.get(team_name)
+                rawTeamName = row['Team Name']
+                cleanedTeamName1 = cleanTeamName(rawTeamName)
+                userID = teamToUser.get(cleanedTeamName1)
 
                 if not userID:
                     continue
