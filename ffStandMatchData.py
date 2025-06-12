@@ -91,14 +91,23 @@ def getStandings(league):
     df = pd.DataFrame(standings)
 
     try:
-        luckdf = getLuckScoresAcrossWeeks(startweek=1, endweek=14) # change endweek to league.current_week when season is active
-        avg_luck_df = luckdf.groupby("Team")["Luck Score"].mean().reset_index()
-        avg_luck_df.columns = ["Team Name", "Luck Score (%)"]  # Rename to "Luck" to fully replace old column
+        luckdf = getLuckScoresAcrossWeeks(startweek=1, endweek=currentWeek)
+        
+        df["Team Name"] = df["Team Name"].str.strip()
+        luckdf["Team"] = luckdf["Team"].str.strip()
 
-        df = df.merge(avg_luck_df, on="Team Name", how="left")
+        # Aggregate luck scores
+        total_luck_df = luckdf.groupby("Team")["Luck Score"].sum().reset_index()
+        total_luck_df.columns = ["Team Name", "Total Luck"]
+        total_luck_df["Luck Rank"] = total_luck_df["Total Luck"].rank(ascending=False).astype(int)
+
+        # Merge with main standings
+        df = df.merge(total_luck_df, on="Team Name", how="left")
+
     except Exception as e:
-        print("Could not calculate advanced luck:", e)
-        df["Luck"] = None
+        print("Could not calculate luck metrics:", e)
+        df["Total Luck"] = None
+        df["Luck Rank"] = None
     
     return df.sort_values(by='Record',ascending=False)
 

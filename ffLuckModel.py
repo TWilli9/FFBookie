@@ -22,7 +22,7 @@ for _, row in matchups.iterrows():
             "Margin": row[f"{side} Actual Score"] - row[f"{'Away' if side == 'Home' else 'Home'} Actual Score"],
         })
 
-scoreDf = pd.DataFrame(allScores)
+#scoreDf = pd.DataFrame(allScores)
 
 
 # Calculates how lucky a team was based on the strength of the opponent they faced (lower opponent score = luckier).
@@ -37,7 +37,7 @@ def calcOpponentLuck(df):
 
     return df
 
-scoreDf = calcOpponentLuck(scoreDf)
+#scoreDf = calcOpponentLuck(scoreDf)
 
 
 # Calculates luck based on how close the game was; narrow wins/losses are considered luckier.
@@ -56,7 +56,7 @@ def calcMarginLuck(df):
 
     return df
 
-scoreDf = calcMarginLuck(scoreDf)
+#scoreDf = calcMarginLuck(scoreDf)
 
 
 # Calculates luck based on how a team's score compared to the league average that week.
@@ -78,17 +78,60 @@ def calcAvgLuck(df):
 
     return df
 
-scoreDf = calcAvgLuck(scoreDf)
+#scoreDf = calcAvgLuck(scoreDf)
 
-
+'''
 scoreDf["Luck Score"] = (round(
     0.4 * scoreDf["Opponent Luck"] + 
     0.3 * scoreDf["Margin Luck"] + 
     0.3 * scoreDf["Average Luck"],
     2) * 100)
-
+'''
 
 #print(scoreDf.sort_values("Luck Score", ascending=False).head(10))
+
+
+def calcCompositeLuck(df):
+    df = df.copy()
+    df["Luck Score"] = 0.0
+
+    for week in df['Week'].unique():
+        weekDf = df[df['Week'] == week].copy()
+
+        scorePct = weekDf["Score"].rank(pct=True)
+        oppScorePct = weekDf["Opponent Score"].rank(pct=True)
+
+        margin = weekDf["Margin"]
+        maxMargin = margin.abs().max() or 1  # Prevent divide-by-zero
+        marginCloseness = 1 - (margin.abs() / maxMargin)  # 1 for close, 0 for blowout
+
+        luckScores = []
+
+        for i in weekDf.index:
+            
+            if margin[i] > 0:  # WIN
+                # Lucky win = low score, weak opponent, close game
+                luck = (
+                    (1 - scorePct[i]) * 2 +            # low score = lucky
+                    (1 - oppScorePct[i]) * 1 +         # weak opponent = lucky
+                    marginCloseness[i] * 3             # closer win = more lucky
+                ) / 6
+                luckScores.append(round(luck, 3))
+
+            else:  # LOSS
+                # Unlucky loss = high score, strong opponent, close game
+                luck = (
+                    scorePct[i] * 2 +                  # high score = unlucky
+                    oppScorePct[i] * 1 +               # strong opponent = unlucky
+                    marginCloseness[i] * 3             # closer loss = more unlucky
+                ) / 6
+                luckScores.append(round(-luck, 3))     # NEGATIVE score for unlucky
+
+        df.loc[weekDf.index, "Luck Score"] = pd.Series(luckScores, index=weekDf.index).clip(-1, 1)
+
+    return df
+
+
 
 
 # Combines all three luck components into a single 'Luck Score' for each team per week.
@@ -109,17 +152,7 @@ def calculateLuckScore(matchups_df):
             })
 
     df = pd.DataFrame(allScores)
-
-
-    df = calcOpponentLuck(df)
-    df = calcMarginLuck(df)
-    df = calcAvgLuck(df)
-    df["Luck Score"] = (round(
-        0.4 * df["Opponent Luck"] + 
-        0.3 * df["Margin Luck"] + 
-        0.3 * df["Average Luck"],
-        2) * 100)
-
+    df = calcCompositeLuck(df)
     return df
 
 

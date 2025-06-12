@@ -145,7 +145,8 @@
                     <th>PA/G</th>
                     <th>DIFF</th>
                     <th>Power Ranking</th>
-                    <th>Luck Score (%)</th>
+                    <th>Total Luck</th>
+                    <th>Luck Rank</th> 
                     <th>SOS</th>
                 </tr>
             </thead>
@@ -209,7 +210,8 @@
                         <td>${team['PA/G']}</td>
                         <td>${team['DIFF']}</td>
                         <td>${team['Power Ranking']}</td>
-                        <td>${team['Luck Score (%)']}</td>
+                        <td>${team['Total Luck']}</td> 
+                        <td>${team['Luck Rank']}</td> 
                         <td>${team['SOS']}</td>
                     </tr>
                 `).join("");
@@ -225,7 +227,7 @@
                         <td>${user['All-Time PF/G']}</td>
                         <td>${user['All-Time PA/G']}</td>
                         <td>${user['All-Time DIFF']}</td>
-                        <td>${user['All-Time Expected Wins']}</td>
+                        <td>${user['All-Time Expected Wins']}</td> <!-- REMOVE THIS???? -->
                         <td>${user['All-Time Luck']}</td>
                     </tr>
                 `).join("");
