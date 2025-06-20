@@ -202,16 +202,38 @@
                 const matchupsResponse = await fetch('matchups.json');
                 const matchupsData = await matchupsResponse.json();
                 const matchupsTbody = document.querySelector("#matchups tbody");
-                matchupsTbody.innerHTML = matchupsData.map(matchup => `
-                    <tr>
-                        <td>${matchup['Home Team']}</td>
-                        <td>${matchup['Away Team']}</td>
-                        <td>${matchup['Home Projected Score']}</td>
-                        <td>${matchup['Away Projected Score']}</td>
-                        <td>${matchup['Predicted Winner']}</td>
-                        <td>${matchup['Projected Margin']}</td>
-                    </tr>
-                `).join("");
+                const weekSelect = document.getElementById("week-select");
+
+                const uniqueWeeks =[...new Set(matchupsData.map(m => m.Week))].sort((a, b) => a - b);
+                uniqueWeeks.forEach(week => {
+                    const option = document.createElement("option");
+                    option.value = week;
+                    option.textContent = `Week ${week}`;
+                    weekSelect.appendChild(option);
+                });
+
+                function renderMatchups(week) {
+                    const filtered = week === "all" ? matchupsData : matchupsData.filter(m => m.Week === week);
+                    matchupsTbody.innerHTML = filtered.map(matchup => `
+                        <tr>
+                            <td>${matchup['Home Team']}</td>
+                            <td>${matchup['Away Team']}</td>
+                            <td>${matchup['Home Projected Score']}</td>
+                            <td>${matchup['Away Projected Score']}</td>
+                            <td>${matchup['Predicted Winner']}</td>
+                            <td>${matchup['Projected Margin']}</td>
+                        </tr>
+                    `).join("");
+                }
+
+                // Initial render for all weeks
+                renderMatchups("all");
+                weekSelect.addEventListener("change", (event) => {
+                    renderMatchups(weekSelect.value);
+                });
+
+
+
 
                 // Fetch standings data
                 const standingsResponse = await fetch('standings.json');
