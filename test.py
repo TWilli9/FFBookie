@@ -15,21 +15,15 @@ league = League(
 )
 
 
-#test_df = getLuckScoresAcrossWeeks(1, 14)
+test_df = getLuckScoresAcrossWeeks(1, 14)
 
 #print(getStandings(league))
 #exportDF(test_df, 'testLuckScores.csv')
-#print(test_df.sort_values("Luck Score", ascending=False).head(10))
+print(test_df.sort_values("Luck Score", ascending=False).head(10))
+print(test_df.sort_values("Luck Score", ascending=False).tail(10))
 
-standings_df = getStandings(league)
+#standings_df = getStandings(league)
 
 # Preview the key luck columns
-print(standings_df[[
-    'Team Name',
-    'Record',
-    'Points For(PF)',
-    'Points Against(PA)',
-    'Total Luck',
-    'Luck Rank'
-]].sort_values("Luck Rank"))
+#print(standings_df[[  'Team Name',    'Record',    'Points For(PF)',    'Points Against(PA)',    'Total Luck',    'Luck Rank']].sort_values("Luck Rank"))
 
