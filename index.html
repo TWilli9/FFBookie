@@ -91,6 +91,8 @@
         .nav-links {
             text-align: center;
             margin-bottom: 30px;
+            flex-wrap: wrap;
+            gap: 10px;
         }
 
         .nav-links a {
@@ -175,7 +177,6 @@
                     <th>All-Time PF/G</th>
                     <th>All-Time PA/G</th>
                     <th>All-Time DIFF</th>
-                    <th>All-Time Luck</th>
                 </tr>
             </thead>
             <tbody>
@@ -234,7 +235,6 @@
                         <td>${user['All-Time PF/G']}</td>
                         <td>${user['All-Time PA/G']}</td>
                         <td class="${user['All-Time DIFF'] > 0 ? 'positive' : 'negative'}">${user['All-Time DIFF']}</td>
-                        <td>${user['All-Time Luck']}</td>
                     </tr>
                 `).join("");
             } catch (error) {
