@@ -84,6 +84,9 @@
             }
         }
 
+        .positive { color: green; font-weight: bold; }
+        .negative { color: red; }
+
         /* Button-like Links */
         .nav-links {
             text-align: center;
@@ -212,7 +215,7 @@
                         <td>${team['Points Against(PA)']}</td>
                         <td>${team['PF/G']}</td>
                         <td>${team['PA/G']}</td>
-                        <td>${team['DIFF']}</td>
+                        <td class="${team['DIFF'] > 0 ? 'positive' : 'negative'}">${team['DIFF']}</td>
                         <td>${team['Power Ranking']}</td>
                         <td>${team['Total Luck']}</td> 
                         <td>${team['Luck Rank']}</td> 
