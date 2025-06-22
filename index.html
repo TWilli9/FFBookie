@@ -220,7 +220,7 @@
                         <td>${matchup['Away Team']}</td>
                         <td>${matchup['Home Projected Score']}</td>
                         <td>${matchup['Away Projected Score']}</td>
-                        <td>${matchup['Predicted Winner']}</td>
+                        <td>${matchup['Predicted Winner'] ? `<strong>${matchup['Predicted Winner']}</strong>` : 'N/A'}</td>
                         <td>${matchup['Projected Margin']}</td>
                     </tr>
                 `).join("");
