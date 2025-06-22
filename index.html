@@ -202,47 +202,59 @@
     </div>
 
     <script>
+
+        async function loadMatchupsForWeek(week){
+
+            const matchupsTbody = document.querySelector("#matchups tbody");
+            const url = `weeklyMatchups/week_${week}_matchups.json`;
+            try {
+                const response = await fetch(url);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.json();
+
+                matchupsTbody.innerHTML = data.map(matchup => `
+                    <tr>
+                        <td>${matchup['Home Team']}</td>
+                        <td>${matchup['Away Team']}</td>
+                        <td>${matchup['Home Projected Score']}</td>
+                        <td>${matchup['Away Projected Score']}</td>
+                        <td>${matchup['Predicted Winner']}</td>
+                        <td>${matchup['Projected Margin']}</td>
+                    </tr>
+                `).join("");
+            } catch (error) {
+                matchupsTbody.innerHTML = `<tr><td colspan="6">Error loading data for week ${week}: ${error.message}</td></tr>`;
+                console.error("Error fetching data:", error);
+            }
+        }
+
+
+
         // Function to fetch and populate data
         async function fetchAndPopulateData() {
+            
             try {
-                // Fetch matchups data
-                const matchupsResponse = await fetch('matchups.json');
-                const matchupsData = await matchupsResponse.json();
-                const matchupsTbody = document.querySelector("#matchups tbody");
                 const weekSelect = document.getElementById("week-select");
+                const currentWeek = 14; // Update to current ESPN API week if automated
 
-                const uniqueWeeks =[...new Set(matchupsData.map(m => m.Week))].sort((a, b) => a - b);
-                uniqueWeeks.forEach(week => {
+                // Populate dropdown
+                for (let w = 1; w <= currentWeek; w++) {
                     const option = document.createElement("option");
-                    option.value = week;
-                    option.textContent = `Week ${week}`;
+                    option.value = w;
+                    option.text = `Week ${w}`;
                     weekSelect.appendChild(option);
-                });
-
-                function renderMatchups(week) {
-                    const filtered = week === "all" ? matchupsData : matchupsData.filter(m => m.Week === week);
-                    matchupsTbody.innerHTML = filtered.map(matchup => `
-                        <tr>
-                            <td>${matchup['Home Team']}</td>
-                            <td>${matchup['Away Team']}</td>
-                            <td>${matchup['Home Projected Score']}</td>
-                            <td>${matchup['Away Projected Score']}</td>
-                            <td>${matchup['Predicted Winner']}</td>
-                            <td>${matchup['Projected Margin']}</td>
-                        </tr>
-                    `).join("");
                 }
 
-                // Initial render for all weeks
-                renderMatchups("all");
+                weekSelect.value = currentWeek;
+                await loadMatchupsForWeek(currentWeek);
+
                 weekSelect.addEventListener("change", (event) => {
-                    renderMatchups(weekSelect.value);
+                    loadMatchupsForWeek(parseInt(event.target.value));
                 });
 
-
-
-
-                // Fetch standings data
+                // Load standings
                 const standingsResponse = await fetch('standings.json');
                 const standingsData = await standingsResponse.json();
                 const standingsTbody = document.querySelector("#standings tbody");
@@ -256,13 +268,13 @@
                         <td>${team['PA/G']}</td>
                         <td class="${team['DIFF'] > 0 ? 'positive' : 'negative'}">${team['DIFF']}</td>
                         <td>${team['Power Ranking']}</td>
-                        <td>${team['Total Luck']}</td> 
-                        <td>${team['Luck Rank']}</td> 
+                        <td>${team['Total Luck']}</td>
+                        <td>${team['Luck Rank']}</td>
                         <td>${team['SOS']}</td>
                     </tr>
                 `).join("");
 
-                // Fetch historical data
+                // Load historical
                 const historicalResponse = await fetch('historical.json');
                 const historicalData = await historicalResponse.json();
                 const historicalTbody = document.querySelector("#historical tbody");
@@ -276,9 +288,9 @@
                     </tr>
                 `).join("");
             } catch (error) {
-                console.error("Error fetching data:", error);
+            console.error("Error fetching data:", error);
             }
-        }
+    }
 
         // Populate data on page load
         fetchAndPopulateData();

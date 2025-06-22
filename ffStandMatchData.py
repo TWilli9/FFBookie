@@ -2,6 +2,8 @@ from espn_api.football import League
 import pandas as pd
 from ffProjScore import getProjectedScores
 from ffLuckModel import calculateLuckScore
+import os
+import json
 
 league = League(
     league_id=42024189,
@@ -189,3 +191,27 @@ def getTeamOwners(league):
             teamOwners[team.team_name] = 'Unknown'
             
     return teamOwners
+
+
+def exportMatchupsToFolder(currentWeek, folder_name = "weeklyMatchups"):
+    #Loops through all weeks up to currentWeek and exports each week's matchups to a separate JSON file in the specified folder
+    os.makedirs(folder_name, exist_ok=True)
+
+    for week in range(1, currentWeek + 1):
+        filePath = os.path.join(folder_name, f"week_{week}_matchups.json")
+
+        if os.path.exists(filePath):
+            print(f"File for week {week} already exists. Skipping export.")
+            continue
+
+        try:
+            df = getMatchups(week)
+            matchups_list = df.to_dict(orient='records')
+                
+            with open(filePath, 'w') as f:
+                json.dump(matchups_list, f, indent=2)
+
+            print(f"Exported week {week} matchups to {filePath}")
+
+        except Exception as e:
+            print(f"Error exporting week {week} matchups: {e}")
