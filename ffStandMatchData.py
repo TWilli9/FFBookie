@@ -125,24 +125,48 @@ def getMatchups(week):
         homeTeam = matchup.home_team
         homeTeamName = homeTeam.team_name if homeTeam else "N/A"
         homeProj = projectedScores.get(homeTeamName, "N/A")
-        homeActual = matchup.home_score if hasattr(matchup, 'home_score') else "N/A"
+        homeActual = getattr(matchup, 'home_score', None)
 
         awayTeam = matchup.away_team
         awayTeamName = awayTeam.team_name if awayTeam else "N/A"
         awayProj = projectedScores.get(awayTeamName, "N/A")
-        awayActual = matchup.away_score if hasattr(matchup, 'away_score') else "N/A"
+        awayActual = getattr(matchup, 'away_score', None)
 
-        if homeProj != "N/A" and awayProj != "N/A":
+        predictedWinner = "N/A"
+        margin = "N/A"
+
+
+
+        # Determine predicted winner and margin
+        if isinstance(homeProj, (int, float)) and isinstance(awayProj, (int, float)):
             if homeProj > awayProj:
                 predictedWinner = homeTeamName
                 margin = round(homeProj - awayProj, 2)
-            else:
+            elif awayProj > homeProj:
                 predictedWinner = awayTeamName
                 margin = round(awayProj - homeProj, 2)
         else:
-            predictedWinner = "N/A"
-            margin = "N/A"
+            predictedWinner = "Tie"
+            margin = 0.0
         
+        #Actual winner and margin
+        if isinstance(homeActual, (int, float)) and isinstance(awayActual, (int, float)):
+            if homeActual > awayActual:
+                actualWinner = homeTeamName
+                actualMargin = round(homeActual - awayActual, 2)
+            elif awayActual > homeActual:
+                actualWinner = awayTeamName
+                actualMargin = round(awayActual - homeActual, 2)
+            else:
+                actualWinner = "Tie"
+                actualMargin = 0.0
+        else:
+            actualWinner = "N/A"
+            actualMargin = "N/A"
+
+
+
+
         def getTopPlayers(team, week):
             if not team:
                 return []
@@ -163,10 +187,12 @@ def getMatchups(week):
             'Away Team': awayTeamName,
             'Home Projected Score': homeProj,
             'Away Projected Score': awayProj,
-            'Home Actual Score': homeActual,
-            'Away Actual Score': awayActual,
+            'Home Actual Score': homeActual if homeActual is not None else 'N/A',
+            'Away Actual Score': awayActual if awayActual is not None else 'N/A',
             'Predicted Winner': predictedWinner,
             'Projected Margin': margin,
+            'Actual Winner': actualWinner,
+            'Actual Margin': actualMargin,
             'Home Top Players': homeTopPlayers,
             'Away Top Players': awayTopPlayers,
         })

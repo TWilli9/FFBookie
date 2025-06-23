@@ -218,10 +218,18 @@
                     <tr>
                         <td>${matchup['Home Team']}</td>
                         <td>${matchup['Away Team']}</td>
-                        <td>${matchup['Home Projected Score']}</td>
-                        <td>${matchup['Away Projected Score']}</td>
-                        <td>${matchup['Predicted Winner'] ? `<strong>${matchup['Predicted Winner']}</strong>` : 'N/A'}</td>
-                        <td>${matchup['Projected Margin']}</td>
+                        <td>${matchup['Home Actual Score'] !== "N/A" ? matchup['Home Actual Score'] : matchup['Home Projected Score']}</td>
+                        <td>${matchup['Away Actual Score'] !== "N/A" ? matchup['Away Actual Score'] : matchup['Away Projected Score']}</td>
+                        <td>
+                             ${matchup['Actual Winner'] !== "N/A"
+                                ? `<strong>${matchup['Actual Winner']}</strong>`
+                                : (matchup['Predicted Winner'] ? `<strong>${matchup['Predicted Winner']}</strong>` : 'N/A')}
+                        </td>
+                        <td>
+                             ${matchup['Actual Margin'] !== "N/A"
+                                ? matchup['Actual Margin']
+                                : matchup['Projected Margin']}
+                        </td>
                     </tr>
                 `).join("");
             } catch (error) {

@@ -5,7 +5,8 @@ from ffStandMatchData import *
 #from ffMLModel import *
 import matplotlib.pyplot as plt
 import json
-#from ffBookiev1 import *
+#from ffBookiev1 import exportDFtoJSON
+from ffProjScore import *
 
 league = League(
     league_id=42024189,
@@ -24,7 +25,10 @@ league = League(
 
 #standings_df = getStandings(league)
 
-# Preview the key luck columns
+# Preview the key luck colum
 #print(standings_df[[  'Team Name',    'Record',    'Points For(PF)',    'Points Against(PA)',    'Total Luck',    'Luck Rank']].sort_values("Luck Rank"))
 
 exportMatchupsToFolder(currentWeek=14)
+
+#matchupsDf = getMatchups(14)
+#exportDFtoJSON(matchupsDf, 'matchups.json')
