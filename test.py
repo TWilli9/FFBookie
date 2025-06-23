@@ -28,7 +28,7 @@ league = League(
 # Preview the key luck colum
 #print(standings_df[[  'Team Name',    'Record',    'Points For(PF)',    'Points Against(PA)',    'Total Luck',    'Luck Rank']].sort_values("Luck Rank"))
 
-exportMatchupsToFolder(currentWeek=14)
-
-#matchupsDf = getMatchups(14)
+matchupsDf = getMatchups(14)
 #exportDFtoJSON(matchupsDf, 'matchups.json')
+
+print(matchupsDf['Home Top Players'])

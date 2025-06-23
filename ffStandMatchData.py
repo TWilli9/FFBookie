@@ -170,14 +170,36 @@ def getMatchups(week):
         def getTopPlayers(team, week):
             if not team:
                 return []
-            roster = team.roster
-            topPlayers = sorted(
-                [player for player in roster if player.lineupSlot not in ['BE','IR']],
-                key=lambda p: p.stats.get(week,{}).get('projected_points', 0),
-                reverse=True
-            )[:3]
-            return[(player.name, player.stats.get(week, {}).get('projected_points',0)) for player in topPlayers]
-        
+
+
+            roster = [
+
+                player for player in team.roster
+                if player.lineupSlot not in ['BE', 'IR']
+            ]
+
+            actualAvailable = any(
+                'points' in player.stats.get(week, {}) for player in roster
+            )
+
+            if actualAvailable:
+                topPlayers = sorted(
+                    roster,
+                    key=lambda p: p.stats.get(week, {}).get('points', 0),
+                    reverse=True
+                )[:3]
+                return[(player.name, player.stats.get(week, {}).get('points',0)) for player in topPlayers[:3]]
+            else:
+                topPlayers = sorted(
+                    roster,
+                    key=lambda p: p.stats.get(week, {}).get('projected_points', 0),
+                    reverse=True
+                )[:3]
+                return[(player.name, player.stats.get(week, {}).get('projected_points',0)) for player in topPlayers[:3]]
+
+    
+
+
         homeTopPlayers = getTopPlayers(homeTeam, week)
         awayTopPlayers = getTopPlayers(awayTeam,week)
 
