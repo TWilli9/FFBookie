@@ -10,20 +10,6 @@
     <style>
         /* General Styles */
 
-        #standings table {
-            table-layout: fixed;
-            width: max-content;
-            min-width: 100%;
-        }
-
-        #standings th:first-child,
-        #standings td:first-child {
-            position: sticky;
-            left: 0;
-            background: white; /* match table background */
-            z-index: 1;
-        }
-
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
@@ -175,7 +161,6 @@
     <!-- Current Standings Section -->
     <div class="section" id="standings">
         <h2>Current Standings</h2>
-        <div style="overflow-x: auto;"></div>
             <table>
                 <thead>
                     <tr>
@@ -196,7 +181,6 @@
                     <!-- Standings data will be populated here -->
                 </tbody>
             </table>
-        </div>
     </div>
 
     <!-- Historical Data Section -->
