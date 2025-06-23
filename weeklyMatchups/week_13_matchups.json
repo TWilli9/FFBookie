@@ -11,32 +11,16 @@
     "Projected Margin": "N/A",
     "Actual Winner": "Amon a Mission",
     "Actual Margin": 6.62,
-    "Home Top Players": [
-      [
-        "Amon-Ra St. Brown",
-        0
-      ],
+    "Home Top Player": [
       [
         "Trey McBride",
-        0
-      ],
-      [
-        "George Pickens",
-        0
+        21.6
       ]
     ],
-    "Away Top Players": [
+    "Away Top Player": [
       [
-        "Garrett Wilson",
-        0
-      ],
-      [
-        "Saquon Barkley",
-        0
-      ],
-      [
-        "Rachaad White",
-        0
+        "Terry McLaurin",
+        27.3
       ]
     ]
   },
@@ -52,32 +36,16 @@
     "Projected Margin": "N/A",
     "Actual Winner": "How I Metcalf Your Mother",
     "Actual Margin": 14.64,
-    "Home Top Players": [
+    "Home Top Player": [
       [
-        "Ja'Marr Chase",
-        0
-      ],
-      [
-        "Derrick Henry",
-        0
-      ],
-      [
-        "Joe Mixon",
-        0
+        "David Njoku",
+        26.2
       ]
     ],
-    "Away Top Players": [
+    "Away Top Player": [
       [
-        "A.J. Brown",
-        0
-      ],
-      [
-        "Jonathan Taylor",
-        0
-      ],
-      [
-        "Nico Collins",
-        0
+        "Najee Harris",
+        24.9
       ]
     ]
   },
@@ -93,32 +61,16 @@
     "Projected Margin": "N/A",
     "Actual Winner": "First and Ted",
     "Actual Margin": 35.52,
-    "Home Top Players": [
+    "Home Top Player": [
       [
-        "Davante Adams",
-        0
-      ],
-      [
-        "Drake London",
-        0
-      ],
-      [
-        "Malik Nabers",
-        0
+        "Josh Allen",
+        28.42
       ]
     ],
-    "Away Top Players": [
+    "Away Top Player": [
       [
-        "Justin Jefferson",
-        0
-      ],
-      [
-        "Kyren Williams",
-        0
-      ],
-      [
-        "De'Von Achane",
-        0
+        "Jayden Daniels",
+        27.64
       ]
     ]
   },
@@ -134,32 +86,16 @@
     "Projected Margin": "N/A",
     "Actual Winner": "Game of Throws",
     "Actual Margin": 27.06,
-    "Home Top Players": [
+    "Home Top Player": [
       [
-        "Breece Hall",
-        0
-      ],
-      [
-        "Puka Nacua",
-        0
-      ],
-      [
-        "DK Metcalf",
-        0
+        "Brock Bowers",
+        30.2
       ]
     ],
-    "Away Top Players": [
+    "Away Top Player": [
       [
-        "Bijan Robinson",
-        0
-      ],
-      [
-        "Mike Evans",
-        0
-      ],
-      [
-        "Cooper Kupp",
-        0
+        "Bucky Irving",
+        27.5
       ]
     ]
   },
@@ -175,32 +111,16 @@
     "Projected Margin": "N/A",
     "Actual Winner": "To infinity and Bijan",
     "Actual Margin": 22.9,
-    "Home Top Players": [
+    "Home Top Player": [
       [
-        "Lamar Jackson",
-        0
-      ],
-      [
-        "J.K. Dobbins",
-        0
-      ],
-      [
-        "Zach Charbonnet",
-        0
+        "Jerry Jeudy",
+        40.5
       ]
     ],
-    "Away Top Players": [
+    "Away Top Player": [
       [
         "Josh Jacobs",
-        0
-      ],
-      [
-        "D'Andre Swift",
-        0
-      ],
-      [
-        "George Kittle",
-        0
+        21.7
       ]
     ]
   }

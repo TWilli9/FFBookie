@@ -11,32 +11,16 @@
     "Projected Margin": "N/A",
     "Actual Winner": "Team Kareem Pie \ud83e\udd67",
     "Actual Margin": 22.8,
-    "Home Top Players": [
-      [
-        "Garrett Wilson",
-        0
-      ],
-      [
-        "Saquon Barkley",
-        0
-      ],
+    "Home Top Player": [
       [
         "Rachaad White",
-        0
+        19.0
       ]
     ],
-    "Away Top Players": [
+    "Away Top Player": [
       [
         "Ja'Marr Chase",
-        0
-      ],
-      [
-        "Derrick Henry",
-        0
-      ],
-      [
-        "Joe Mixon",
-        0
+        55.4
       ]
     ]
   },
@@ -52,32 +36,16 @@
     "Projected Margin": "N/A",
     "Actual Winner": "To infinity and Bijan",
     "Actual Margin": 25.66,
-    "Home Top Players": [
+    "Home Top Player": [
       [
         "Lamar Jackson",
-        0
-      ],
-      [
-        "J.K. Dobbins",
-        0
-      ],
-      [
-        "Zach Charbonnet",
-        0
+        32.9
       ]
     ],
-    "Away Top Players": [
+    "Away Top Player": [
       [
-        "Breece Hall",
-        0
-      ],
-      [
-        "Puka Nacua",
-        0
-      ],
-      [
-        "DK Metcalf",
-        0
+        "Calvin Ridley",
+        25.4
       ]
     ]
   },
@@ -93,32 +61,16 @@
     "Projected Margin": "N/A",
     "Actual Winner": "Hamilton Administration ",
     "Actual Margin": 13.3,
-    "Home Top Players": [
+    "Home Top Player": [
       [
-        "Davante Adams",
-        0
-      ],
-      [
-        "Drake London",
-        0
-      ],
-      [
-        "Malik Nabers",
-        0
+        "Chuba Hubbard",
+        24.9
       ]
     ],
-    "Away Top Players": [
+    "Away Top Player": [
       [
-        "A.J. Brown",
-        0
-      ],
-      [
-        "Jonathan Taylor",
-        0
-      ],
-      [
-        "Nico Collins",
-        0
+        "Kareem Hunt",
+        17.0
       ]
     ]
   },
@@ -134,32 +86,16 @@
     "Projected Margin": "N/A",
     "Actual Winner": "The  Left Tacklers ",
     "Actual Margin": 52.24,
-    "Home Top Players": [
+    "Home Top Player": [
       [
-        "Amon-Ra St. Brown",
-        0
-      ],
-      [
-        "Trey McBride",
-        0
-      ],
-      [
-        "George Pickens",
-        0
+        "Joe Burrow",
+        33.72
       ]
     ],
-    "Away Top Players": [
+    "Away Top Player": [
       [
-        "Justin Jefferson",
-        0
-      ],
-      [
-        "Kyren Williams",
-        0
-      ],
-      [
-        "De'Von Achane",
-        0
+        "James Conner",
+        22.3
       ]
     ]
   },
@@ -175,32 +111,16 @@
     "Projected Margin": "N/A",
     "Actual Winner": "Game of Throws",
     "Actual Margin": 17.54,
-    "Home Top Players": [
+    "Home Top Player": [
       [
-        "Bijan Robinson",
-        0
-      ],
-      [
-        "Mike Evans",
-        0
-      ],
-      [
-        "Cooper Kupp",
-        0
+        "Jalen Hurts",
+        29.68
       ]
     ],
-    "Away Top Players": [
+    "Away Top Player": [
       [
-        "Josh Jacobs",
-        0
-      ],
-      [
-        "D'Andre Swift",
-        0
-      ],
-      [
-        "George Kittle",
-        0
+        "Bills D/ST",
+        17.0
       ]
     ]
   }

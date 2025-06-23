@@ -150,6 +150,8 @@
                     <th>Away Score</th>
                     <th>Winner</th>
                     <th>Margin</th>
+                    <th>Top Home Player</th>
+                    <th>Top Away Player</th>
                 </tr>
             </thead>
             <tbody>
@@ -230,6 +232,16 @@
                              ${matchup['Actual Margin'] !== "N/A"
                                 ? matchup['Actual Margin']
                                 : matchup['Projected Margin']}
+                        </td>
+                         <td>
+                            ${matchup['Home Top Player'] && matchup['Home Top Player'].length > 0 
+                                ? `${matchup['Home Top Player'][0][0]} (${matchup['Home Top Player'][0][1]} pts)` 
+                                : 'N/A'}
+                        </td>
+                        <td>
+                            ${matchup['Away Top Player'] && matchup['Away Top Player'].length > 0 
+                                ? `${matchup['Away Top Player'][0][0]} (${matchup['Away Top Player'][0][1]} pts)` 
+                                : 'N/A'}
                         </td>
                     </tr>
                 `).join("");

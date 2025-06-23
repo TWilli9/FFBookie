@@ -171,37 +171,35 @@ def getMatchups(week):
             if not team:
                 return []
 
+            boxScores = league.box_scores(week=week)
 
-            roster = [
+            for matchup in boxScores:
+                if matchup.home_team.team_id == team.team_id:
+                    players = matchup.home_lineup
+                    break
+                elif matchup.away_team.team_id == team.team_id:
+                    players = matchup.away_lineup
+                    break
+            
+            if not players:
+                return []
 
-                player for player in team.roster
-                if player.lineupSlot not in ['BE', 'IR']
-            ]
+            starters = [p for p in players if p.slot_position not in ['BE', 'IR']]   
 
-            actualAvailable = any(
-                'points' in player.stats.get(week, {}) for player in roster
-            )
+            actualAvailable = any(getattr(p, 'points', 0) > 0 for p in starters)
 
             if actualAvailable:
-                topPlayers = sorted(
-                    roster,
-                    key=lambda p: p.stats.get(week, {}).get('points', 0),
-                    reverse=True
-                )[:3]
-                return[(player.name, player.stats.get(week, {}).get('points',0)) for player in topPlayers[:3]]
+                top = max(starters, key=lambda p: getattr(p, 'points', 0))
+                return [(top.name, round(getattr(top, 'points', 0), 2))]
             else:
-                topPlayers = sorted(
-                    roster,
-                    key=lambda p: p.stats.get(week, {}).get('projected_points', 0),
-                    reverse=True
-                )[:3]
-                return[(player.name, player.stats.get(week, {}).get('projected_points',0)) for player in topPlayers[:3]]
+                top = max(starters, key=lambda p: getattr(p, 'projected_points', 0))
+                return [(top.name, round(getattr(top, 'projected_points', 0), 2))]
 
     
 
 
-        homeTopPlayers = getTopPlayers(homeTeam, week)
-        awayTopPlayers = getTopPlayers(awayTeam,week)
+        homeTopPlayer = getTopPlayers(homeTeam, week)
+        awayTopPlayer = getTopPlayers(awayTeam,week)
 
         matchupDetails.append({
             'Week': week,
@@ -215,8 +213,8 @@ def getMatchups(week):
             'Projected Margin': margin,
             'Actual Winner': actualWinner,
             'Actual Margin': actualMargin,
-            'Home Top Players': homeTopPlayers,
-            'Away Top Players': awayTopPlayers,
+            'Home Top Player': homeTopPlayer,
+            'Away Top Player': awayTopPlayer,
         })
 
         df = pd.DataFrame(matchupDetails)

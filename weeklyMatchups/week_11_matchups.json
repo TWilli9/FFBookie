@@ -11,32 +11,16 @@
     "Projected Margin": "N/A",
     "Actual Winner": "First and Ted",
     "Actual Margin": 7.56,
-    "Home Top Players": [
-      [
-        "Justin Jefferson",
-        0
-      ],
-      [
-        "Kyren Williams",
-        0
-      ],
+    "Home Top Player": [
       [
         "De'Von Achane",
-        0
+        20.5
       ]
     ],
-    "Away Top Players": [
+    "Away Top Player": [
       [
-        "A.J. Brown",
-        0
-      ],
-      [
-        "Jonathan Taylor",
-        0
-      ],
-      [
-        "Nico Collins",
-        0
+        "Jared Goff",
+        34.58
       ]
     ]
   },
@@ -52,32 +36,16 @@
     "Projected Margin": "N/A",
     "Actual Winner": "Game of Throws",
     "Actual Margin": 0.78,
-    "Home Top Players": [
+    "Home Top Player": [
       [
-        "Bijan Robinson",
-        0
-      ],
-      [
-        "Mike Evans",
-        0
-      ],
-      [
-        "Cooper Kupp",
-        0
+        "Taysom Hill",
+        41.52
       ]
     ],
-    "Away Top Players": [
+    "Away Top Player": [
       [
-        "Lamar Jackson",
-        0
-      ],
-      [
-        "J.K. Dobbins",
-        0
-      ],
-      [
-        "Zach Charbonnet",
-        0
+        "Jerry Jeudy",
+        26.2
       ]
     ]
   },
@@ -93,32 +61,16 @@
     "Projected Margin": "N/A",
     "Actual Winner": "Jared's Pack Attack",
     "Actual Margin": 49.56,
-    "Home Top Players": [
+    "Home Top Player": [
       [
-        "Breece Hall",
-        0
-      ],
-      [
-        "Puka Nacua",
-        0
-      ],
-      [
-        "DK Metcalf",
-        0
+        "Brock Bowers",
+        31.3
       ]
     ],
-    "Away Top Players": [
+    "Away Top Player": [
       [
-        "Davante Adams",
-        0
-      ],
-      [
-        "Drake London",
-        0
-      ],
-      [
-        "Malik Nabers",
-        0
+        "Josh Allen",
+        23.98
       ]
     ]
   },
@@ -134,32 +86,16 @@
     "Projected Margin": "N/A",
     "Actual Winner": "Hawaii McLovins VIII",
     "Actual Margin": 12.78,
-    "Home Top Players": [
+    "Home Top Player": [
       [
-        "Josh Jacobs",
-        0
-      ],
-      [
-        "D'Andre Swift",
-        0
-      ],
-      [
-        "George Kittle",
-        0
+        "Bo Nix",
+        28.78
       ]
     ],
-    "Away Top Players": [
-      [
-        "Ja'Marr Chase",
-        0
-      ],
-      [
-        "Derrick Henry",
-        0
-      ],
+    "Away Top Player": [
       [
         "Joe Mixon",
-        0
+        35.3
       ]
     ]
   },
@@ -175,32 +111,16 @@
     "Projected Margin": "N/A",
     "Actual Winner": "The  Left Tacklers ",
     "Actual Margin": 18.86,
-    "Home Top Players": [
-      [
-        "Garrett Wilson",
-        0
-      ],
+    "Home Top Player": [
       [
         "Saquon Barkley",
-        0
-      ],
-      [
-        "Rachaad White",
-        0
+        33.8
       ]
     ],
-    "Away Top Players": [
+    "Away Top Player": [
       [
         "Amon-Ra St. Brown",
-        0
-      ],
-      [
-        "Trey McBride",
-        0
-      ],
-      [
-        "George Pickens",
-        0
+        38.7
       ]
     ]
   }

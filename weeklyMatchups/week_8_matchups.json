@@ -11,32 +11,16 @@
     "Projected Margin": "N/A",
     "Actual Winner": "Hamilton Administration ",
     "Actual Margin": 10.22,
-    "Home Top Players": [
+    "Home Top Player": [
       [
-        "Davante Adams",
-        0
-      ],
-      [
-        "Drake London",
-        0
-      ],
-      [
-        "Malik Nabers",
-        0
+        "Cade Otton",
+        29.1
       ]
     ],
-    "Away Top Players": [
-      [
-        "Ja'Marr Chase",
-        0
-      ],
-      [
-        "Derrick Henry",
-        0
-      ],
+    "Away Top Player": [
       [
         "Joe Mixon",
-        0
+        23.4
       ]
     ]
   },
@@ -52,32 +36,16 @@
     "Projected Margin": "N/A",
     "Actual Winner": "To infinity and Bijan",
     "Actual Margin": 51.58,
-    "Home Top Players": [
+    "Home Top Player": [
       [
-        "Lamar Jackson",
-        0
-      ],
-      [
-        "J.K. Dobbins",
-        0
-      ],
-      [
-        "Zach Charbonnet",
-        0
+        "CeeDee Lamb",
+        39.6
       ]
     ],
-    "Away Top Players": [
+    "Away Top Player": [
       [
-        "Garrett Wilson",
-        0
-      ],
-      [
-        "Saquon Barkley",
-        0
-      ],
-      [
-        "Rachaad White",
-        0
+        "Terry McLaurin",
+        17.5
       ]
     ]
   },
@@ -93,32 +61,16 @@
     "Projected Margin": "N/A",
     "Actual Winner": "Game of Throws",
     "Actual Margin": 6.76,
-    "Home Top Players": [
-      [
-        "Justin Jefferson",
-        0
-      ],
-      [
-        "Kyren Williams",
-        0
-      ],
+    "Home Top Player": [
       [
         "De'Von Achane",
-        0
+        26.7
       ]
     ],
-    "Away Top Players": [
+    "Away Top Player": [
       [
-        "Bijan Robinson",
-        0
-      ],
-      [
-        "Mike Evans",
-        0
-      ],
-      [
-        "Cooper Kupp",
-        0
+        "Jalen Hurts",
+        35.14
       ]
     ]
   },
@@ -134,32 +86,16 @@
     "Projected Margin": "N/A",
     "Actual Winner": "How I Metcalf Your Mother",
     "Actual Margin": 19.86,
-    "Home Top Players": [
+    "Home Top Player": [
       [
-        "Breece Hall",
-        0
-      ],
-      [
-        "Puka Nacua",
-        0
-      ],
-      [
-        "DK Metcalf",
-        0
+        "Calvin Ridley",
+        22.6
       ]
     ],
-    "Away Top Players": [
+    "Away Top Player": [
       [
-        "A.J. Brown",
-        0
-      ],
-      [
-        "Jonathan Taylor",
-        0
-      ],
-      [
-        "Nico Collins",
-        0
+        "Kyle Pitts",
+        25.1
       ]
     ]
   },
@@ -175,32 +111,16 @@
     "Projected Margin": "N/A",
     "Actual Winner": "Hawaii McLovins VIII",
     "Actual Margin": 37.92,
-    "Home Top Players": [
+    "Home Top Player": [
       [
-        "Josh Jacobs",
-        0
-      ],
-      [
-        "D'Andre Swift",
-        0
-      ],
-      [
-        "George Kittle",
-        0
+        "Ladd McConkey",
+        29.1
       ]
     ],
-    "Away Top Players": [
+    "Away Top Player": [
       [
-        "Amon-Ra St. Brown",
-        0
-      ],
-      [
-        "Trey McBride",
-        0
-      ],
-      [
-        "George Pickens",
-        0
+        "Brock Purdy",
+        26.0
       ]
     ]
   }

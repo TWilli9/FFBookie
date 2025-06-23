@@ -11,32 +11,16 @@
     "Projected Margin": "N/A",
     "Actual Winner": "Game of Throws",
     "Actual Margin": 33.2,
-    "Home Top Players": [
-      [
-        "Bijan Robinson",
-        0
-      ],
-      [
-        "Mike Evans",
-        0
-      ],
+    "Home Top Player": [
       [
         "Cooper Kupp",
-        0
+        32.0
       ]
     ],
-    "Away Top Players": [
-      [
-        "Justin Jefferson",
-        0
-      ],
-      [
-        "Kyren Williams",
-        0
-      ],
+    "Away Top Player": [
       [
         "De'Von Achane",
-        0
+        23.0
       ]
     ]
   },
@@ -52,32 +36,16 @@
     "Projected Margin": "N/A",
     "Actual Winner": "Team Kareem Pie \ud83e\udd67",
     "Actual Margin": 8.8,
-    "Home Top Players": [
-      [
-        "Ja'Marr Chase",
-        0
-      ],
-      [
-        "Derrick Henry",
-        0
-      ],
+    "Home Top Player": [
       [
         "Joe Mixon",
-        0
+        26.8
       ]
     ],
-    "Away Top Players": [
+    "Away Top Player": [
       [
-        "Davante Adams",
-        0
-      ],
-      [
-        "Drake London",
-        0
-      ],
-      [
-        "Malik Nabers",
-        0
+        "Josh Allen",
+        31.18
       ]
     ]
   },
@@ -93,32 +61,16 @@
     "Projected Margin": "N/A",
     "Actual Winner": "How I Metcalf Your Mother",
     "Actual Margin": 4.42,
-    "Home Top Players": [
+    "Home Top Player": [
       [
         "A.J. Brown",
-        0
-      ],
-      [
-        "Jonathan Taylor",
-        0
-      ],
-      [
-        "Nico Collins",
-        0
+        22.9
       ]
     ],
-    "Away Top Players": [
+    "Away Top Player": [
       [
         "Lamar Jackson",
-        0
-      ],
-      [
-        "J.K. Dobbins",
-        0
-      ],
-      [
-        "Zach Charbonnet",
-        0
+        25.12
       ]
     ]
   },
@@ -134,32 +86,16 @@
     "Projected Margin": "N/A",
     "Actual Winner": "Jared's Pack Attack",
     "Actual Margin": 12.24,
-    "Home Top Players": [
+    "Home Top Player": [
       [
-        "Breece Hall",
-        0
-      ],
-      [
-        "Puka Nacua",
-        0
-      ],
-      [
-        "DK Metcalf",
-        0
+        "Vikings D/ST",
+        21.0
       ]
     ],
-    "Away Top Players": [
+    "Away Top Player": [
       [
-        "Amon-Ra St. Brown",
-        0
-      ],
-      [
-        "Trey McBride",
-        0
-      ],
-      [
-        "George Pickens",
-        0
+        "Alvin Kamara",
+        22.0
       ]
     ]
   },
@@ -175,32 +111,16 @@
     "Projected Margin": "N/A",
     "Actual Winner": "Amon a Mission",
     "Actual Margin": 31.44,
-    "Home Top Players": [
+    "Home Top Player": [
       [
-        "Josh Jacobs",
-        0
-      ],
-      [
-        "D'Andre Swift",
-        0
-      ],
-      [
-        "George Kittle",
-        0
+        "Tyreek Hill",
+        26.0
       ]
     ],
-    "Away Top Players": [
-      [
-        "Garrett Wilson",
-        0
-      ],
+    "Away Top Player": [
       [
         "Saquon Barkley",
-        0
-      ],
-      [
-        "Rachaad White",
-        0
+        33.2
       ]
     ]
   }
