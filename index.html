@@ -288,7 +288,7 @@
                         <td>${team['PF/G']}</td>
                         <td>${team['PA/G']}</td>
                         <td class="${team['DIFF'] > 0 ? 'positive' : 'negative'}">${team['DIFF']}</td>
-                        <td>${team['Power Ranking']}</td>
+                        <td>${team['Power Ranking'] === 1 ? '💪 ' : ''}${team['Power Ranking']}</td>
                         <td class="${team['Total Luck'] > 0 ? 'positive' : 'negative'}">${team['Total Luck']}</td>
                         <td>${team['Luck Rank']}</td>
                         <td>${team['SOS']}</td>
