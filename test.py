@@ -31,4 +31,9 @@ league = League(
 #matchupsDf = getMatchups(14)
 #exportDFtoJSON(matchupsDf, 'matchups.json')
 
-exportMatchupsToFolder(14)
+#exportMatchupsToFolder(14)
+
+#teams = league.teams
+
+#for team in teams:
+#    print(f"{team.team_name}  - Division ID: {team.division_id}")
