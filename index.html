@@ -280,6 +280,7 @@
                 const standingsResponse = await fetch('standings.json');
                 const standingsData = await standingsResponse.json();
                 const standingsTbody = document.querySelector("#standings tbody");
+                const highestPowerRanking = Math.max(...standingsData.map(team => team['Power Ranking']));
                 standingsTbody.innerHTML = standingsData.map(team => `
                     <tr>
                         <td>${team['Team Name']}</td>
@@ -289,7 +290,7 @@
                         <td>${team['PF/G']}</td>
                         <td>${team['PA/G']}</td>
                         <td class="${team['DIFF'] > 0 ? 'positive' : 'negative'}">${team['DIFF']}</td>
-                        <td>${team['Power Ranking']}</td>
+                        <td>${team['Power Ranking']}${isTopPower ? '💪' : ''}</td>
                         <td class="${team['Total Luck'] > 0 ? 'positive' : 'negative'}">${team['Total Luck']}</td>
                         <td>${team['Luck Rank']}</td>
                         <td>${team['SOS']}</td>
