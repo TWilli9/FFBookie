@@ -280,25 +280,21 @@
                 const standingsResponse = await fetch('standings.json');
                 const standingsData = await standingsResponse.json();
                 const standingsTbody = document.querySelector("#standings tbody");
-                const highestPowerRanking = Math.max(...standingsData.map(team => team['Power Ranking']));
-                standingsTbody.innerHTML = standingsData.map(team => {
-                    const isTopPower = team['Power Ranking'] === highestPowerRanking;
-                    return `
-                        <tr>
-                            <td>${team['Team Name']}</td>
-                            <td>${team['Record']}</td>
-                            <td>${team['Points For(PF)']}</td>
-                            <td>${team['Points Against(PA)']}</td>
-                            <td>${team['PF/G']}</td>
-                            <td>${team['PA/G']}</td>
-                            <td class="${team['DIFF'] > 0 ? 'positive' : 'negative'}">${team['DIFF']}</td>
-                            <td>${team['Power Ranking']} ${isTopPower ? '💪' : ''}</td>
-                            <td class="${team['Total Luck'] > 0 ? 'positive' : 'negative'}">${team['Total Luck']}</td>
-                            <td>${team['Luck Rank']}</td>
-                            <td>${team['SOS']}</td>
-                        </tr>
-                    `;
-                }).join("");
+                standingsTbody.innerHTML = standingsData.map(team => `
+                    <tr>
+                        <td>${team['Team Name']}</td>
+                        <td>${team['Record']}</td>
+                        <td>${team['Points For(PF)']}</td>
+                        <td>${team['Points Against(PA)']}</td>
+                        <td>${team['PF/G']}</td>
+                        <td>${team['PA/G']}</td>
+                        <td class="${team['DIFF'] > 0 ? 'positive' : 'negative'}">${team['DIFF']}</td>
+                        <td>${team['Power Ranking']}</td>
+                        <td class="${team['Total Luck'] > 0 ? 'positive' : 'negative'}">${team['Total Luck']}</td>
+                        <td>${team['Luck Rank']}</td>
+                        <td>${team['SOS']}</td>
+                    </tr>
+                `).join("");
 
                 // Load historical
                 const historicalResponse = await fetch('historical.json');
