@@ -2,6 +2,8 @@ import pandas as pd
 import os
 from ffLuckModel import calculateLuckScore
 from ffStandMatchData import getMatchups, currentWeek
+import json
+
 
 # Load all weekly matchups + calculate luck
 all_weeks = []
@@ -28,3 +30,17 @@ for team in merged["Team"].unique():
     filename = f"team_data/{team.replace(' ', '_')}.json"
     team_df.to_json(filename, orient="records", indent=2)
     print(f"Exported {filename}")
+
+
+# Collect all clean team names from filenames
+team_names = sorted([
+    filename.replace('.json', '').replace('_', ' ')
+    for filename in os.listdir("team_data")
+    if filename.endswith(".json")
+])
+
+# Save to teams.json
+with open("teams.json", "w") as f:
+    json.dump(team_names, f, indent=2)
+
+print("✅ teams.json created successfully.")

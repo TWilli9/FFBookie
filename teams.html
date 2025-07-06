@@ -33,35 +33,31 @@
     const teamSelect = document.getElementById("team-select");
     const teamNameHeading = document.getElementById("team-name");
 
-    // List of all teams (add more if needed)
-    const teams = [
-      "First and Ted",
-      "Game of Throws",
-      "To infinity and Bijan",
-      "Hamilton Administration",
-      "Amon a Mission",
-      "How I Metcalf Your Mother",
-      "The  Left Tacklers",
-      "Team Kareem Pie 🥧",
-      "Hawaii McLovins VIII",
-      "Jared's Pack Attack"
-    ];
+    async function loadTeams() {
+      try {
+        const res = await fetch("teams.json");
+        const teams = await res.json();
 
-    // Populate the dropdown
-    teams.forEach(team => {
-      const option = document.createElement("option");
-      option.value = team.replace(/\s+/g, "_");
-      option.text = team;
-      teamSelect.appendChild(option);
-    });
+        // Populate dropdown
+        teams.forEach(team => {
+          const option = document.createElement("option");
+          option.value = team.replace(/\s+/g, "_");
+          option.text = team;
+          teamSelect.appendChild(option);
+        });
 
-    // Load correct team from URL param
-    const urlParams = new URLSearchParams(window.location.search);
-    const defaultTeam = urlParams.get("team") || teamSelect.options[0].value;
-    teamSelect.value = defaultTeam;
+        const urlParams = new URLSearchParams(window.location.search);
+        const defaultTeam = urlParams.get("team") || teamSelect.options[0].value;
+        teamSelect.value = defaultTeam;
 
-    // Main load function
-    async function loadTeam(teamSlug) {
+        loadTeam(defaultTeam, teams);
+      } catch (err) {
+        document.getElementById('chart').innerHTML = "<p>Error loading team list</p>";
+        console.error(err);
+      }
+    }
+
+    async function loadTeam(teamSlug, teams) {
       const displayName = teams.find(t => t.replace(/\s+/g, "_") === teamSlug) || teamSlug.replace(/_/g, " ");
       teamNameHeading.textContent = displayName;
 
@@ -103,11 +99,12 @@
       }
     }
 
-    // When dropdown changes
-    teamSelect.addEventListener("change", () => {
+    teamSelect.addEventListener("change", async () => {
       const newTeam = teamSelect.value;
+      const res = await fetch("teams.json");
+      const teams = await res.json();
       window.history.replaceState(null, null, "?team=" + newTeam);
-      loadTeam(newTeam);
+      loadTeam(newTeam, teams);
     });
 
     function goBack() {
@@ -115,7 +112,7 @@
     }
 
     // Initial load
-    loadTeam(defaultTeam);
+    loadTeams();
   </script>
 </body>
 </html>
