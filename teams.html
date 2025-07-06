@@ -2,40 +2,94 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Team Page</title>
+  <title>Team Dashboard</title>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <style>
-    body { font-family: Arial, sans-serif; padding: 20px; }
+    body { font-family: Arial, sans-serif; padding: 20px; background: #f9f9f9; }
     h1 { font-size: 2em; }
-    #chart { width: 100%; height: 400px; }
+    #chart { width: 100%; height: 400px; margin-bottom: 40px; }
+    select, button {
+      padding: 8px 12px;
+      font-size: 16px;
+      margin-right: 10px;
+      border-radius: 6px;
+    }
+    .controls {
+      margin-bottom: 20px;
+    }
   </style>
 </head>
 <body>
+  <div class="controls">
+    <button onclick="goBack()">⬅ Back to Dashboard</button>
+    <label for="team-select">Select Team:</label>
+    <select id="team-select"></select>
+  </div>
+
   <h1 id="team-name">Loading...</h1>
   <div id="chart"></div>
 
   <script>
+    const teamSelect = document.getElementById("team-select");
+    const teamNameHeading = document.getElementById("team-name");
+
+    // List of all teams (add more if needed)
+    const teams = [
+      "First and Ted",
+      "Game of Throws",
+      "To infinity and Bijan",
+      "Hamilton Administration",
+      "Amon a Mission",
+      "How I Metcalf Your Mother",
+      "The  Left Tacklers",
+      "Team Kareem Pie 🥧",
+      "Hawaii McLovins VIII",
+      "Jared's Pack Attack"
+    ];
+
+    // Populate the dropdown
+    teams.forEach(team => {
+      const option = document.createElement("option");
+      option.value = team.replace(/\s+/g, "_");
+      option.text = team;
+      teamSelect.appendChild(option);
+    });
+
+    // Load correct team from URL param
     const urlParams = new URLSearchParams(window.location.search);
-    const team = urlParams.get('team');
+    const defaultTeam = urlParams.get("team") || teamSelect.options[0].value;
+    teamSelect.value = defaultTeam;
 
-    document.getElementById("team-name").textContent = team.replace(/_/g, ' ');
+    // Main load function
+    async function loadTeam(teamSlug) {
+      const displayName = teams.find(t => t.replace(/\s+/g, "_") === teamSlug) || teamSlug.replace(/_/g, " ");
+      teamNameHeading.textContent = displayName;
 
-    fetch(`team_data/${team}.json`)
-      .then(res => res.json())
-      .then(data => {
+      try {
+        const res = await fetch(`team_data/${teamSlug}.json`);
+        const data = await res.json();
         const weeks = data.map(row => row.Week);
         const scores = data.map(row => row.Score);
         const luck = data.map(row => row["Luck Score"]);
 
         Plotly.newPlot('chart', [
           {
-            x: weeks, y: scores, name: 'Score', mode: 'lines+markers', type: 'scatter'
+            x: weeks,
+            y: scores,
+            name: 'Score',
+            mode: 'lines+markers',
+            type: 'scatter'
           },
           {
-            x: weeks, y: luck, name: 'Luck Score', mode: 'lines+markers', type: 'scatter', yaxis: 'y2'
+            x: weeks,
+            y: luck,
+            name: 'Luck Score',
+            mode: 'lines+markers',
+            type: 'scatter',
+            yaxis: 'y2'
           }
         ], {
-          title: `${team.replace(/_/g, ' ')} Weekly Performance`,
+          title: `${displayName} Weekly Performance`,
           yaxis: { title: 'Score' },
           yaxis2: {
             title: 'Luck Score',
@@ -43,7 +97,25 @@
             side: 'right'
           }
         });
-      });
+      } catch (err) {
+        document.getElementById('chart').innerHTML = `<p>Error loading data for ${displayName}</p>`;
+        console.error(err);
+      }
+    }
+
+    // When dropdown changes
+    teamSelect.addEventListener("change", () => {
+      const newTeam = teamSelect.value;
+      window.history.replaceState(null, null, "?team=" + newTeam);
+      loadTeam(newTeam);
+    });
+
+    function goBack() {
+      window.location.href = "index.html";
+    }
+
+    // Initial load
+    loadTeam(defaultTeam);
   </script>
 </body>
 </html>
