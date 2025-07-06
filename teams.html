@@ -2,32 +2,126 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Team Dashboard</title>
+  <title>Team Data</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body { font-family: Arial, sans-serif; padding: 20px; background: #f9f9f9; }
-    h1 { font-size: 2em; }
-    #chart { width: 100%; height: 400px; margin-bottom: 40px; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 30px;
+      font-size: 2.5em;
+      font-family: "Oswald", sans-serif;
+    }
+
+    h2 {
+      color: #34495e;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      font-size: 1.8em;
+      font-family: "Oswald", sans-serif;
+    }
+
+    .section {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+
+    label {
+      color: #34495e;
+      font-family: "Oswald", sans-serif;
+    }
+
     select, button {
       padding: 8px 12px;
       font-size: 16px;
       margin-right: 10px;
       border-radius: 6px;
+      border: 1px solid #ccc;
+      font-family: "Roboto", sans-serif;
     }
-    .controls {
-      margin-bottom: 20px;
+
+    button {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+
+    .nav-links {
+      text-align: center;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .nav-links a {
+      display: inline-block;
+      margin: 0 10px;
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+      font-family: "Oswald", sans-serif;
+    }
+
+    .nav-links a:hover {
+      background-color: #2980b9;
+    }
+
+    #chart {
+      width: 100%;
+      height: 400px;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      h2 {
+        font-size: 1.5em;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="controls">
-    <button onclick="goBack()">⬅ Back to Dashboard</button>
-    <label for="team-select">Select Team:</label>
+  <h1>Fantasy Football Team Data</h1>
+
+  <div class="nav-links">
+    <a href="index.html">⬅ Back to Dashboard</a>
+  </div>
+
+  <div class="section">
+    <label for="team-select"><strong>Select Team:</strong></label>
     <select id="team-select"></select>
   </div>
 
-  <h1 id="team-name">Loading...</h1>
-  <div id="chart"></div>
+  <div class="section">
+    <h2 id="team-name">Loading...</h2>
+    <div id="chart"></div>
+  </div>
 
   <script>
     const teamSelect = document.getElementById("team-select");
@@ -38,7 +132,6 @@
         const res = await fetch("teams.json");
         const teams = await res.json();
 
-        // Populate dropdown
         teams.forEach(team => {
           const option = document.createElement("option");
           option.value = team.replace(/\s+/g, "_");
@@ -107,11 +200,6 @@
       loadTeam(newTeam, teams);
     });
 
-    function goBack() {
-      window.location.href = "index.html";
-    }
-
-    // Initial load
     loadTeams();
   </script>
 </body>
