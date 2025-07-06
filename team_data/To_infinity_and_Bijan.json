@@ -1,0 +1,142 @@
+[
+  {
+    "Week":1,
+    "Side":"Away Team",
+    "Team":"To infinity and Bijan",
+    "Opponent":"How I Metcalf Your Mother",
+    "Score":102.92,
+    "Opponent Score":107.34,
+    "Margin":-4.42,
+    "Luck Score":-0.533
+  },
+  {
+    "Week":2,
+    "Side":"Away Team",
+    "Team":"To infinity and Bijan",
+    "Opponent":"First and Ted",
+    "Score":159.68,
+    "Opponent Score":133.24,
+    "Margin":26.44,
+    "Luck Score":0.321
+  },
+  {
+    "Week":3,
+    "Side":"Home Team",
+    "Team":"To infinity and Bijan",
+    "Opponent":"Team Kareem Pie \ud83e\udd67",
+    "Score":165.08,
+    "Opponent Score":148.04,
+    "Margin":17.04,
+    "Luck Score":0.106
+  },
+  {
+    "Week":4,
+    "Side":"Away Team",
+    "Team":"To infinity and Bijan",
+    "Opponent":"Game of Throws",
+    "Score":128.24,
+    "Opponent Score":98.92,
+    "Margin":29.32,
+    "Luck Score":0.317
+  },
+  {
+    "Week":5,
+    "Side":"Away Team",
+    "Team":"To infinity and Bijan",
+    "Opponent":"Amon a Mission",
+    "Score":122.62,
+    "Opponent Score":128.14,
+    "Margin":-5.52,
+    "Luck Score":-0.733
+  },
+  {
+    "Week":6,
+    "Side":"Away Team",
+    "Team":"To infinity and Bijan",
+    "Opponent":"Hamilton Administration",
+    "Score":114.62,
+    "Opponent Score":113.0,
+    "Margin":1.62,
+    "Luck Score":0.754
+  },
+  {
+    "Week":7,
+    "Side":"Away Team",
+    "Team":"To infinity and Bijan",
+    "Opponent":"How I Metcalf Your Mother",
+    "Score":105.64,
+    "Opponent Score":122.38,
+    "Margin":-16.74,
+    "Luck Score":-0.327
+  },
+  {
+    "Week":8,
+    "Side":"Home Team",
+    "Team":"To infinity and Bijan",
+    "Opponent":"Amon a Mission",
+    "Score":163.38,
+    "Opponent Score":111.8,
+    "Margin":51.58,
+    "Luck Score":0.167
+  },
+  {
+    "Week":9,
+    "Side":"Home Team",
+    "Team":"To infinity and Bijan",
+    "Opponent":"Hamilton Administration",
+    "Score":124.5,
+    "Opponent Score":168.8,
+    "Margin":-44.3,
+    "Luck Score":-0.333
+  },
+  {
+    "Week":10,
+    "Side":"Home Team",
+    "Team":"To infinity and Bijan",
+    "Opponent":"Jared's Pack Attack",
+    "Score":140.8,
+    "Opponent Score":115.14,
+    "Margin":25.66,
+    "Luck Score":0.371
+  },
+  {
+    "Week":11,
+    "Side":"Away Team",
+    "Team":"To infinity and Bijan",
+    "Opponent":"Game of Throws",
+    "Score":143.18,
+    "Opponent Score":143.96,
+    "Margin":-0.78,
+    "Luck Score":-0.859
+  },
+  {
+    "Week":12,
+    "Side":"Home Team",
+    "Team":"To infinity and Bijan",
+    "Opponent":"The  Left Tacklers",
+    "Score":130.08,
+    "Opponent Score":112.56,
+    "Margin":17.52,
+    "Luck Score":0.437
+  },
+  {
+    "Week":13,
+    "Side":"Home Team",
+    "Team":"To infinity and Bijan",
+    "Opponent":"Hawaii McLovins VIII",
+    "Score":140.28,
+    "Opponent Score":117.38,
+    "Margin":22.9,
+    "Luck Score":0.394
+  },
+  {
+    "Week":14,
+    "Side":"Home Team",
+    "Team":"To infinity and Bijan",
+    "Opponent":"First and Ted",
+    "Score":164.6,
+    "Opponent Score":177.46,
+    "Margin":-12.86,
+    "Luck Score":-0.823
+  }
+]

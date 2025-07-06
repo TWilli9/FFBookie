@@ -1,0 +1,142 @@
+[
+  {
+    "Week":1,
+    "Side":"Away Team",
+    "Team":"Amon a Mission",
+    "Opponent":"Hawaii McLovins VIII",
+    "Score":148.56,
+    "Opponent Score":117.12,
+    "Margin":31.44,
+    "Luck Score":0.06
+  },
+  {
+    "Week":2,
+    "Side":"Away Team",
+    "Team":"Amon a Mission",
+    "Opponent":"Hamilton Administration",
+    "Score":114.2,
+    "Opponent Score":141.56,
+    "Margin":-27.36,
+    "Luck Score":-0.546
+  },
+  {
+    "Week":3,
+    "Side":"Home Team",
+    "Team":"Amon a Mission",
+    "Opponent":"First and Ted",
+    "Score":107.1,
+    "Opponent Score":113.38,
+    "Margin":-6.28,
+    "Luck Score":-0.582
+  },
+  {
+    "Week":4,
+    "Side":"Away Team",
+    "Team":"Amon a Mission",
+    "Opponent":"Team Kareem Pie \ud83e\udd67",
+    "Score":136.6,
+    "Opponent Score":140.58,
+    "Margin":-3.98,
+    "Luck Score":-0.865
+  },
+  {
+    "Week":5,
+    "Side":"Home Team",
+    "Team":"Amon a Mission",
+    "Opponent":"To infinity and Bijan",
+    "Score":128.14,
+    "Opponent Score":122.62,
+    "Margin":5.52,
+    "Luck Score":0.633
+  },
+  {
+    "Week":6,
+    "Side":"Home Team",
+    "Team":"Amon a Mission",
+    "Opponent":"Hawaii McLovins VIII",
+    "Score":150.38,
+    "Opponent Score":88.32,
+    "Margin":62.06,
+    "Luck Score":0.217
+  },
+  {
+    "Week":7,
+    "Side":"Away Team",
+    "Team":"Amon a Mission",
+    "Opponent":"Jared's Pack Attack",
+    "Score":112.74,
+    "Opponent Score":134.2,
+    "Margin":-21.46,
+    "Luck Score":-0.333
+  },
+  {
+    "Week":8,
+    "Side":"Away Team",
+    "Team":"Amon a Mission",
+    "Opponent":"To infinity and Bijan",
+    "Score":111.8,
+    "Opponent Score":163.38,
+    "Margin":-51.58,
+    "Luck Score":-0.217
+  },
+  {
+    "Week":9,
+    "Side":"Away Team",
+    "Team":"Amon a Mission",
+    "Opponent":"Jared's Pack Attack",
+    "Score":130.38,
+    "Opponent Score":109.22,
+    "Margin":21.16,
+    "Luck Score":0.528
+  },
+  {
+    "Week":10,
+    "Side":"Home Team",
+    "Team":"Amon a Mission",
+    "Opponent":"Team Kareem Pie \ud83e\udd67",
+    "Score":109.14,
+    "Opponent Score":131.94,
+    "Margin":-22.8,
+    "Luck Score":-0.548
+  },
+  {
+    "Week":11,
+    "Side":"Home Team",
+    "Team":"Amon a Mission",
+    "Opponent":"The  Left Tacklers",
+    "Score":116.18,
+    "Opponent Score":135.04,
+    "Margin":-18.86,
+    "Luck Score":-0.526
+  },
+  {
+    "Week":12,
+    "Side":"Home Team",
+    "Team":"Amon a Mission",
+    "Opponent":"Game of Throws",
+    "Score":151.88,
+    "Opponent Score":122.36,
+    "Margin":29.52,
+    "Luck Score":0.067
+  },
+  {
+    "Week":13,
+    "Side":"Away Team",
+    "Team":"Amon a Mission",
+    "Opponent":"The  Left Tacklers",
+    "Score":133.18,
+    "Opponent Score":126.56,
+    "Margin":6.62,
+    "Luck Score":0.673
+  },
+  {
+    "Week":14,
+    "Side":"Home Team",
+    "Team":"Amon a Mission",
+    "Opponent":"How I Metcalf Your Mother",
+    "Score":122.16,
+    "Opponent Score":81.7,
+    "Margin":40.46,
+    "Luck Score":0.554
+  }
+]

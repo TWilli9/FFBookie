@@ -1,0 +1,142 @@
+[
+  {
+    "Week":1,
+    "Side":"Home Team",
+    "Team":"Jared's Pack Attack",
+    "Opponent":"The  Left Tacklers",
+    "Score":115.6,
+    "Opponent Score":103.36,
+    "Margin":12.24,
+    "Luck Score":0.549
+  },
+  {
+    "Week":2,
+    "Side":"Away Team",
+    "Team":"Jared's Pack Attack",
+    "Opponent":"Hawaii McLovins VIII",
+    "Score":139.8,
+    "Opponent Score":94.52,
+    "Margin":45.28,
+    "Luck Score":0.33
+  },
+  {
+    "Week":3,
+    "Side":"Away Team",
+    "Team":"Jared's Pack Attack",
+    "Opponent":"The  Left Tacklers",
+    "Score":105.78,
+    "Opponent Score":112.16,
+    "Margin":-6.38,
+    "Luck Score":-0.496
+  },
+  {
+    "Week":4,
+    "Side":"Home Team",
+    "Team":"Jared's Pack Attack",
+    "Opponent":"First and Ted",
+    "Score":127.76,
+    "Opponent Score":137.92,
+    "Margin":-10.16,
+    "Luck Score":-0.61
+  },
+  {
+    "Week":5,
+    "Side":"Home Team",
+    "Team":"Jared's Pack Attack",
+    "Opponent":"How I Metcalf Your Mother",
+    "Score":100.76,
+    "Opponent Score":134.84,
+    "Margin":-34.08,
+    "Luck Score":-0.51
+  },
+  {
+    "Week":6,
+    "Side":"Away Team",
+    "Team":"Jared's Pack Attack",
+    "Opponent":"Team Kareem Pie \ud83e\udd67",
+    "Score":135.92,
+    "Opponent Score":150.9,
+    "Margin":-14.98,
+    "Luck Score":-0.763
+  },
+  {
+    "Week":7,
+    "Side":"Home Team",
+    "Team":"Jared's Pack Attack",
+    "Opponent":"Amon a Mission",
+    "Score":134.2,
+    "Opponent Score":112.74,
+    "Margin":21.46,
+    "Luck Score":0.133
+  },
+  {
+    "Week":8,
+    "Side":"Home Team",
+    "Team":"Jared's Pack Attack",
+    "Opponent":"How I Metcalf Your Mother",
+    "Score":104.84,
+    "Opponent Score":124.7,
+    "Margin":-19.86,
+    "Luck Score":-0.391
+  },
+  {
+    "Week":9,
+    "Side":"Home Team",
+    "Team":"Jared's Pack Attack",
+    "Opponent":"Amon a Mission",
+    "Score":109.22,
+    "Opponent Score":130.38,
+    "Margin":-21.16,
+    "Luck Score":-0.428
+  },
+  {
+    "Week":10,
+    "Side":"Away Team",
+    "Team":"Jared's Pack Attack",
+    "Opponent":"To infinity and Bijan",
+    "Score":115.14,
+    "Opponent Score":140.8,
+    "Margin":-25.66,
+    "Luck Score":-0.571
+  },
+  {
+    "Week":11,
+    "Side":"Home Team",
+    "Team":"Jared's Pack Attack",
+    "Opponent":"Hamilton Administration",
+    "Score":150.84,
+    "Opponent Score":101.28,
+    "Margin":49.56,
+    "Luck Score":0.167
+  },
+  {
+    "Week":12,
+    "Side":"Home Team",
+    "Team":"Jared's Pack Attack",
+    "Opponent":"Team Kareem Pie \ud83e\udd67",
+    "Score":118.82,
+    "Opponent Score":91.56,
+    "Margin":27.26,
+    "Luck Score":0.388
+  },
+  {
+    "Week":13,
+    "Side":"Home Team",
+    "Team":"Jared's Pack Attack",
+    "Opponent":"Game of Throws",
+    "Score":116.16,
+    "Opponent Score":143.22,
+    "Margin":-27.06,
+    "Luck Score":-0.319
+  },
+  {
+    "Week":14,
+    "Side":"Away Team",
+    "Team":"Jared's Pack Attack",
+    "Opponent":"Hawaii McLovins VIII",
+    "Score":130.84,
+    "Opponent Score":110.92,
+    "Margin":19.92,
+    "Luck Score":0.654
+  }
+]

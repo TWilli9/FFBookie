@@ -1,0 +1,142 @@
+[
+  {
+    "Week":1,
+    "Side":"Home Team",
+    "Team":"Game of Throws",
+    "Opponent":"First and Ted",
+    "Score":147.08,
+    "Opponent Score":113.88,
+    "Margin":33.2,
+    "Luck Score":0.108
+  },
+  {
+    "Week":2,
+    "Side":"Away Team",
+    "Team":"Game of Throws",
+    "Opponent":"How I Metcalf Your Mother",
+    "Score":110.68,
+    "Opponent Score":100.74,
+    "Margin":9.94,
+    "Luck Score":0.724
+  },
+  {
+    "Week":3,
+    "Side":"Away Team",
+    "Team":"Game of Throws",
+    "Opponent":"Hamilton Administration",
+    "Score":121.46,
+    "Opponent Score":120.92,
+    "Margin":0.54,
+    "Luck Score":0.604
+  },
+  {
+    "Week":4,
+    "Side":"Home Team",
+    "Team":"Game of Throws",
+    "Opponent":"To infinity and Bijan",
+    "Score":98.92,
+    "Opponent Score":128.24,
+    "Margin":-29.32,
+    "Luck Score":-0.117
+  },
+  {
+    "Week":5,
+    "Side":"Away Team",
+    "Team":"Game of Throws",
+    "Opponent":"Team Kareem Pie \ud83e\udd67",
+    "Score":92.06,
+    "Opponent Score":174.7,
+    "Margin":-82.64,
+    "Luck Score":-0.2
+  },
+  {
+    "Week":6,
+    "Side":"Away Team",
+    "Team":"Game of Throws",
+    "Opponent":"How I Metcalf Your Mother",
+    "Score":155.46,
+    "Opponent Score":101.7,
+    "Margin":53.76,
+    "Luck Score":0.184
+  },
+  {
+    "Week":7,
+    "Side":"Home Team",
+    "Team":"Game of Throws",
+    "Opponent":"Hawaii McLovins VIII",
+    "Score":96.16,
+    "Opponent Score":108.08,
+    "Margin":-11.92,
+    "Luck Score":-0.339
+  },
+  {
+    "Week":8,
+    "Side":"Away Team",
+    "Team":"Game of Throws",
+    "Opponent":"First and Ted",
+    "Score":162.34,
+    "Opponent Score":155.58,
+    "Margin":6.76,
+    "Luck Score":0.551
+  },
+  {
+    "Week":9,
+    "Side":"Home Team",
+    "Team":"Game of Throws",
+    "Opponent":"The  Left Tacklers",
+    "Score":166.6,
+    "Opponent Score":150.34,
+    "Margin":16.26,
+    "Luck Score":0.383
+  },
+  {
+    "Week":10,
+    "Side":"Home Team",
+    "Team":"Game of Throws",
+    "Opponent":"Hawaii McLovins VIII",
+    "Score":123.48,
+    "Opponent Score":105.94,
+    "Margin":17.54,
+    "Luck Score":0.549
+  },
+  {
+    "Week":11,
+    "Side":"Home Team",
+    "Team":"Game of Throws",
+    "Opponent":"To infinity and Bijan",
+    "Score":143.96,
+    "Opponent Score":143.18,
+    "Margin":0.78,
+    "Luck Score":0.609
+  },
+  {
+    "Week":12,
+    "Side":"Away Team",
+    "Team":"Game of Throws",
+    "Opponent":"Amon a Mission",
+    "Score":122.36,
+    "Opponent Score":151.88,
+    "Margin":-29.52,
+    "Luck Score":-0.367
+  },
+  {
+    "Week":13,
+    "Side":"Away Team",
+    "Team":"Game of Throws",
+    "Opponent":"Jared's Pack Attack",
+    "Score":143.22,
+    "Opponent Score":116.16,
+    "Margin":27.06,
+    "Luck Score":0.319
+  },
+  {
+    "Week":14,
+    "Side":"Away Team",
+    "Team":"Game of Throws",
+    "Opponent":"Hamilton Administration",
+    "Score":119.72,
+    "Opponent Score":188.08,
+    "Margin":-68.36,
+    "Luck Score":-0.267
+  }
+]

@@ -1,0 +1,142 @@
+[
+  {
+    "Week":1,
+    "Side":"Away Team",
+    "Team":"First and Ted",
+    "Opponent":"Game of Throws",
+    "Score":113.88,
+    "Opponent Score":147.08,
+    "Margin":-33.2,
+    "Luck Score":-0.333
+  },
+  {
+    "Week":2,
+    "Side":"Home Team",
+    "Team":"First and Ted",
+    "Opponent":"To infinity and Bijan",
+    "Score":133.24,
+    "Opponent Score":159.68,
+    "Margin":-26.44,
+    "Luck Score":-0.621
+  },
+  {
+    "Week":3,
+    "Side":"Away Team",
+    "Team":"First and Ted",
+    "Opponent":"Amon a Mission",
+    "Score":113.38,
+    "Opponent Score":107.1,
+    "Margin":6.28,
+    "Luck Score":0.582
+  },
+  {
+    "Week":4,
+    "Side":"Away Team",
+    "Team":"First and Ted",
+    "Opponent":"Jared's Pack Attack",
+    "Score":137.92,
+    "Opponent Score":127.76,
+    "Margin":10.16,
+    "Luck Score":0.46
+  },
+  {
+    "Week":5,
+    "Side":"Away Team",
+    "Team":"First and Ted",
+    "Opponent":"Hamilton Administration",
+    "Score":123.52,
+    "Opponent Score":127.64,
+    "Margin":-4.12,
+    "Luck Score":-0.758
+  },
+  {
+    "Week":6,
+    "Side":"Home Team",
+    "Team":"First and Ted",
+    "Opponent":"The  Left Tacklers",
+    "Score":101.26,
+    "Opponent Score":120.0,
+    "Margin":-18.74,
+    "Luck Score":-0.516
+  },
+  {
+    "Week":7,
+    "Side":"Home Team",
+    "Team":"First and Ted",
+    "Opponent":"Team Kareem Pie \ud83e\udd67",
+    "Score":135.64,
+    "Opponent Score":134.8,
+    "Margin":0.84,
+    "Luck Score":0.497
+  },
+  {
+    "Week":8,
+    "Side":"Home Team",
+    "Team":"First and Ted",
+    "Opponent":"Game of Throws",
+    "Score":155.58,
+    "Opponent Score":162.34,
+    "Margin":-6.76,
+    "Luck Score":-0.801
+  },
+  {
+    "Week":9,
+    "Side":"Home Team",
+    "Team":"First and Ted",
+    "Opponent":"How I Metcalf Your Mother",
+    "Score":145.42,
+    "Opponent Score":103.24,
+    "Margin":42.18,
+    "Luck Score":0.274
+  },
+  {
+    "Week":10,
+    "Side":"Away Team",
+    "Team":"First and Ted",
+    "Opponent":"The  Left Tacklers",
+    "Score":93.88,
+    "Opponent Score":146.12,
+    "Margin":-52.24,
+    "Luck Score":-0.2
+  },
+  {
+    "Week":11,
+    "Side":"Home Team",
+    "Team":"First and Ted",
+    "Opponent":"How I Metcalf Your Mother",
+    "Score":108.64,
+    "Opponent Score":101.08,
+    "Margin":7.56,
+    "Luck Score":0.807
+  },
+  {
+    "Week":12,
+    "Side":"Away Team",
+    "Team":"First and Ted",
+    "Opponent":"Hawaii McLovins VIII",
+    "Score":131.7,
+    "Opponent Score":147.62,
+    "Margin":-15.92,
+    "Luck Score":-0.647
+  },
+  {
+    "Week":13,
+    "Side":"Away Team",
+    "Team":"First and Ted",
+    "Opponent":"Hamilton Administration",
+    "Score":146.54,
+    "Opponent Score":111.02,
+    "Margin":35.52,
+    "Luck Score":0.183
+  },
+  {
+    "Week":14,
+    "Side":"Away Team",
+    "Team":"First and Ted",
+    "Opponent":"To infinity and Bijan",
+    "Score":177.46,
+    "Opponent Score":164.6,
+    "Margin":12.86,
+    "Luck Score":0.473
+  }
+]

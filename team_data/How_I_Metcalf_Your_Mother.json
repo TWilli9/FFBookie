@@ -1,0 +1,142 @@
+[
+  {
+    "Week":1,
+    "Side":"Home Team",
+    "Team":"How I Metcalf Your Mother",
+    "Opponent":"To infinity and Bijan",
+    "Score":107.34,
+    "Opponent Score":102.92,
+    "Margin":4.42,
+    "Luck Score":0.783
+  },
+  {
+    "Week":2,
+    "Side":"Home Team",
+    "Team":"How I Metcalf Your Mother",
+    "Opponent":"Game of Throws",
+    "Score":100.74,
+    "Opponent Score":110.68,
+    "Margin":-9.94,
+    "Luck Score":-0.574
+  },
+  {
+    "Week":3,
+    "Side":"Home Team",
+    "Team":"How I Metcalf Your Mother",
+    "Opponent":"Hawaii McLovins VIII",
+    "Score":106.88,
+    "Opponent Score":86.14,
+    "Margin":20.74,
+    "Luck Score":0.383
+  },
+  {
+    "Week":4,
+    "Side":"Away Team",
+    "Team":"How I Metcalf Your Mother",
+    "Opponent":"The  Left Tacklers",
+    "Score":133.5,
+    "Opponent Score":132.26,
+    "Margin":1.24,
+    "Luck Score":0.646
+  },
+  {
+    "Week":5,
+    "Side":"Away Team",
+    "Team":"How I Metcalf Your Mother",
+    "Opponent":"Jared's Pack Attack",
+    "Score":134.84,
+    "Opponent Score":100.76,
+    "Margin":34.08,
+    "Luck Score":0.46
+  },
+  {
+    "Week":6,
+    "Side":"Home Team",
+    "Team":"How I Metcalf Your Mother",
+    "Opponent":"Game of Throws",
+    "Score":101.7,
+    "Opponent Score":155.46,
+    "Margin":-53.76,
+    "Luck Score":-0.334
+  },
+  {
+    "Week":7,
+    "Side":"Home Team",
+    "Team":"How I Metcalf Your Mother",
+    "Opponent":"To infinity and Bijan",
+    "Score":122.38,
+    "Opponent Score":105.64,
+    "Margin":16.74,
+    "Luck Score":0.327
+  },
+  {
+    "Week":8,
+    "Side":"Away Team",
+    "Team":"How I Metcalf Your Mother",
+    "Opponent":"Jared's Pack Attack",
+    "Score":124.7,
+    "Opponent Score":104.84,
+    "Margin":19.86,
+    "Luck Score":0.691
+  },
+  {
+    "Week":9,
+    "Side":"Away Team",
+    "Team":"How I Metcalf Your Mother",
+    "Opponent":"First and Ted",
+    "Score":103.24,
+    "Opponent Score":145.42,
+    "Margin":-42.18,
+    "Luck Score":-0.174
+  },
+  {
+    "Week":10,
+    "Side":"Away Team",
+    "Team":"How I Metcalf Your Mother",
+    "Opponent":"Hamilton Administration",
+    "Score":105.0,
+    "Opponent Score":118.3,
+    "Margin":-13.3,
+    "Luck Score":-0.539
+  },
+  {
+    "Week":11,
+    "Side":"Away Team",
+    "Team":"How I Metcalf Your Mother",
+    "Opponent":"First and Ted",
+    "Score":101.08,
+    "Opponent Score":108.64,
+    "Margin":-7.56,
+    "Luck Score":-0.507
+  },
+  {
+    "Week":12,
+    "Side":"Home Team",
+    "Team":"How I Metcalf Your Mother",
+    "Opponent":"Hamilton Administration",
+    "Score":117.16,
+    "Opponent Score":121.38,
+    "Margin":-4.22,
+    "Luck Score":-0.612
+  },
+  {
+    "Week":13,
+    "Side":"Away Team",
+    "Team":"How I Metcalf Your Mother",
+    "Opponent":"Team Kareem Pie \ud83e\udd67",
+    "Score":149.84,
+    "Opponent Score":135.2,
+    "Margin":14.64,
+    "Luck Score":0.361
+  },
+  {
+    "Week":14,
+    "Side":"Away Team",
+    "Team":"How I Metcalf Your Mother",
+    "Opponent":"Amon a Mission",
+    "Score":81.7,
+    "Opponent Score":122.16,
+    "Margin":-40.46,
+    "Luck Score":-0.304
+  }
+]

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Team Page</title>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    h1 { font-size: 2em; }
+    #chart { width: 100%; height: 400px; }
+  </style>
+</head>
+<body>
+  <h1 id="team-name">Loading...</h1>
+  <div id="chart"></div>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const team = urlParams.get('team');
+
+    document.getElementById("team-name").textContent = team.replace(/_/g, ' ');
+
+    fetch(`team_data/${team}.json`)
+      .then(res => res.json())
+      .then(data => {
+        const weeks = data.map(row => row.Week);
+        const scores = data.map(row => row.Score);
+        const luck = data.map(row => row["Luck Score"]);
+
+        Plotly.newPlot('chart', [
+          {
+            x: weeks, y: scores, name: 'Score', mode: 'lines+markers', type: 'scatter'
+          },
+          {
+            x: weeks, y: luck, name: 'Luck Score', mode: 'lines+markers', type: 'scatter', yaxis: 'y2'
+          }
+        ], {
+          title: `${team.replace(/_/g, ' ')} Weekly Performance`,
+          yaxis: { title: 'Score' },
+          yaxis2: {
+            title: 'Luck Score',
+            overlaying: 'y',
+            side: 'right'
+          }
+        });
+      });
+  </script>
+</body>
+</html>
