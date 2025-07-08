@@ -90,6 +90,66 @@
       background-color: #2980b9;
     }
 
+    .summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    }
+
+    .bar-section {
+    margin-top: 20px;
+    }
+
+    .bar-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 10px;
+    }
+
+    .bar {
+    background: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 24px;
+    margin-bottom: 10px;
+    }
+
+    .bar div {
+    height: 100%;
+    color: white;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 24px;
+    font-weight: bold;
+    }
+
+    #pf-bar {
+    background-color: #3498db;
+    width: 0%;
+    }
+
+    #pa-bar {
+    background-color: #e74c3c;
+    width: 0%;
+    }
+
+    .bar-number {
+    font-weight: normal;
+    font-size: 0.95em;
+    color: #333;
+    }
+
+    .bar-note {
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 5px;
+    }
+
+
     #chart {
       width: 100%;
       height: 400px;
@@ -119,20 +179,33 @@
   </div>
 
     <div class="section" id="summary">
-        <h2>Season Summary</h2>
-        <p><strong>Owner:</strong> <span id="owner-name">Loading...</span></p>
-        <p><strong>Record:</strong> <span id="record">–</span></p>
-        <p><strong>Power Rank:</strong> <span id="power-rank">–</span></p>
-        <p><strong>Luck Rank:</strong> <span id="luck-rank">–</span></p>
-        <div style="margin-top: 20px;">
-            <strong>Points For vs Against</strong>
-            <div style="height: 24px; background: #eee; border-radius: 12px; overflow: hidden;">
-            <div id="pf-bar" style="height: 100%; background-color: #3498db; width: 0%; text-align: center; color: white;">PF</div>
-            <div id="pa-bar" style="height: 100%; background-color: #e74c3c; width: 0%; text-align: center; color: white;">PA</div>
-            </div>
-            <p style="font-size: 0.9em; color: #555;">Bar length represents PF and PA relative to league average.</p>
+    <h2>Season Summary</h2>
+
+    <div class="summary-grid">
+        <div><strong>Owner:</strong> <span id="owner-name">Loading...</span></div>
+        <div><strong>Record:</strong> <span id="record">–</span></div>
+        <div><strong>Power Rank:</strong> <span id="power-rank">–</span></div>
+        <div><strong>Luck Rank:</strong> <span id="luck-rank">–</span></div>
+    </div>
+
+    <div class="bar-section">
+        <h3>Points Scored vs Allowed</h3>
+        <div class="bar-labels">
+        <span>Points For (PF)</span>
+        <span id="pf-value" class="bar-number">–</span>
+        </div>
+        <div class="bar pf-bar"><div id="pf-bar"></div></div>
+
+        <div class="bar-labels">
+        <span>Points Against (PA)</span>
+        <span id="pa-value" class="bar-number">–</span>
+        </div>
+        <div class="bar pa-bar"><div id="pa-bar"></div></div>
+
+        <p class="bar-note">Bar length represents PF and PA relative to league average.</p>
         </div>
     </div>
+
 
     <div class="section">
         <h2 id="team-name">Loading...</h2>
@@ -184,6 +257,10 @@
 
         document.getElementById("pa-bar").style.width = paPct + "%";
         document.getElementById("pa-bar").textContent = `PA: ${pa.toFixed(1)}`;
+
+        document.getElementById("pf-value").textContent = pf.toFixed(1);
+        document.getElementById("pa-value").textContent = pa.toFixed(1);
+
         }
 
       } catch (err) {
