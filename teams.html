@@ -94,9 +94,10 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 20px;
-    font-size: 1.1em;
+    font-size: 1.1em; /* 🔄 CHANGE TO 1.3em */
     margin-bottom: 30px;
     }
+
 
     .bar-section {
     margin-top: 20px;
@@ -111,12 +112,24 @@
     }
 
     .bar {
+    position: relative;
     background: #eee;
     border-radius: 10px;
     overflow: hidden;
     height: 24px;
     margin-bottom: 10px;
     }
+
+    .league-line {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #2c3e50;
+    opacity: 0.5;
+    }
+
 
     .bar div {
     height: 100%;
@@ -194,13 +207,13 @@
         <span>Points For (PF)</span>
         <span id="pf-value" class="bar-number">–</span>
         </div>
-        <div class="bar pf-bar"><div id="pf-bar"></div></div>
+        <div class="bar pf-bar"><div id="pf-bar"></div><div class="league-line"></div></div>
 
         <div class="bar-labels">
         <span>Points Against (PA)</span>
         <span id="pa-value" class="bar-number">–</span>
         </div>
-        <div class="bar pa-bar"><div id="pa-bar"></div></div>
+        <div class="bar pa-bar"><div id="pa-bar"></div> <div class="league-line"></div></div>
 
         <p class="bar-note">Bar length represents PF and PA relative to league average.</p>
         </div>
@@ -249,14 +262,22 @@
         const pa = teamRow["Points Against(PA)"];
 
         const avgPF = standingsData.reduce((sum, t) => sum + t["Points For(PF)"], 0) / standingsData.length;
-        const pfPct = Math.min(100, (pf / avgPF) * 50); // max 50%
-        const paPct = Math.min(100, (pa / avgPF) * 50); // scaled to same avg
+        const pfPct = Math.min(100, (pf / avgPF) * 100);
+        const paPct = Math.min(100, (pa / avgPF) * 100);
+
+        const pfLine = document.querySelector("#pf-bar").parentNode.querySelector(".league-line");
+        const paLine = document.querySelector("#pa-bar").parentNode.querySelector(".league-line");
+
+        pfLine.style.left = "100%";
+        paLine.style.left = "100%";
+
 
         document.getElementById("pf-bar").style.width = pfPct + "%";
         document.getElementById("pf-bar").textContent = `PF: ${pf.toFixed(1)}`;
 
         document.getElementById("pa-bar").style.width = paPct + "%";
         document.getElementById("pa-bar").textContent = `PA: ${pa.toFixed(1)}`;
+
 
         document.getElementById("pf-value").textContent = pf.toFixed(1);
         document.getElementById("pa-value").textContent = pa.toFixed(1);
