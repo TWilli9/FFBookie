@@ -123,6 +123,23 @@
     <div id="chart"></div>
   </div>
 
+    <div class="section" id="summary">
+        <h2>Season Summary</h2>
+        <p><strong>Owner:</strong> <span id="owner-name">Loading...</span></p>
+        <p><strong>Record:</strong> <span id="record">–</span></p>
+        <p><strong>Power Rank:</strong> <span id="power-rank">–</span></p>
+        <p><strong>Luck Rank:</strong> <span id="luck-rank">–</span></p>
+        <div style="margin-top: 20px;">
+            <strong>Points For vs Against</strong>
+            <div style="height: 24px; background: #eee; border-radius: 12px; overflow: hidden;">
+            <div id="pf-bar" style="height: 100%; background-color: #3498db; width: 0%; text-align: center; color: white;">PF</div>
+            <div id="pa-bar" style="height: 100%; background-color: #e74c3c; width: 0%; text-align: center; color: white;">PA</div>
+            </div>
+            <p style="font-size: 0.9em; color: #555;">Bar length represents PF and PA relative to league average.</p>
+        </div>
+    </div>
+
+
   <script>
     const teamSelect = document.getElementById("team-select");
     const teamNameHeading = document.getElementById("team-name");
@@ -144,6 +161,31 @@
         teamSelect.value = defaultTeam;
 
         loadTeam(defaultTeam, teams);
+
+        const standingsRes = await fetch("standings.json");
+        const standingsData = await standingsRes.json();
+        const teamNameFormatted = defaultTeam.replace(/_/g, " ");
+        const teamRow = standingsData.find(t => t["Team Name"].trim() === teamNameFormatted);
+
+        if (teamRow) {
+        document.getElementById("record").textContent = teamRow["Record"];
+        document.getElementById("power-rank").textContent = teamRow["Power Ranking"];
+        document.getElementById("luck-rank").textContent = teamRow["Luck Rank"];
+
+        const pf = teamRow["Points For(PF)"];
+        const pa = teamRow["Points Against(PA)"];
+
+        const avgPF = standingsData.reduce((sum, t) => sum + t["Points For(PF)"], 0) / standingsData.length;
+        const pfPct = Math.min(100, (pf / avgPF) * 50); // max 50%
+        const paPct = Math.min(100, (pa / avgPF) * 50); // scaled to same avg
+
+        document.getElementById("pf-bar").style.width = pfPct + "%";
+        document.getElementById("pf-bar").textContent = `PF: ${pf.toFixed(1)}`;
+
+        document.getElementById("pa-bar").style.width = paPct + "%";
+        document.getElementById("pa-bar").textContent = `PA: ${pa.toFixed(1)}`;
+        }
+
       } catch (err) {
         document.getElementById('chart').innerHTML = "<p>Error loading team list</p>";
         console.error(err);
