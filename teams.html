@@ -219,10 +219,6 @@
     </div>
 
 
-    <div class="section">
-        <h2 id="team-name">Loading...</h2>
-        <div id="chart"></div>
-    </div>
 
 
   <script>
@@ -290,49 +286,6 @@
         console.error(err);
       }
     }
-
-    async function loadTeam(teamSlug, teams) {
-      const displayName = teams.find(t => t.replace(/\s+/g, "_") === teamSlug) || teamSlug.replace(/_/g, " ");
-      teamNameHeading.textContent = displayName;
-
-      try {
-        const res = await fetch(`team_data/${teamSlug}.json`);
-        const data = await res.json();
-        const weeks = data.map(row => row.Week);
-        const scores = data.map(row => row.Score);
-        const luck = data.map(row => row["Luck Score"]);
-
-        Plotly.newPlot('chart', [
-          {
-            x: weeks,
-            y: scores,
-            name: 'Score',
-            mode: 'lines+markers',
-            type: 'scatter'
-          },
-          {
-            x: weeks,
-            y: luck,
-            name: 'Luck Score',
-            mode: 'lines+markers',
-            type: 'scatter',
-            yaxis: 'y2'
-          }
-        ], {
-          title: `${displayName} Weekly Performance`,
-          yaxis: { title: 'Score' },
-          yaxis2: {
-            title: 'Luck Score',
-            overlaying: 'y',
-            side: 'right'
-          }
-        });
-      } catch (err) {
-        document.getElementById('chart').innerHTML = `<p>Error loading data for ${displayName}</p>`;
-        console.error(err);
-      }
-    }
-
     teamSelect.addEventListener("change", async () => {
       const newTeam = teamSelect.value;
       const res = await fetch("teams.json");
