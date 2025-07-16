@@ -162,6 +162,17 @@
     margin-top: 5px;
     }
 
+    #matchup-table th, #matchup-table td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+    #matchup-table th {
+      background-color: #3498db;
+      color: white;
+      font-family: "Oswald", sans-serif;
+    }
+
 
     #chart {
       width: 100%;
@@ -218,6 +229,24 @@
         </div>
     </div>
 
+    <div class="section" id="matchup-history">
+    <h2>Matchup History</h2>
+    <table id="matchup-table" style="width: 100%; border-collapse: collapse;">
+      <thead>
+        <tr>
+          <th>Week</th>
+          <th>Opponent</th>
+          <th>Result</th>
+          <th>Score</th>
+          <th>Top Scorer</th>
+          <th>Luck</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Matchup rows will be injected here -->
+      </tbody>
+    </table>
+    </div>
 
 
 
@@ -294,40 +323,39 @@
       try {
         const res = await fetch(`team_data/${teamSlug}.json`);
         const data = await res.json();
-        const weeks = data.map(row => row.Week);
-        const scores = data.map(row => row.Score);
-        const luck = data.map(row => row["Luck Score"]);
+        const tableBody = document.querySelector("#matchup-table tbody");
+        tableBody.innerHTML = ""; // Clear previous content
 
-        Plotly.newPlot('chart', [
-          {
-            x: weeks,
-            y: scores,
-            name: 'Score',
-            mode: 'lines+markers',
-            type: 'scatter'
-          },
-          {
-            x: weeks,
-            y: luck,
-            name: 'Luck Score',
-            mode: 'lines+markers',
-            type: 'scatter',
-            yaxis: 'y2'
-          }
-        ], {
-          title: `${displayName} Weekly Performance`,
-          yaxis: { title: 'Score' },
-          yaxis2: {
-            title: 'Luck Score',
-            overlaying: 'y',
-            side: 'right'
-          }
+        data.forEach(row => {
+          const isHome = row["Home Team"] === displayName;
+          const opponent = isHome ? row["Away Team"] : row["Home Team"];
+          const result = row["Actual Winner"] === displayName ? "Win" : (row["Actual Winner"] === "Tie" ? "Tie" : "Loss");
+
+          const teamScore = isHome ? row["Home Actual Score"] : row["Away Actual Score"];
+          const oppScore = isHome ? row["Away Actual Score"] : row["Home Actual Score"];
+          const scoreDisplay = `${teamScore} - ${oppScore}`;
+
+          const topPlayer = isHome ? row["Home Top Player"] : row["Away Top Player"];
+          const topScorer = topPlayer?.[0] ? `${topPlayer[0][0]} (${topPlayer[0][1]})` : "–";
+
+          const tr = document.createElement("tr");
+          tr.innerHTML = `
+            <td>${row.Week}</td>
+            <td>${opponent}</td>
+            <td>${result}</td>
+            <td>${scoreDisplay}</td>
+            <td>${topScorer}</td>
+            <td>${row["Luck Score"]?.toFixed?.(1) ?? "–"}</td>
+          `;
+          tableBody.appendChild(tr);
         });
+
       } catch (err) {
-        document.getElementById('chart').innerHTML = `<p>Error loading data for ${displayName}</p>`;
+        document.querySelector("#matchup-table tbody").innerHTML = `<tr><td colspan="6">Error loading data for ${displayName}</td></tr>`;
         console.error(err);
       }
     }
+
 
     teamSelect.addEventListener("change", async () => {
       const newTeam = teamSelect.value;
