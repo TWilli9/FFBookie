@@ -324,28 +324,20 @@
         const res = await fetch(`team_data/${teamSlug}.json`);
         const data = await res.json();
         const tableBody = document.querySelector("#matchup-table tbody");
-        tableBody.innerHTML = ""; // Clear previous content
+        tableBody.innerHTML = ""; // Clear old rows
 
         data.forEach(row => {
-          const isHome = row["Home Team"] === displayName;
-          const opponent = isHome ? row["Away Team"] : row["Home Team"];
-          const result = row["Actual Winner"] === displayName ? "Win" : (row["Actual Winner"] === "Tie" ? "Tie" : "Loss");
-
-          const teamScore = isHome ? row["Home Actual Score"] : row["Away Actual Score"];
-          const oppScore = isHome ? row["Away Actual Score"] : row["Home Actual Score"];
-          const scoreDisplay = `${teamScore} - ${oppScore}`;
-
-          const topPlayer = isHome ? row["Home Top Player"] : row["Away Top Player"];
-          const topScorer = topPlayer?.[0] ? `${topPlayer[0][0]} (${topPlayer[0][1]})` : "–";
-
+          const result = row.Margin > 0 ? "Win" : row.Margin < 0 ? "Loss" : "Tie";
+          const scoreDisplay = `${row.Score.toFixed(2)} - ${row["Opponent Score"].toFixed(2)}`;
           const tr = document.createElement("tr");
+
           tr.innerHTML = `
             <td>${row.Week}</td>
-            <td>${opponent}</td>
+            <td>${row.Opponent}</td>
             <td>${result}</td>
             <td>${scoreDisplay}</td>
-            <td>${topScorer}</td>
-            <td>${row["Luck Score"]?.toFixed?.(1) ?? "–"}</td>
+            <td>–</td>
+            <td>${row["Luck Score"]?.toFixed(2) ?? "–"}</td>
           `;
           tableBody.appendChild(tr);
         });
@@ -355,6 +347,7 @@
         console.error(err);
       }
     }
+
 
 
     teamSelect.addEventListener("change", async () => {
