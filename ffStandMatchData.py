@@ -66,16 +66,19 @@ def getStandings(league):
     powerRankings = league.power_rankings()
 
     # Create a dictionary to map team names to their power rankings
-    powerRankingsDict = {team.team_name: rank for rank, team in powerRankings}
+    powerRankingsDict = {' '.join(team.team_name.strip().split()): rank for rank, team in powerRankings}
     #Call getProjectedScores from ffProjScore
     projectedScores = getProjectedScores(currentWeek)
 
     sosDf = calculateSOS(league, currentWeek)
-    sosDict = sosDf.set_index('Team Name')['SOS'].to_dict()
+    sosDict = {
+        ' '.join(name.strip().split()): value
+        for name, value in sosDf.set_index('Team Name')['SOS'].items()
+    }
 
     standings = [
         {
-            'Team Name': team.team_name,
+            'Team Name': ' '.join(team.team_name.strip().split()),
             'Projected Scores': projectedScores.get(team.team_name, 'N/A'),
             'Record': f"{team.wins}-{team.losses}",
             'Points For(PF)': team.points_for,
