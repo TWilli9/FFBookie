@@ -331,19 +331,21 @@
         tableBody.innerHTML = ""; // Clear old rows
 
         data.forEach(row => {
-          const result = row.Margin > 0 ? "Win" : row.Margin < 0 ? "Loss" : "Tie";
-          const scoreDisplay = `${row.Score.toFixed(2)} - ${row["Opponent Score"].toFixed(2)}`;
-          const tr = document.createElement("tr");
+           const isTeam = normalize(row.Team) === normalize(displayName);
+            const opponent = row.Opponent;
+            const result = row.Margin > 0 ? "Win" : row.Margin < 0 ? "Loss" : "Tie";
+            const scoreDisplay = `${row.Score.toFixed(2)} - ${row["Opponent Score"].toFixed(2)}`;
+            const tr = document.createElement("tr");
 
-          tr.innerHTML = `
-            <td>${row.Week}</td>
-            <td>${row.Opponent}</td>
-            <td>${result}</td>
-            <td>${scoreDisplay}</td>
-            <td>–</td>
-            <td>${row["Luck Score"]?.toFixed(2) ?? "–"}</td>
-          `;
-          tableBody.appendChild(tr);
+            tr.innerHTML = `
+              <td>${row.Week}</td>
+              <td>${opponent}</td>
+              <td>${result}</td>
+              <td>${scoreDisplay}</td>
+              <td>–</td>
+              <td>${row["Luck Score"]?.toFixed(2) ?? "–"}</td>
+            `;
+            tableBody.appendChild(tr);
         });
 
       } catch (err) {
