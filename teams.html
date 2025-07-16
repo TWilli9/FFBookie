@@ -195,7 +195,6 @@
     <h2>Season Summary</h2>
 
     <div class="summary-grid">
-        <div><strong>Owner:</strong> <span id="owner-name">Loading...</span></div>
         <div><strong>Record:</strong> <span id="record">–</span></div>
         <div><strong>Power Rank:</strong> <span id="power-rank">–</span></div>
         <div><strong>Luck Rank:</strong> <span id="luck-rank">–</span></div>
@@ -262,14 +261,17 @@
         const pa = teamRow["Points Against(PA)"];
 
         const avgPF = standingsData.reduce((sum, t) => sum + t["Points For(PF)"], 0) / standingsData.length;
-        const pfPct = Math.min(100, (pf / avgPF) * 100);
-        const paPct = Math.min(100, (pa / avgPF) * 100);
+        const maxScale = 2000;
+        const pfPct = Math.min(100, (pf / maxScale) * 100);
+        const paPct = Math.min(100, (pa / maxScale) * 100);
+        const avgPct = (avgPF / maxScale) * 100;
+
 
         const pfLine = document.querySelector("#pf-bar").parentNode.querySelector(".league-line");
         const paLine = document.querySelector("#pa-bar").parentNode.querySelector(".league-line");
 
-        pfLine.style.left = "100%";
-        paLine.style.left = "100%";
+        pfLine.style.left = `${avgPct}%`;
+        paLine.style.left = `${avgPct}%`;
 
 
         document.getElementById("pf-bar").style.width = pfPct + "%";
@@ -277,7 +279,6 @@
 
         document.getElementById("pa-bar").style.width = paPct + "%";
         document.getElementById("pa-bar").textContent = `PA: ${pa.toFixed(1)}`;
-
 
         document.getElementById("pf-value").textContent = pf.toFixed(1);
         document.getElementById("pa-value").textContent = pa.toFixed(1);

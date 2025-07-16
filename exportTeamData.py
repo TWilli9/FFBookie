@@ -27,17 +27,19 @@ os.makedirs("team_data", exist_ok=True)
 # Export one JSON per team
 for team in merged["Team"].unique():
     team_df = merged[merged["Team"] == team].sort_values(by="Week")
-    filename = f"team_data/{team.replace(' ', '_')}.json"
+    clean_team = ' '.join(team.strip().split())  # Removes extra/multiple spaces
+    filename = f"team_data/{clean_team.replace(' ', '_')}.json"
     team_df.to_json(filename, orient="records", indent=2)
     print(f"Exported {filename}")
 
 
 # Collect all clean team names from filenames
 team_names = sorted([
-    filename.replace('.json', '').replace('_', ' ')
+    ' '.join(filename.replace('.json', '').replace('_', ' ').strip().split())
     for filename in os.listdir("team_data")
     if filename.endswith(".json")
 ])
+
 
 # Save to teams.json
 with open("teams.json", "w") as f:
