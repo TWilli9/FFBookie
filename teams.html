@@ -318,7 +318,10 @@
     }
 
     async function loadTeam(teamSlug, teams) {
-      const displayName = teams.find(t => t.replace(/\s+/g, "_") === teamSlug) || teamSlug.replace(/_/g, " ");
+      function normalize(name) {
+        return name.replace(/\s+/g, " ").trim();
+      }
+      const displayName = normalize(teams.find(t => t.replace(/\s+/g, "_") === teamSlug)) || teamSlug.replace(/_/g, " ");
       teamNameHeading.textContent = displayName;
 
       try {
