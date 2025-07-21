@@ -178,6 +178,12 @@
       width: 100%;
       height: 400px;
     }
+    
+    #win-loss-chart {
+      width: 100%;
+      height: 400px;
+    }
+
 
     @media (max-width: 768px) {
       h1 {
@@ -230,6 +236,11 @@
         </div>
     </div>
 
+    <div class="section" id="win-loss-section">
+      <h2>Win/Loss Timeline</h2>
+      <div id="win-loss-chart"></div>
+    </div>
+
     <div class="section" id="matchup-history">
     <h2>Matchup History</h2>
     <table id="matchup-table" style="width: 100%; border-collapse: collapse;">
@@ -254,6 +265,51 @@
   <script>
     const teamSelect = document.getElementById("team-select");
     const teamNameHeading = document.getElementById("team-name");
+
+    function updateWinLossChart(data) {
+      const weeks = [];
+      let wins = 0;
+      let losses = 0;
+      const winTotals = [];
+      const lossTotals = [];
+
+      data.forEach(row => {
+        weeks.push(row.Week);
+        if (row.Margin > 0) {
+          wins++;
+        } else if (row.Margin < 0) {
+          losses++;
+        }
+        winTotals.push(wins);
+        lossTotals.push(losses);
+      });
+
+      const winTrace = {
+        x: weeks,
+        y: winTotals,
+        mode: 'lines+markers',
+        name: 'Wins',
+        line: { color: '#2ecc71' }
+      };
+
+      const lossTrace = {
+        x: weeks,
+        y: lossTotals,
+        mode: 'lines+markers',
+        name: 'Losses',
+        line: { color: '#e74c3c' }
+      };
+
+      const layout = {
+        margin: { t: 30 },
+        xaxis: { title: 'Week', dtick: 1 },
+        yaxis: { title: 'Total' },
+        legend: { orientation: 'h' }
+      };
+
+      Plotly.newPlot('win-loss-chart', [winTrace, lossTrace], layout);
+    }
+
 
     async function loadTeams() {
       try {
@@ -347,6 +403,8 @@
             `;
             tableBody.appendChild(tr);
         });
+
+        updateWinLossChart(data);
 
       } catch (err) {
         document.querySelector("#matchup-table tbody").innerHTML = `<tr><td colspan="6">Error loading data for ${displayName}</td></tr>`;
