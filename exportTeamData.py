@@ -4,22 +4,35 @@ from ffLuckModel import calculateLuckScore
 from ffStandMatchData import getMatchups, currentWeek
 import json
 
-
-# Load all weekly matchups + calculate luck
+# Load all weekly matchups
 all_weeks = []
 for week in range(1, currentWeek + 1):
     df = getMatchups(week)
     all_weeks.append(df)
+
 all_matchups = pd.concat(all_weeks, ignore_index=True)
 luck_df = calculateLuckScore(all_matchups)
 
-# Merge scores + luck
-merged = pd.merge(
-    all_matchups.melt(id_vars=["Week"], value_vars=["Home Team", "Away Team"], var_name="Side", value_name="Team"),
-    luck_df,
-    on=["Week", "Team"],
-    how="left"
-)
+# Build a per-team dataframe including top players
+records = []
+for _, row in all_matchups.iterrows():
+    records.append({
+        "Week": row["Week"],
+        "Side": "Home Team",
+        "Team": row["Home Team"].strip(),
+        "Top Scorer": row.get("Home Top Player") or row.get("Home Top Players")
+    })
+    records.append({
+        "Week": row["Week"],
+        "Side": "Away Team",
+        "Team": row["Away Team"].strip(),
+        "Top Scorer": row.get("Away Top Player") or row.get("Away Top Players")
+    })
+
+players_df = pd.DataFrame(records)
+
+# Merge with luck information
+merged = pd.merge(players_df, luck_df, on=["Week", "Team"], how="left")
 
 # Make a folder for team data
 os.makedirs("team_data", exist_ok=True)

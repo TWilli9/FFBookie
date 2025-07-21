@@ -393,12 +393,16 @@
             const scoreDisplay = `${row.Score.toFixed(2)} - ${row["Opponent Score"].toFixed(2)}`;
             const tr = document.createElement("tr");
 
+            const top = Array.isArray(row["Top Scorer"]) && row["Top Scorer"].length > 0
+              ? `${row["Top Scorer"][0]} (${row["Top Scorer"][1]} pts)`
+              : "–";
+
             tr.innerHTML = `
               <td>${row.Week}</td>
               <td>${opponent}</td>
               <td>${result}</td>
               <td>${scoreDisplay}</td>
-              <td>–</td>
+              <td>${top}</td>
               <td>${row["Luck Score"]?.toFixed(2) ?? "–"}</td>
             `;
             tableBody.appendChild(tr);
