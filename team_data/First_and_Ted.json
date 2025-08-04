@@ -9,10 +9,10 @@
         23.0
       ]
     ],
-    "Opponent_x":"Game of Throws",
-    "Score_x":113.88,
-    "Opponent Score_x":147.08,
-    "Margin_x":-33.2,
+    "Opponent":"Game of Throws",
+    "Score":113.88,
+    "Opponent Score":147.08,
+    "Margin":-33.2,
     "Opponent_y":"Game of Throws",
     "Score_y":113.88,
     "Opponent Score_y":147.08,
@@ -29,10 +29,10 @@
         29.5
       ]
     ],
-    "Opponent_x":"To infinity and Bijan",
-    "Score_x":133.24,
-    "Opponent Score_x":159.68,
-    "Margin_x":-26.44,
+    "Opponent":"To infinity and Bijan",
+    "Score":133.24,
+    "Opponent Score":159.68,
+    "Margin":-26.44,
     "Opponent_y":"To infinity and Bijan",
     "Score_y":133.24,
     "Opponent Score_y":159.68,
@@ -49,10 +49,10 @@
         31.6
       ]
     ],
-    "Opponent_x":"Amon a Mission",
-    "Score_x":113.38,
-    "Opponent Score_x":107.1,
-    "Margin_x":6.28,
+    "Opponent":"Amon a Mission",
+    "Score":113.38,
+    "Opponent Score":107.1,
+    "Margin":6.28,
     "Opponent_y":"Amon a Mission",
     "Score_y":113.38,
     "Opponent Score_y":107.1,
@@ -69,10 +69,10 @@
         24.02
       ]
     ],
-    "Opponent_x":"Jared's Pack Attack",
-    "Score_x":137.92,
-    "Opponent Score_x":127.76,
-    "Margin_x":10.16,
+    "Opponent":"Jared's Pack Attack",
+    "Score":137.92,
+    "Opponent Score":127.76,
+    "Margin":10.16,
     "Opponent_y":"Jared's Pack Attack",
     "Score_y":137.92,
     "Opponent Score_y":127.76,
@@ -89,10 +89,10 @@
         23.2
       ]
     ],
-    "Opponent_x":"Hamilton Administration",
-    "Score_x":123.52,
-    "Opponent Score_x":127.64,
-    "Margin_x":-4.12,
+    "Opponent":"Hamilton Administration",
+    "Score":123.52,
+    "Opponent Score":127.64,
+    "Margin":-4.12,
     "Opponent_y":"Hamilton Administration",
     "Score_y":123.52,
     "Opponent Score_y":127.64,
@@ -109,10 +109,10 @@
         20.96
       ]
     ],
-    "Opponent_x":"The  Left Tacklers",
-    "Score_x":101.26,
-    "Opponent Score_x":120.0,
-    "Margin_x":-18.74,
+    "Opponent":"The  Left Tacklers",
+    "Score":101.26,
+    "Opponent Score":120.0,
+    "Margin":-18.74,
     "Opponent_y":"The  Left Tacklers",
     "Score_y":101.26,
     "Opponent Score_y":120.0,
@@ -129,10 +129,10 @@
         23.8
       ]
     ],
-    "Opponent_x":"Team Kareem Pie \ud83e\udd67",
-    "Score_x":135.64,
-    "Opponent Score_x":134.8,
-    "Margin_x":0.84,
+    "Opponent":"Team Kareem Pie \ud83e\udd67",
+    "Score":135.64,
+    "Opponent Score":134.8,
+    "Margin":0.84,
     "Opponent_y":"Team Kareem Pie \ud83e\udd67",
     "Score_y":135.64,
     "Opponent Score_y":134.8,
@@ -149,10 +149,10 @@
         26.7
       ]
     ],
-    "Opponent_x":"Game of Throws",
-    "Score_x":155.58,
-    "Opponent Score_x":162.34,
-    "Margin_x":-6.76,
+    "Opponent":"Game of Throws",
+    "Score":155.58,
+    "Opponent Score":162.34,
+    "Margin":-6.76,
     "Opponent_y":"Game of Throws",
     "Score_y":155.58,
     "Opponent Score_y":162.34,
@@ -169,10 +169,10 @@
         32.1
       ]
     ],
-    "Opponent_x":"How I Metcalf Your Mother",
-    "Score_x":145.42,
-    "Opponent Score_x":103.24,
-    "Margin_x":42.18,
+    "Opponent":"How I Metcalf Your Mother",
+    "Score":145.42,
+    "Opponent Score":103.24,
+    "Margin":42.18,
     "Opponent_y":"How I Metcalf Your Mother",
     "Score_y":145.42,
     "Opponent Score_y":103.24,
@@ -189,10 +189,10 @@
         22.3
       ]
     ],
-    "Opponent_x":"The  Left Tacklers",
-    "Score_x":93.88,
-    "Opponent Score_x":146.12,
-    "Margin_x":-52.24,
+    "Opponent":"The  Left Tacklers",
+    "Score":93.88,
+    "Opponent Score":146.12,
+    "Margin":-52.24,
     "Opponent_y":"The  Left Tacklers",
     "Score_y":93.88,
     "Opponent Score_y":146.12,
@@ -209,10 +209,10 @@
         20.5
       ]
     ],
-    "Opponent_x":"How I Metcalf Your Mother",
-    "Score_x":108.64,
-    "Opponent Score_x":101.08,
-    "Margin_x":7.56,
+    "Opponent":"How I Metcalf Your Mother",
+    "Score":108.64,
+    "Opponent Score":101.08,
+    "Margin":7.56,
     "Opponent_y":"How I Metcalf Your Mother",
     "Score_y":108.64,
     "Opponent Score_y":101.08,
@@ -229,10 +229,10 @@
         30.4
       ]
     ],
-    "Opponent_x":"Hawaii McLovins VIII",
-    "Score_x":131.7,
-    "Opponent Score_x":147.62,
-    "Margin_x":-15.92,
+    "Opponent":"Hawaii McLovins VIII",
+    "Score":131.7,
+    "Opponent Score":147.62,
+    "Margin":-15.92,
     "Opponent_y":"Hawaii McLovins VIII",
     "Score_y":131.7,
     "Opponent Score_y":147.62,
@@ -249,10 +249,10 @@
         27.64
       ]
     ],
-    "Opponent_x":"Hamilton Administration",
-    "Score_x":146.54,
-    "Opponent Score_x":111.02,
-    "Margin_x":35.52,
+    "Opponent":"Hamilton Administration",
+    "Score":146.54,
+    "Opponent Score":111.02,
+    "Margin":35.52,
     "Opponent_y":"Hamilton Administration",
     "Score_y":146.54,
     "Opponent Score_y":111.02,
@@ -269,10 +269,10 @@
         32.2
       ]
     ],
-    "Opponent_x":"To infinity and Bijan",
-    "Score_x":177.46,
-    "Opponent Score_x":164.6,
-    "Margin_x":12.86,
+    "Opponent":"To infinity and Bijan",
+    "Score":177.46,
+    "Opponent Score":164.6,
+    "Margin":12.86,
     "Opponent_y":"To infinity and Bijan",
     "Score_y":177.46,
     "Opponent Score_y":164.6,

@@ -9,10 +9,10 @@
         22.0
       ]
     ],
-    "Opponent_x":"Jared's Pack Attack",
-    "Score_x":103.36,
-    "Opponent Score_x":115.6,
-    "Margin_x":-12.24,
+    "Opponent":"Jared's Pack Attack",
+    "Score":103.36,
+    "Opponent Score":115.6,
+    "Margin":-12.24,
     "Opponent_y":"Jared's Pack Attack",
     "Score_y":103.36,
     "Opponent Score_y":115.6,
@@ -29,10 +29,10 @@
         44.0
       ]
     ],
-    "Opponent_x":"Team Kareem Pie \ud83e\udd67",
-    "Score_x":149.26,
-    "Opponent Score_x":95.36,
-    "Margin_x":53.9,
+    "Opponent":"Team Kareem Pie \ud83e\udd67",
+    "Score":149.26,
+    "Opponent Score":95.36,
+    "Margin":53.9,
     "Opponent_y":"Team Kareem Pie \ud83e\udd67",
     "Score_y":149.26,
     "Opponent Score_y":95.36,
@@ -49,10 +49,10 @@
         25.36
       ]
     ],
-    "Opponent_x":"Jared's Pack Attack",
-    "Score_x":112.16,
-    "Opponent Score_x":105.78,
-    "Margin_x":6.38,
+    "Opponent":"Jared's Pack Attack",
+    "Score":112.16,
+    "Opponent Score":105.78,
+    "Margin":6.38,
     "Opponent_y":"Jared's Pack Attack",
     "Score_y":112.16,
     "Opponent Score_y":105.78,
@@ -69,10 +69,10 @@
         24.9
       ]
     ],
-    "Opponent_x":"How I Metcalf Your Mother",
-    "Score_x":132.26,
-    "Opponent Score_x":133.5,
-    "Margin_x":-1.24,
+    "Opponent":"How I Metcalf Your Mother",
+    "Score":132.26,
+    "Opponent Score":133.5,
+    "Margin":-1.24,
     "Opponent_y":"How I Metcalf Your Mother",
     "Score_y":132.26,
     "Opponent Score_y":133.5,
@@ -89,10 +89,10 @@
         18.6
       ]
     ],
-    "Opponent_x":"Hawaii McLovins VIII",
-    "Score_x":105.16,
-    "Opponent Score_x":123.88,
-    "Margin_x":-18.72,
+    "Opponent":"Hawaii McLovins VIII",
+    "Score":105.16,
+    "Opponent Score":123.88,
+    "Margin":-18.72,
     "Opponent_y":"Hawaii McLovins VIII",
     "Score_y":105.16,
     "Opponent Score_y":123.88,
@@ -109,10 +109,10 @@
         24.1
       ]
     ],
-    "Opponent_x":"First and Ted",
-    "Score_x":120.0,
-    "Opponent Score_x":101.26,
-    "Margin_x":18.74,
+    "Opponent":"First and Ted",
+    "Score":120.0,
+    "Opponent Score":101.26,
+    "Margin":18.74,
     "Opponent_y":"First and Ted",
     "Score_y":120.0,
     "Opponent Score_y":101.26,
@@ -129,10 +129,10 @@
         25.2
       ]
     ],
-    "Opponent_x":"Hamilton Administration",
-    "Score_x":106.94,
-    "Opponent Score_x":101.12,
-    "Margin_x":5.82,
+    "Opponent":"Hamilton Administration",
+    "Score":106.94,
+    "Opponent Score":101.12,
+    "Margin":5.82,
     "Opponent_y":"Hamilton Administration",
     "Score_y":106.94,
     "Opponent Score_y":101.12,
@@ -149,10 +149,10 @@
         26.0
       ]
     ],
-    "Opponent_x":"Hawaii McLovins VIII",
-    "Score_x":136.2,
-    "Opponent Score_x":174.12,
-    "Margin_x":-37.92,
+    "Opponent":"Hawaii McLovins VIII",
+    "Score":136.2,
+    "Opponent Score":174.12,
+    "Margin":-37.92,
     "Opponent_y":"Hawaii McLovins VIII",
     "Score_y":136.2,
     "Opponent Score_y":174.12,
@@ -169,10 +169,10 @@
         37.0
       ]
     ],
-    "Opponent_x":"Game of Throws",
-    "Score_x":150.34,
-    "Opponent Score_x":166.6,
-    "Margin_x":-16.26,
+    "Opponent":"Game of Throws",
+    "Score":150.34,
+    "Opponent Score":166.6,
+    "Margin":-16.26,
     "Opponent_y":"Game of Throws",
     "Score_y":150.34,
     "Opponent Score_y":166.6,
@@ -189,10 +189,10 @@
         33.72
       ]
     ],
-    "Opponent_x":"First and Ted",
-    "Score_x":146.12,
-    "Opponent Score_x":93.88,
-    "Margin_x":52.24,
+    "Opponent":"First and Ted",
+    "Score":146.12,
+    "Opponent Score":93.88,
+    "Margin":52.24,
     "Opponent_y":"First and Ted",
     "Score_y":146.12,
     "Opponent Score_y":93.88,
@@ -209,10 +209,10 @@
         38.7
       ]
     ],
-    "Opponent_x":"Amon a Mission",
-    "Score_x":135.04,
-    "Opponent Score_x":116.18,
-    "Margin_x":18.86,
+    "Opponent":"Amon a Mission",
+    "Score":135.04,
+    "Opponent Score":116.18,
+    "Margin":18.86,
     "Opponent_y":"Amon a Mission",
     "Score_y":135.04,
     "Opponent Score_y":116.18,
@@ -229,10 +229,10 @@
         25.3
       ]
     ],
-    "Opponent_x":"To infinity and Bijan",
-    "Score_x":112.56,
-    "Opponent Score_x":130.08,
-    "Margin_x":-17.52,
+    "Opponent":"To infinity and Bijan",
+    "Score":112.56,
+    "Opponent Score":130.08,
+    "Margin":-17.52,
     "Opponent_y":"To infinity and Bijan",
     "Score_y":112.56,
     "Opponent Score_y":130.08,
@@ -249,10 +249,10 @@
         21.6
       ]
     ],
-    "Opponent_x":"Amon a Mission",
-    "Score_x":126.56,
-    "Opponent Score_x":133.18,
-    "Margin_x":-6.62,
+    "Opponent":"Amon a Mission",
+    "Score":126.56,
+    "Opponent Score":133.18,
+    "Margin":-6.62,
     "Opponent_y":"Amon a Mission",
     "Score_y":126.56,
     "Opponent Score_y":133.18,
@@ -269,10 +269,10 @@
         28.0
       ]
     ],
-    "Opponent_x":"Team Kareem Pie \ud83e\udd67",
-    "Score_x":159.86,
-    "Opponent Score_x":146.0,
-    "Margin_x":13.86,
+    "Opponent":"Team Kareem Pie \ud83e\udd67",
+    "Score":159.86,
+    "Opponent Score":146.0,
+    "Margin":13.86,
     "Opponent_y":"Team Kareem Pie \ud83e\udd67",
     "Score_y":159.86,
     "Opponent Score_y":146.0,

@@ -42,6 +42,13 @@ players_df = pd.DataFrame(records)
 # Merge with luck information
 merged = pd.merge(players_df, luck_df, on=["Week", "Team"], how="left")
 
+merged = merged.rename(columns={
+    "Score_x": "Score",
+    "Opponent Score_x": "Opponent Score",
+    "Margin_x": "Margin",
+    "Opponent_x": "Opponent"
+})
+
 # Make a folder for team data
 os.makedirs("team_data", exist_ok=True)
 

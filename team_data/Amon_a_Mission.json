@@ -9,10 +9,10 @@
         33.2
       ]
     ],
-    "Opponent_x":"Hawaii McLovins VIII",
-    "Score_x":148.56,
-    "Opponent Score_x":117.12,
-    "Margin_x":31.44,
+    "Opponent":"Hawaii McLovins VIII",
+    "Score":148.56,
+    "Opponent Score":117.12,
+    "Margin":31.44,
     "Opponent_y":"Hawaii McLovins VIII",
     "Score_y":148.56,
     "Opponent Score_y":117.12,
@@ -29,10 +29,10 @@
         24.7
       ]
     ],
-    "Opponent_x":"Hamilton Administration",
-    "Score_x":114.2,
-    "Opponent Score_x":141.56,
-    "Margin_x":-27.36,
+    "Opponent":"Hamilton Administration",
+    "Score":114.2,
+    "Opponent Score":141.56,
+    "Margin":-27.36,
     "Opponent_y":"Hamilton Administration",
     "Score_y":114.2,
     "Opponent Score_y":141.56,
@@ -49,10 +49,10 @@
         33.6
       ]
     ],
-    "Opponent_x":"First and Ted",
-    "Score_x":107.1,
-    "Opponent Score_x":113.38,
-    "Margin_x":-6.28,
+    "Opponent":"First and Ted",
+    "Score":107.1,
+    "Opponent Score":113.38,
+    "Margin":-6.28,
     "Opponent_y":"First and Ted",
     "Score_y":107.1,
     "Opponent Score_y":113.38,
@@ -69,10 +69,10 @@
         24.0
       ]
     ],
-    "Opponent_x":"Team Kareem Pie \ud83e\udd67",
-    "Score_x":136.6,
-    "Opponent Score_x":140.58,
-    "Margin_x":-3.98,
+    "Opponent":"Team Kareem Pie \ud83e\udd67",
+    "Score":136.6,
+    "Opponent Score":140.58,
+    "Margin":-3.98,
     "Opponent_y":"Team Kareem Pie \ud83e\udd67",
     "Score_y":136.6,
     "Opponent Score_y":140.58,
@@ -89,10 +89,10 @@
         29.1
       ]
     ],
-    "Opponent_x":"To infinity and Bijan",
-    "Score_x":128.14,
-    "Opponent Score_x":122.62,
-    "Margin_x":5.52,
+    "Opponent":"To infinity and Bijan",
+    "Score":128.14,
+    "Opponent Score":122.62,
+    "Margin":5.52,
     "Opponent_y":"To infinity and Bijan",
     "Score_y":128.14,
     "Opponent Score_y":122.62,
@@ -109,10 +109,10 @@
         35.5
       ]
     ],
-    "Opponent_x":"Hawaii McLovins VIII",
-    "Score_x":150.38,
-    "Opponent Score_x":88.32,
-    "Margin_x":62.06,
+    "Opponent":"Hawaii McLovins VIII",
+    "Score":150.38,
+    "Opponent Score":88.32,
+    "Margin":62.06,
     "Opponent_y":"Hawaii McLovins VIII",
     "Score_y":150.38,
     "Opponent Score_y":88.32,
@@ -129,10 +129,10 @@
         26.7
       ]
     ],
-    "Opponent_x":"Jared's Pack Attack",
-    "Score_x":112.74,
-    "Opponent Score_x":134.2,
-    "Margin_x":-21.46,
+    "Opponent":"Jared's Pack Attack",
+    "Score":112.74,
+    "Opponent Score":134.2,
+    "Margin":-21.46,
     "Opponent_y":"Jared's Pack Attack",
     "Score_y":112.74,
     "Opponent Score_y":134.2,
@@ -149,10 +149,10 @@
         17.5
       ]
     ],
-    "Opponent_x":"To infinity and Bijan",
-    "Score_x":111.8,
-    "Opponent Score_x":163.38,
-    "Margin_x":-51.58,
+    "Opponent":"To infinity and Bijan",
+    "Score":111.8,
+    "Opponent Score":163.38,
+    "Margin":-51.58,
     "Opponent_y":"To infinity and Bijan",
     "Score_y":111.8,
     "Opponent Score_y":163.38,
@@ -169,10 +169,10 @@
         32.9
       ]
     ],
-    "Opponent_x":"Jared's Pack Attack",
-    "Score_x":130.38,
-    "Opponent Score_x":109.22,
-    "Margin_x":21.16,
+    "Opponent":"Jared's Pack Attack",
+    "Score":130.38,
+    "Opponent Score":109.22,
+    "Margin":21.16,
     "Opponent_y":"Jared's Pack Attack",
     "Score_y":130.38,
     "Opponent Score_y":109.22,
@@ -189,10 +189,10 @@
         19.0
       ]
     ],
-    "Opponent_x":"Team Kareem Pie \ud83e\udd67",
-    "Score_x":109.14,
-    "Opponent Score_x":131.94,
-    "Margin_x":-22.8,
+    "Opponent":"Team Kareem Pie \ud83e\udd67",
+    "Score":109.14,
+    "Opponent Score":131.94,
+    "Margin":-22.8,
     "Opponent_y":"Team Kareem Pie \ud83e\udd67",
     "Score_y":109.14,
     "Opponent Score_y":131.94,
@@ -209,10 +209,10 @@
         33.8
       ]
     ],
-    "Opponent_x":"The  Left Tacklers",
-    "Score_x":116.18,
-    "Opponent Score_x":135.04,
-    "Margin_x":-18.86,
+    "Opponent":"The  Left Tacklers",
+    "Score":116.18,
+    "Opponent Score":135.04,
+    "Margin":-18.86,
     "Opponent_y":"The  Left Tacklers",
     "Score_y":116.18,
     "Opponent Score_y":135.04,
@@ -229,10 +229,10 @@
         46.2
       ]
     ],
-    "Opponent_x":"Game of Throws",
-    "Score_x":151.88,
-    "Opponent Score_x":122.36,
-    "Margin_x":29.52,
+    "Opponent":"Game of Throws",
+    "Score":151.88,
+    "Opponent Score":122.36,
+    "Margin":29.52,
     "Opponent_y":"Game of Throws",
     "Score_y":151.88,
     "Opponent Score_y":122.36,
@@ -249,10 +249,10 @@
         27.3
       ]
     ],
-    "Opponent_x":"The  Left Tacklers",
-    "Score_x":133.18,
-    "Opponent Score_x":126.56,
-    "Margin_x":6.62,
+    "Opponent":"The  Left Tacklers",
+    "Score":133.18,
+    "Opponent Score":126.56,
+    "Margin":6.62,
     "Opponent_y":"The  Left Tacklers",
     "Score_y":133.18,
     "Opponent Score_y":126.56,
@@ -269,10 +269,10 @@
         24.9
       ]
     ],
-    "Opponent_x":"How I Metcalf Your Mother",
-    "Score_x":122.16,
-    "Opponent Score_x":81.7,
-    "Margin_x":40.46,
+    "Opponent":"How I Metcalf Your Mother",
+    "Score":122.16,
+    "Opponent Score":81.7,
+    "Margin":40.46,
     "Opponent_y":"How I Metcalf Your Mother",
     "Score_y":122.16,
     "Opponent Score_y":81.7,
