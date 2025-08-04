@@ -221,9 +221,9 @@
     </div>
 
     <div class="bar-section">
-        <h3>Points Scored vs Allowed</h3>
+        <h3>Points Scored vs Allowed (Per Game)</h3>
         <div class="bar-labels">
-        <span>Points For (PF)</span>
+        <span>PF/G</span>
         <span id="pf-value" class="bar-number">–</span>
         </div>
         <div class="bar pf-bar"><div id="pf-bar"></div><div class="league-line"></div></div>
@@ -234,7 +234,7 @@
         </div>
         <div class="bar pa-bar"><div id="pa-bar"></div> <div class="league-line"></div></div>
 
-        <p class="bar-note">Bar length represents PF and PA relative to league average.</p>
+        <p class="bar-note">Bar length represents PF/G and PA/G relative to league average.</p>
         </div>
     </div>
 
@@ -267,7 +267,7 @@
   <script>
     const teamSelect = document.getElementById("team-select");
     const teamNameHeading = document.getElementById("team-name");
-
+    let standingsData = [];
     function updateWinLossChart(data) {
       const weeks = [];
       let wins = 0;
@@ -312,40 +312,19 @@
       Plotly.newPlot('win-loss-chart', [winTrace, lossTrace], layout);
     }
 
-
-    async function loadTeams() {
-      try {
-        const res = await fetch("teams.json");
-        const teams = await res.json();
-
-        teams.forEach(team => {
-          const option = document.createElement("option");
-          option.value = team.replace(/\s+/g, "_");
-          option.text = team;
-          teamSelect.appendChild(option);
-        });
-
-        const urlParams = new URLSearchParams(window.location.search);
-        const defaultTeam = urlParams.get("team") || teamSelect.options[0].value;
-        teamSelect.value = defaultTeam;
-
-        loadTeam(defaultTeam, teams);
-
-        const standingsRes = await fetch("standings.json");
-        const standingsData = await standingsRes.json();
-        const teamNameFormatted = defaultTeam.replace(/_/g, " ");
-        const teamRow = standingsData.find(t => t["Team Name"].trim() === teamNameFormatted);
+    function updateBars(teamName) {
+      const teamRow = standingsData.find(t => t["Team Name"].trim() === teamName);
 
         if (teamRow) {
         document.getElementById("record").textContent = teamRow["Record"];
         document.getElementById("power-rank").textContent = teamRow["Power Ranking"];
         document.getElementById("luck-rank").textContent = teamRow["Luck Rank"];
 
-        const pf = teamRow["Points For(PF)"];
-        const pa = teamRow["Points Against(PA)"];
+        const pf = teamRow["PF/G"];
+        const pa = teamRow["PA/G"];
 
-        const avgPF = standingsData.reduce((sum, t) => sum + t["Points For(PF)"], 0) / standingsData.length;
-        const maxScale = 2000;
+        const avgPF = standingsData.reduce((sum, t) => sum + t["PF/G"], 0) / standingsData.length;
+        const maxScale = 150;
         const pfPct = Math.min(100, (pf / maxScale) * 100);
         const paPct = Math.min(100, (pa / maxScale) * 100);
         const avgPct = (avgPF / maxScale) * 100;
@@ -359,17 +338,41 @@
 
 
         document.getElementById("pf-bar").style.width = pfPct + "%";
-        document.getElementById("pf-bar").textContent = `PF: ${pf.toFixed(1)}`;
+        document.getElementById("pf-bar").textContent = `PF/G: ${pf.toFixed(2)}`;
 
         document.getElementById("pa-bar").style.width = paPct + "%";
-        document.getElementById("pa-bar").textContent = `PA: ${pa.toFixed(1)}`;
+        document.getElementById("pa-bar").textContent = `PA/G: ${pa.toFixed(2)}`;
 
-        document.getElementById("pf-value").textContent = pf.toFixed(1);
-        document.getElementById("pa-value").textContent = pa.toFixed(1);
+        document.getElementById("pf-value").textContent = pf.toFixed(2);
+        document.getElementById("pa-value").textContent = pa.toFixed(2);
 
         }
 
-      } catch (err) {
+      } 
+
+          async function loadTeams() {
+          try {
+            const res = await fetch("teams.json");
+            const teams = await res.json();
+
+            teams.forEach(team => {
+              const option = document.createElement("option");
+              option.value = team.replace(/\s+/g, "_");
+              option.text = team;
+              teamSelect.appendChild(option);
+            });
+
+            const urlParams = new URLSearchParams(window.location.search);
+            const defaultTeam = urlParams.get("team") || teamSelect.options[0].value;
+            teamSelect.value = defaultTeam;
+
+            const standingsRes = await fetch("standings.json");
+            standingsData = await standingsRes.json();
+            updateBars(defaultTeam.replace(/_/g, " "));
+
+            loadTeam(defaultTeam, teams);
+      
+          }catch (err) {
         document.getElementById('chart').innerHTML = "<p>Error loading team list</p>";
         console.error(err);
       }
@@ -470,6 +473,7 @@
       const teams = await res.json();
       window.history.replaceState(null, null, "?team=" + newTeam);
       loadTeam(newTeam, teams);
+      updateBars(newTeam.replace(/_/g, " "));
     });
 
     loadTeams();
