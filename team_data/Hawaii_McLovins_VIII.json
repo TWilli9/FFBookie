@@ -13,10 +13,6 @@
     "Score":117.12,
     "Opponent Score":148.56,
     "Margin":-31.44,
-    "Opponent_y":"Amon a Mission",
-    "Score_y":117.12,
-    "Opponent Score_y":148.56,
-    "Margin_y":-31.44,
     "Luck Score":-0.46
   },
   {
@@ -33,10 +29,6 @@
     "Score":94.52,
     "Opponent Score":139.8,
     "Margin":-45.28,
-    "Opponent_y":"Jared's Pack Attack",
-    "Score_y":94.52,
-    "Opponent Score_y":139.8,
-    "Margin_y":-45.28,
     "Luck Score":-0.23
   },
   {
@@ -53,10 +45,6 @@
     "Score":86.14,
     "Opponent Score":106.88,
     "Margin":-20.74,
-    "Opponent_y":"How I Metcalf Your Mother",
-    "Score_y":86.14,
-    "Opponent Score_y":106.88,
-    "Margin_y":-20.74,
     "Luck Score":-0.083
   },
   {
@@ -73,10 +61,6 @@
     "Score":126.14,
     "Opponent Score":103.5,
     "Margin":22.64,
-    "Opponent_y":"Hamilton Administration",
-    "Score_y":126.14,
-    "Opponent Score_y":103.5,
-    "Margin_y":22.64,
     "Luck Score":0.481
   },
   {
@@ -93,10 +77,6 @@
     "Score":123.88,
     "Opponent Score":105.16,
     "Margin":18.72,
-    "Opponent_y":"The  Left Tacklers",
-    "Score_y":123.88,
-    "Opponent Score_y":105.16,
-    "Margin_y":18.72,
     "Luck Score":0.637
   },
   {
@@ -113,10 +93,6 @@
     "Score":88.32,
     "Opponent Score":150.38,
     "Margin":-62.06,
-    "Opponent_y":"Amon a Mission",
-    "Score_y":88.32,
-    "Opponent Score_y":150.38,
-    "Margin_y":-62.06,
     "Luck Score":-0.167
   },
   {
@@ -133,10 +109,6 @@
     "Score":108.08,
     "Opponent Score":96.16,
     "Margin":11.92,
-    "Opponent_y":"Game of Throws",
-    "Score_y":108.08,
-    "Opponent Score_y":96.16,
-    "Margin_y":11.92,
     "Luck Score":0.539
   },
   {
@@ -153,10 +125,6 @@
     "Score":174.12,
     "Opponent Score":136.2,
     "Margin":37.92,
-    "Opponent_y":"The  Left Tacklers",
-    "Score_y":174.12,
-    "Opponent Score_y":136.2,
-    "Margin_y":37.92,
     "Luck Score":0.216
   },
   {
@@ -173,10 +141,6 @@
     "Score":110.3,
     "Opponent Score":124.4,
     "Margin":-14.1,
-    "Opponent_y":"Team Kareem Pie \ud83e\udd67",
-    "Score_y":110.3,
-    "Opponent Score_y":124.4,
-    "Margin_y":-14.1,
     "Luck Score":-0.508
   },
   {
@@ -193,10 +157,6 @@
     "Score":105.94,
     "Opponent Score":123.48,
     "Margin":-17.54,
-    "Opponent_y":"Game of Throws",
-    "Score_y":105.94,
-    "Opponent Score_y":123.48,
-    "Margin_y":-17.54,
     "Luck Score":-0.549
   },
   {
@@ -213,10 +173,6 @@
     "Score":155.78,
     "Opponent Score":143.0,
     "Margin":12.78,
-    "Opponent_y":"Team Kareem Pie \ud83e\udd67",
-    "Score_y":155.78,
-    "Opponent Score_y":143.0,
-    "Margin_y":12.78,
     "Luck Score":0.438
   },
   {
@@ -233,10 +189,6 @@
     "Score":147.62,
     "Opponent Score":131.7,
     "Margin":15.92,
-    "Opponent_y":"First and Ted",
-    "Score_y":147.62,
-    "Opponent Score_y":131.7,
-    "Margin_y":15.92,
     "Luck Score":0.297
   },
   {
@@ -253,10 +205,6 @@
     "Score":117.38,
     "Opponent Score":140.28,
     "Margin":-22.9,
-    "Opponent_y":"To infinity and Bijan",
-    "Score_y":117.38,
-    "Opponent Score_y":140.28,
-    "Margin_y":-22.9,
     "Luck Score":-0.394
   },
   {
@@ -273,10 +221,6 @@
     "Score":110.92,
     "Opponent Score":130.84,
     "Margin":-19.92,
-    "Opponent_y":"Jared's Pack Attack",
-    "Score_y":110.92,
-    "Opponent Score_y":130.84,
-    "Margin_y":-19.92,
     "Luck Score":-0.504
   }
 ]

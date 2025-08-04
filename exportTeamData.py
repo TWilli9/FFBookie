@@ -42,12 +42,16 @@ players_df = pd.DataFrame(records)
 # Merge with luck information
 merged = pd.merge(players_df, luck_df, on=["Week", "Team"], how="left")
 
+# ✅ Rename merged columns for frontend compatibility
 merged = merged.rename(columns={
     "Score_x": "Score",
     "Opponent Score_x": "Opponent Score",
     "Margin_x": "Margin",
     "Opponent_x": "Opponent"
 })
+
+# ✅ Drop unnecessary duplicated _y columns
+merged = merged.drop(columns=[col for col in merged.columns if col.endswith('_y')])
 
 # Make a folder for team data
 os.makedirs("team_data", exist_ok=True)
