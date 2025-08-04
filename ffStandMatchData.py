@@ -76,22 +76,23 @@ def getStandings(league):
         for name, value in sosDf.set_index('Team Name')['SOS'].items()
     }
 
-    standings = [
-        {
-            'Team Name': ' '.join(team.team_name.strip().split()),
-            'Projected Scores': projectedScores.get(team.team_name, 'N/A'),
+    standings = []
+    for team in teams:
+        clean_team_name = ' '.join(team.team_name.strip().split())  # normalize spacing
+
+        standings.append({
+            'Team Name': clean_team_name,
+            'Projected Scores': projectedScores.get(clean_team_name, 'N/A'),
             'Record': f"{team.wins}-{team.losses}",
             'Points For(PF)': team.points_for,
             'Points Against(PA)': team.points_against,
             'PF/G': round((team.points_for) / currentWeek, 2),
-            'PA/G' : round((team.points_against) / currentWeek, 2),
+            'PA/G': round((team.points_against) / currentWeek, 2),
             'DIFF': round((team.points_for / currentWeek) - (team.points_against / currentWeek), 2),
-            'Power Ranking': powerRankingsDict.get(team.team_name, 'N/A'),
-            'SOS' : sosDict.get(team.team_name, 'N/A'),
+            'Power Ranking': powerRankingsDict.get(clean_team_name, 'N/A'),
+            'SOS': sosDict.get(clean_team_name, 'N/A'),
+        })
 
-        }
-        for team in teams
-    ]
 
     df = pd.DataFrame(standings)
 
