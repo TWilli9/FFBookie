@@ -214,6 +214,8 @@
 
     <div class="summary-grid">
         <div><strong>Record:</strong> <span id="record">–</span></div>
+        <div><strong>Streak:</strong> <span id="current-streak">–</span></div>
+        <div><strong>Longest W/L Streak:</strong> <span id="longest-streak">–</span></div>
         <div><strong>Power Rank:</strong> <span id="power-rank">–</span></div>
         <div><strong>Luck Rank:</strong> <span id="luck-rank">–</span></div>
     </div>
@@ -410,6 +412,49 @@
         });
 
         updateWinLossChart(data);
+
+        // Calculate streaks
+        let currentType = null;
+        let currentCount = 0;
+        for (let i = data.length - 1; i >= 0; i--) {
+          const type = data[i].Margin > 0 ? 'W' : data[i].Margin < 0 ? 'L' : 'T';
+          if (type === 'T') {
+            if (currentType) break;
+            else continue;
+          }
+          if (!currentType) {
+            currentType = type;
+            currentCount = 1;
+          } else if (type === currentType) {
+            currentCount++;
+          } else {
+            break;
+          }
+        }
+        const currentStreak = currentType ? `${currentType}${currentCount}` : '–';
+
+        let longestWin = 0;
+        let longestLoss = 0;
+        let winCount = 0;
+        let lossCount = 0;
+        data.forEach(r => {
+          if (r.Margin > 0) {
+            winCount++;
+            lossCount = 0;
+            if (winCount > longestWin) longestWin = winCount;
+          } else if (r.Margin < 0) {
+            lossCount++;
+            winCount = 0;
+            if (lossCount > longestLoss) longestLoss = lossCount;
+          } else {
+            winCount = 0;
+            lossCount = 0;
+          }
+        });
+
+        document.getElementById("current-streak").textContent = currentStreak;
+        document.getElementById("longest-streak").textContent = `W${longestWin} / L${longestLoss}`;
+
 
       } catch (err) {
         document.querySelector("#matchup-table tbody").innerHTML = `<tr><td colspan="6">Error loading data for ${displayName}</td></tr>`;
