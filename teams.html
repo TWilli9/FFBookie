@@ -218,6 +218,10 @@
         <div><strong>Longest W/L Streak:</strong> <span id="longest-streak">–</span></div>
         <div><strong>Power Rank:</strong> <span id="power-rank">–</span></div>
         <div><strong>Luck Rank:</strong> <span id="luck-rank">–</span></div>
+        <div><strong>Highest-scoring Week:</strong> <span id="high-week">–</span></div>
+        <div><strong>Lowest-scoring Week:</strong> <span id="low-week">–</span></div>
+        <div><strong>Biggest Win:</strong> <span id="biggest-win">–</span></div>
+        <div><strong>Worst Loss:</strong> <span id="worst-loss">–</span></div>
     </div>
 
     <div class="bar-section">
@@ -415,6 +419,29 @@
         });
 
         updateWinLossChart(data);
+
+        // Season highs/lows
+        const highWeek = data.reduce((max, r) => (r.Score > max.Score ? r : max), data[0]);
+        const lowWeek = data.reduce((min, r) => (r.Score < min.Score ? r : min), data[0]);
+        document.getElementById("high-week").textContent = `Week ${highWeek.Week} (${highWeek.Score.toFixed(2)})`;
+        document.getElementById("low-week").textContent = `Week ${lowWeek.Week} (${lowWeek.Score.toFixed(2)})`;
+
+        const wins = data.filter(r => r.Margin > 0);
+        if (wins.length > 0) {
+          const bestWin = wins.reduce((max, r) => (r.Margin > max.Margin ? r : max));
+          document.getElementById("biggest-win").textContent = `Week ${bestWin.Week} (+${bestWin.Margin.toFixed(2)})`;
+        } else {
+          document.getElementById("biggest-win").textContent = '–';
+        }
+
+        const losses = data.filter(r => r.Margin < 0);
+        if (losses.length > 0) {
+          const worstLoss = losses.reduce((min, r) => (r.Margin < min.Margin ? r : min));
+          document.getElementById("worst-loss").textContent = `Week ${worstLoss.Week} (${worstLoss.Margin.toFixed(2)})`;
+        } else {
+          document.getElementById("worst-loss").textContent = '–';
+        }
+
 
         // Calculate streaks
         let currentType = null;
