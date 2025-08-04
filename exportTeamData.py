@@ -13,20 +13,28 @@ for week in range(1, currentWeek + 1):
 all_matchups = pd.concat(all_weeks, ignore_index=True)
 luck_df = calculateLuckScore(all_matchups)
 
-# Build a per-team dataframe including top players
+# Build a per-team dataframe including top players, scores, opponent, and margin
 records = []
 for _, row in all_matchups.iterrows():
     records.append({
         "Week": row["Week"],
         "Side": "Home Team",
         "Team": row["Home Team"].strip(),
-        "Top Scorer": row.get("Home Top Player") or row.get("Home Top Players")
+        "Top Scorer": row.get("Home Top Player") or row.get("Home Top Players"),
+        "Opponent": row["Away Team"].strip(),
+        "Score": row["Home Actual Score"],
+        "Opponent Score": row["Away Actual Score"],
+        "Margin": row["Home Actual Score"] - row["Away Actual Score"]
     })
     records.append({
         "Week": row["Week"],
         "Side": "Away Team",
         "Team": row["Away Team"].strip(),
-        "Top Scorer": row.get("Away Top Player") or row.get("Away Top Players")
+        "Top Scorer": row.get("Away Top Player") or row.get("Away Top Players"),
+        "Opponent": row["Home Team"].strip(),
+        "Score": row["Away Actual Score"],
+        "Opponent Score": row["Home Actual Score"],
+        "Margin": row["Away Actual Score"] - row["Home Actual Score"]
     })
 
 players_df = pd.DataFrame(records)
@@ -45,14 +53,12 @@ for team in merged["Team"].unique():
     team_df.to_json(filename, orient="records", indent=2)
     print(f"Exported {filename}")
 
-
 # Collect all clean team names from filenames
 team_names = sorted([
     ' '.join(filename.replace('.json', '').replace('_', ' ').strip().split())
     for filename in os.listdir("team_data")
     if filename.endswith(".json")
 ])
-
 
 # Save to teams.json
 with open("teams.json", "w") as f:

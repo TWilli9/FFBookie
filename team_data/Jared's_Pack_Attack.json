@@ -3,140 +3,280 @@
     "Week":1,
     "Side":"Home Team",
     "Team":"Jared's Pack Attack",
-    "Opponent":"The  Left Tacklers",
-    "Score":115.6,
-    "Opponent Score":103.36,
-    "Margin":12.24,
+    "Top Scorer":[
+      [
+        "Vikings D\/ST",
+        21.0
+      ]
+    ],
+    "Opponent_x":"The  Left Tacklers",
+    "Score_x":115.6,
+    "Opponent Score_x":103.36,
+    "Margin_x":12.24,
+    "Opponent_y":"The  Left Tacklers",
+    "Score_y":115.6,
+    "Opponent Score_y":103.36,
+    "Margin_y":12.24,
     "Luck Score":0.549
   },
   {
     "Week":2,
     "Side":"Away Team",
     "Team":"Jared's Pack Attack",
-    "Opponent":"Hawaii McLovins VIII",
-    "Score":139.8,
-    "Opponent Score":94.52,
-    "Margin":45.28,
+    "Top Scorer":[
+      [
+        "DK Metcalf",
+        28.9
+      ]
+    ],
+    "Opponent_x":"Hawaii McLovins VIII",
+    "Score_x":139.8,
+    "Opponent Score_x":94.52,
+    "Margin_x":45.28,
+    "Opponent_y":"Hawaii McLovins VIII",
+    "Score_y":139.8,
+    "Opponent Score_y":94.52,
+    "Margin_y":45.28,
     "Luck Score":0.33
   },
   {
     "Week":3,
     "Side":"Away Team",
     "Team":"Jared's Pack Attack",
-    "Opponent":"The  Left Tacklers",
-    "Score":105.78,
-    "Opponent Score":112.16,
-    "Margin":-6.38,
+    "Top Scorer":[
+      [
+        "Aaron Jones",
+        25.8
+      ]
+    ],
+    "Opponent_x":"The  Left Tacklers",
+    "Score_x":105.78,
+    "Opponent Score_x":112.16,
+    "Margin_x":-6.38,
+    "Opponent_y":"The  Left Tacklers",
+    "Score_y":105.78,
+    "Opponent Score_y":112.16,
+    "Margin_y":-6.38,
     "Luck Score":-0.496
   },
   {
     "Week":4,
     "Side":"Home Team",
     "Team":"Jared's Pack Attack",
-    "Opponent":"First and Ted",
-    "Score":127.76,
-    "Opponent Score":137.92,
-    "Margin":-10.16,
+    "Top Scorer":[
+      [
+        "Jordan Love",
+        28.16
+      ]
+    ],
+    "Opponent_x":"First and Ted",
+    "Score_x":127.76,
+    "Opponent Score_x":137.92,
+    "Margin_x":-10.16,
+    "Opponent_y":"First and Ted",
+    "Score_y":127.76,
+    "Opponent Score_y":137.92,
+    "Margin_y":-10.16,
     "Luck Score":-0.61
   },
   {
     "Week":5,
     "Side":"Home Team",
     "Team":"Jared's Pack Attack",
-    "Opponent":"How I Metcalf Your Mother",
-    "Score":100.76,
-    "Opponent Score":134.84,
-    "Margin":-34.08,
+    "Top Scorer":[
+      [
+        "Brock Bowers",
+        23.7
+      ]
+    ],
+    "Opponent_x":"How I Metcalf Your Mother",
+    "Score_x":100.76,
+    "Opponent Score_x":134.84,
+    "Margin_x":-34.08,
+    "Opponent_y":"How I Metcalf Your Mother",
+    "Score_y":100.76,
+    "Opponent Score_y":134.84,
+    "Margin_y":-34.08,
     "Luck Score":-0.51
   },
   {
     "Week":6,
     "Side":"Away Team",
     "Team":"Jared's Pack Attack",
-    "Opponent":"Team Kareem Pie \ud83e\udd67",
-    "Score":135.92,
-    "Opponent Score":150.9,
-    "Margin":-14.98,
+    "Top Scorer":[
+      [
+        "Jordan Love",
+        25.62
+      ]
+    ],
+    "Opponent_x":"Team Kareem Pie \ud83e\udd67",
+    "Score_x":135.92,
+    "Opponent Score_x":150.9,
+    "Margin_x":-14.98,
+    "Opponent_y":"Team Kareem Pie \ud83e\udd67",
+    "Score_y":135.92,
+    "Opponent Score_y":150.9,
+    "Margin_y":-14.98,
     "Luck Score":-0.763
   },
   {
     "Week":7,
     "Side":"Home Team",
     "Team":"Jared's Pack Attack",
-    "Opponent":"Amon a Mission",
-    "Score":134.2,
-    "Opponent Score":112.74,
-    "Margin":21.46,
+    "Top Scorer":[
+      [
+        "Breece Hall",
+        26.1
+      ]
+    ],
+    "Opponent_x":"Amon a Mission",
+    "Score_x":134.2,
+    "Opponent Score_x":112.74,
+    "Margin_x":21.46,
+    "Opponent_y":"Amon a Mission",
+    "Score_y":134.2,
+    "Opponent Score_y":112.74,
+    "Margin_y":21.46,
     "Luck Score":0.133
   },
   {
     "Week":8,
     "Side":"Home Team",
     "Team":"Jared's Pack Attack",
-    "Opponent":"How I Metcalf Your Mother",
-    "Score":104.84,
-    "Opponent Score":124.7,
-    "Margin":-19.86,
+    "Top Scorer":[
+      [
+        "Calvin Ridley",
+        22.6
+      ]
+    ],
+    "Opponent_x":"How I Metcalf Your Mother",
+    "Score_x":104.84,
+    "Opponent Score_x":124.7,
+    "Margin_x":-19.86,
+    "Opponent_y":"How I Metcalf Your Mother",
+    "Score_y":104.84,
+    "Opponent Score_y":124.7,
+    "Margin_y":-19.86,
     "Luck Score":-0.391
   },
   {
     "Week":9,
     "Side":"Home Team",
     "Team":"Jared's Pack Attack",
-    "Opponent":"Amon a Mission",
-    "Score":109.22,
-    "Opponent Score":130.38,
-    "Margin":-21.16,
+    "Top Scorer":[
+      [
+        "Tony Pollard",
+        18.4
+      ]
+    ],
+    "Opponent_x":"Amon a Mission",
+    "Score_x":109.22,
+    "Opponent Score_x":130.38,
+    "Margin_x":-21.16,
+    "Opponent_y":"Amon a Mission",
+    "Score_y":109.22,
+    "Opponent Score_y":130.38,
+    "Margin_y":-21.16,
     "Luck Score":-0.428
   },
   {
     "Week":10,
     "Side":"Away Team",
     "Team":"Jared's Pack Attack",
-    "Opponent":"To infinity and Bijan",
-    "Score":115.14,
-    "Opponent Score":140.8,
-    "Margin":-25.66,
+    "Top Scorer":[
+      [
+        "Calvin Ridley",
+        25.4
+      ]
+    ],
+    "Opponent_x":"To infinity and Bijan",
+    "Score_x":115.14,
+    "Opponent Score_x":140.8,
+    "Margin_x":-25.66,
+    "Opponent_y":"To infinity and Bijan",
+    "Score_y":115.14,
+    "Opponent Score_y":140.8,
+    "Margin_y":-25.66,
     "Luck Score":-0.571
   },
   {
     "Week":11,
     "Side":"Home Team",
     "Team":"Jared's Pack Attack",
-    "Opponent":"Hamilton Administration",
-    "Score":150.84,
-    "Opponent Score":101.28,
-    "Margin":49.56,
+    "Top Scorer":[
+      [
+        "Brock Bowers",
+        31.3
+      ]
+    ],
+    "Opponent_x":"Hamilton Administration",
+    "Score_x":150.84,
+    "Opponent Score_x":101.28,
+    "Margin_x":49.56,
+    "Opponent_y":"Hamilton Administration",
+    "Score_y":150.84,
+    "Opponent Score_y":101.28,
+    "Margin_y":49.56,
     "Luck Score":0.167
   },
   {
     "Week":12,
     "Side":"Home Team",
     "Team":"Jared's Pack Attack",
-    "Opponent":"Team Kareem Pie \ud83e\udd67",
-    "Score":118.82,
-    "Opponent Score":91.56,
-    "Margin":27.26,
+    "Top Scorer":[
+      [
+        "Tony Pollard",
+        21.9
+      ]
+    ],
+    "Opponent_x":"Team Kareem Pie \ud83e\udd67",
+    "Score_x":118.82,
+    "Opponent Score_x":91.56,
+    "Margin_x":27.26,
+    "Opponent_y":"Team Kareem Pie \ud83e\udd67",
+    "Score_y":118.82,
+    "Opponent Score_y":91.56,
+    "Margin_y":27.26,
     "Luck Score":0.388
   },
   {
     "Week":13,
     "Side":"Home Team",
     "Team":"Jared's Pack Attack",
-    "Opponent":"Game of Throws",
-    "Score":116.16,
-    "Opponent Score":143.22,
-    "Margin":-27.06,
+    "Top Scorer":[
+      [
+        "Brock Bowers",
+        30.2
+      ]
+    ],
+    "Opponent_x":"Game of Throws",
+    "Score_x":116.16,
+    "Opponent Score_x":143.22,
+    "Margin_x":-27.06,
+    "Opponent_y":"Game of Throws",
+    "Score_y":116.16,
+    "Opponent Score_y":143.22,
+    "Margin_y":-27.06,
     "Luck Score":-0.319
   },
   {
     "Week":14,
     "Side":"Away Team",
     "Team":"Jared's Pack Attack",
-    "Opponent":"Hawaii McLovins VIII",
-    "Score":130.84,
-    "Opponent Score":110.92,
-    "Margin":19.92,
+    "Top Scorer":[
+      [
+        "Puka Nacua",
+        41.8
+      ]
+    ],
+    "Opponent_x":"Hawaii McLovins VIII",
+    "Score_x":130.84,
+    "Opponent Score_x":110.92,
+    "Margin_x":19.92,
+    "Opponent_y":"Hawaii McLovins VIII",
+    "Score_y":130.84,
+    "Opponent Score_y":110.92,
+    "Margin_y":19.92,
     "Luck Score":0.654
   }
 ]

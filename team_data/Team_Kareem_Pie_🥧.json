@@ -3,140 +3,280 @@
     "Week":1,
     "Side":"Home Team",
     "Team":"Team Kareem Pie \ud83e\udd67",
-    "Opponent":"Hamilton Administration",
-    "Score":113.88,
-    "Opponent Score":105.08,
-    "Margin":8.8,
+    "Top Scorer":[
+      [
+        "Joe Mixon",
+        26.8
+      ]
+    ],
+    "Opponent_x":"Hamilton Administration",
+    "Score_x":113.88,
+    "Opponent Score_x":105.08,
+    "Margin_x":8.8,
+    "Opponent_y":"Hamilton Administration",
+    "Score_y":113.88,
+    "Opponent Score_y":105.08,
+    "Margin_y":8.8,
     "Luck Score":0.634
   },
   {
     "Week":2,
     "Side":"Away Team",
     "Team":"Team Kareem Pie \ud83e\udd67",
-    "Opponent":"The  Left Tacklers",
-    "Score":95.36,
-    "Opponent Score":149.26,
-    "Margin":-53.9,
+    "Top Scorer":[
+      [
+        "Derrick Henry",
+        16.6
+      ]
+    ],
+    "Opponent_x":"The  Left Tacklers",
+    "Score_x":95.36,
+    "Opponent Score_x":149.26,
+    "Margin_x":-53.9,
+    "Opponent_y":"The  Left Tacklers",
+    "Score_y":95.36,
+    "Opponent Score_y":149.26,
+    "Margin_y":-53.9,
     "Luck Score":-0.217
   },
   {
     "Week":3,
     "Side":"Away Team",
     "Team":"Team Kareem Pie \ud83e\udd67",
-    "Opponent":"To infinity and Bijan",
-    "Score":148.04,
-    "Opponent Score":165.08,
-    "Margin":-17.04,
+    "Top Scorer":[
+      [
+        "Derrick Henry",
+        30.4
+      ]
+    ],
+    "Opponent_x":"To infinity and Bijan",
+    "Score_x":148.04,
+    "Opponent Score_x":165.08,
+    "Margin_x":-17.04,
+    "Opponent_y":"To infinity and Bijan",
+    "Score_y":148.04,
+    "Opponent Score_y":165.08,
+    "Margin_y":-17.04,
     "Luck Score":-0.556
   },
   {
     "Week":4,
     "Side":"Home Team",
     "Team":"Team Kareem Pie \ud83e\udd67",
-    "Opponent":"Amon a Mission",
-    "Score":140.58,
-    "Opponent Score":136.6,
-    "Margin":3.98,
+    "Top Scorer":[
+      [
+        "Derrick Henry",
+        35.9
+      ]
+    ],
+    "Opponent_x":"Amon a Mission",
+    "Score_x":140.58,
+    "Opponent Score_x":136.6,
+    "Margin_x":3.98,
+    "Opponent_y":"Amon a Mission",
+    "Score_y":140.58,
+    "Opponent Score_y":136.6,
+    "Margin_y":3.98,
     "Luck Score":0.465
   },
   {
     "Week":5,
     "Side":"Home Team",
     "Team":"Team Kareem Pie \ud83e\udd67",
-    "Opponent":"Game of Throws",
-    "Score":174.7,
-    "Opponent Score":92.06,
-    "Margin":82.64,
+    "Top Scorer":[
+      [
+        "Ja'Marr Chase",
+        41.3
+      ]
+    ],
+    "Opponent_x":"Game of Throws",
+    "Score_x":174.7,
+    "Opponent Score_x":92.06,
+    "Margin_x":82.64,
+    "Opponent_y":"Game of Throws",
+    "Score_y":174.7,
+    "Opponent Score_y":92.06,
+    "Margin_y":82.64,
     "Luck Score":0.15
   },
   {
     "Week":6,
     "Side":"Home Team",
     "Team":"Team Kareem Pie \ud83e\udd67",
-    "Opponent":"Jared's Pack Attack",
-    "Score":150.9,
-    "Opponent Score":135.92,
-    "Margin":14.98,
+    "Top Scorer":[
+      [
+        "Joe Mixon",
+        27.2
+      ]
+    ],
+    "Opponent_x":"Jared's Pack Attack",
+    "Score_x":150.9,
+    "Opponent Score_x":135.92,
+    "Margin_x":14.98,
+    "Opponent_y":"Jared's Pack Attack",
+    "Score_y":150.9,
+    "Opponent Score_y":135.92,
+    "Margin_y":14.98,
     "Luck Score":0.463
   },
   {
     "Week":7,
     "Side":"Away Team",
     "Team":"Team Kareem Pie \ud83e\udd67",
-    "Opponent":"First and Ted",
-    "Score":134.8,
-    "Opponent Score":135.64,
-    "Margin":-0.84,
+    "Top Scorer":[
+      [
+        "Baker Mayfield",
+        27.0
+      ]
+    ],
+    "Opponent_x":"First and Ted",
+    "Score_x":134.8,
+    "Opponent Score_x":135.64,
+    "Margin_x":-0.84,
+    "Opponent_y":"First and Ted",
+    "Score_y":134.8,
+    "Opponent Score_y":135.64,
+    "Margin_y":-0.84,
     "Luck Score":-0.947
   },
   {
     "Week":8,
     "Side":"Away Team",
     "Team":"Team Kareem Pie \ud83e\udd67",
-    "Opponent":"Hamilton Administration",
-    "Score":129.7,
-    "Opponent Score":139.92,
-    "Margin":-10.22,
+    "Top Scorer":[
+      [
+        "Joe Mixon",
+        23.4
+      ]
+    ],
+    "Opponent_x":"Hamilton Administration",
+    "Score_x":129.7,
+    "Opponent Score_x":139.92,
+    "Margin_x":-10.22,
+    "Opponent_y":"Hamilton Administration",
+    "Score_y":129.7,
+    "Opponent Score_y":139.92,
+    "Margin_y":-10.22,
     "Luck Score":-0.634
   },
   {
     "Week":9,
     "Side":"Home Team",
     "Team":"Team Kareem Pie \ud83e\udd67",
-    "Opponent":"Hawaii McLovins VIII",
-    "Score":124.4,
-    "Opponent Score":110.3,
-    "Margin":14.1,
+    "Top Scorer":[
+      [
+        "Derrick Henry",
+        26.3
+      ]
+    ],
+    "Opponent_x":"Hawaii McLovins VIII",
+    "Score_x":124.4,
+    "Opponent Score_x":110.3,
+    "Margin_x":14.1,
+    "Opponent_y":"Hawaii McLovins VIII",
+    "Score_y":124.4,
+    "Opponent Score_y":110.3,
+    "Margin_y":14.1,
     "Luck Score":0.658
   },
   {
     "Week":10,
     "Side":"Away Team",
     "Team":"Team Kareem Pie \ud83e\udd67",
-    "Opponent":"Amon a Mission",
-    "Score":131.94,
-    "Opponent Score":109.14,
-    "Margin":22.8,
+    "Top Scorer":[
+      [
+        "Ja'Marr Chase",
+        55.4
+      ]
+    ],
+    "Opponent_x":"Amon a Mission",
+    "Score_x":131.94,
+    "Opponent Score_x":109.14,
+    "Margin_x":22.8,
+    "Opponent_y":"Amon a Mission",
+    "Score_y":131.94,
+    "Opponent Score_y":109.14,
+    "Margin_y":22.8,
     "Luck Score":0.448
   },
   {
     "Week":11,
     "Side":"Away Team",
     "Team":"Team Kareem Pie \ud83e\udd67",
-    "Opponent":"Hawaii McLovins VIII",
-    "Score":143.0,
-    "Opponent Score":155.78,
-    "Margin":-12.78,
+    "Top Scorer":[
+      [
+        "Joe Mixon",
+        35.3
+      ]
+    ],
+    "Opponent_x":"Hawaii McLovins VIII",
+    "Score_x":143.0,
+    "Opponent Score_x":155.78,
+    "Margin_x":-12.78,
+    "Opponent_y":"Hawaii McLovins VIII",
+    "Score_y":143.0,
+    "Opponent Score_y":155.78,
+    "Margin_y":-12.78,
     "Luck Score":-0.738
   },
   {
     "Week":12,
     "Side":"Away Team",
     "Team":"Team Kareem Pie \ud83e\udd67",
-    "Opponent":"Jared's Pack Attack",
-    "Score":91.56,
-    "Opponent Score":118.82,
-    "Margin":-27.26,
+    "Top Scorer":[
+      [
+        "Keenan Allen",
+        23.6
+      ]
+    ],
+    "Opponent_x":"Jared's Pack Attack",
+    "Score_x":91.56,
+    "Opponent Score_x":118.82,
+    "Margin_x":-27.26,
+    "Opponent_y":"Jared's Pack Attack",
+    "Score_y":91.56,
+    "Opponent Score_y":118.82,
+    "Margin_y":-27.26,
     "Luck Score":-0.138
   },
   {
     "Week":13,
     "Side":"Home Team",
     "Team":"Team Kareem Pie \ud83e\udd67",
-    "Opponent":"How I Metcalf Your Mother",
-    "Score":135.2,
-    "Opponent Score":149.84,
-    "Margin":-14.64,
+    "Top Scorer":[
+      [
+        "David Njoku",
+        26.2
+      ]
+    ],
+    "Opponent_x":"How I Metcalf Your Mother",
+    "Score_x":135.2,
+    "Opponent Score_x":149.84,
+    "Margin_x":-14.64,
+    "Opponent_y":"How I Metcalf Your Mother",
+    "Score_y":135.2,
+    "Opponent Score_y":149.84,
+    "Margin_y":-14.64,
     "Luck Score":-0.661
   },
   {
     "Week":14,
     "Side":"Home Team",
     "Team":"Team Kareem Pie \ud83e\udd67",
-    "Opponent":"The  Left Tacklers",
-    "Score":146.0,
-    "Opponent Score":159.86,
-    "Margin":-13.86,
+    "Top Scorer":[
+      [
+        "Ja'Marr Chase",
+        45.1
+      ]
+    ],
+    "Opponent_x":"The  Left Tacklers",
+    "Score_x":146.0,
+    "Opponent Score_x":159.86,
+    "Margin_x":-13.86,
+    "Opponent_y":"The  Left Tacklers",
+    "Score_y":146.0,
+    "Opponent Score_y":159.86,
+    "Margin_y":-13.86,
     "Luck Score":-0.715
   }
 ]

@@ -3,140 +3,280 @@
     "Week":1,
     "Side":"Home Team",
     "Team":"Hawaii McLovins VIII",
-    "Opponent":"Amon a Mission",
-    "Score":117.12,
-    "Opponent Score":148.56,
-    "Margin":-31.44,
+    "Top Scorer":[
+      [
+        "Tyreek Hill",
+        26.0
+      ]
+    ],
+    "Opponent_x":"Amon a Mission",
+    "Score_x":117.12,
+    "Opponent Score_x":148.56,
+    "Margin_x":-31.44,
+    "Opponent_y":"Amon a Mission",
+    "Score_y":117.12,
+    "Opponent Score_y":148.56,
+    "Margin_y":-31.44,
     "Luck Score":-0.46
   },
   {
     "Week":2,
     "Side":"Home Team",
     "Team":"Hawaii McLovins VIII",
-    "Opponent":"Jared's Pack Attack",
-    "Score":94.52,
-    "Opponent Score":139.8,
-    "Margin":-45.28,
+    "Top Scorer":[
+      [
+        "Jalen Hurts",
+        23.82
+      ]
+    ],
+    "Opponent_x":"Jared's Pack Attack",
+    "Score_x":94.52,
+    "Opponent Score_x":139.8,
+    "Margin_x":-45.28,
+    "Opponent_y":"Jared's Pack Attack",
+    "Score_y":94.52,
+    "Opponent Score_y":139.8,
+    "Margin_y":-45.28,
     "Luck Score":-0.23
   },
   {
     "Week":3,
     "Side":"Away Team",
     "Team":"Hawaii McLovins VIII",
-    "Opponent":"How I Metcalf Your Mother",
-    "Score":86.14,
-    "Opponent Score":106.88,
-    "Margin":-20.74,
+    "Top Scorer":[
+      [
+        "Chris Olave",
+        20.6
+      ]
+    ],
+    "Opponent_x":"How I Metcalf Your Mother",
+    "Score_x":86.14,
+    "Opponent Score_x":106.88,
+    "Margin_x":-20.74,
+    "Opponent_y":"How I Metcalf Your Mother",
+    "Score_y":86.14,
+    "Opponent Score_y":106.88,
+    "Margin_y":-20.74,
     "Luck Score":-0.083
   },
   {
     "Week":4,
     "Side":"Away Team",
     "Team":"Hawaii McLovins VIII",
-    "Opponent":"Hamilton Administration",
-    "Score":126.14,
-    "Opponent Score":103.5,
-    "Margin":22.64,
+    "Top Scorer":[
+      [
+        "D'Andre Swift",
+        29.5
+      ]
+    ],
+    "Opponent_x":"Hamilton Administration",
+    "Score_x":126.14,
+    "Opponent Score_x":103.5,
+    "Margin_x":22.64,
+    "Opponent_y":"Hamilton Administration",
+    "Score_y":126.14,
+    "Opponent Score_y":103.5,
+    "Margin_y":22.64,
     "Luck Score":0.481
   },
   {
     "Week":5,
     "Side":"Home Team",
     "Team":"Hawaii McLovins VIII",
-    "Opponent":"The  Left Tacklers",
-    "Score":123.88,
-    "Opponent Score":105.16,
-    "Margin":18.72,
+    "Top Scorer":[
+      [
+        "George Kittle",
+        20.4
+      ]
+    ],
+    "Opponent_x":"The  Left Tacklers",
+    "Score_x":123.88,
+    "Opponent Score_x":105.16,
+    "Margin_x":18.72,
+    "Opponent_y":"The  Left Tacklers",
+    "Score_y":123.88,
+    "Opponent Score_y":105.16,
+    "Margin_y":18.72,
     "Luck Score":0.637
   },
   {
     "Week":6,
     "Side":"Away Team",
     "Team":"Hawaii McLovins VIII",
-    "Opponent":"Amon a Mission",
-    "Score":88.32,
-    "Opponent Score":150.38,
-    "Margin":-62.06,
+    "Top Scorer":[
+      [
+        "George Kittle",
+        22.8
+      ]
+    ],
+    "Opponent_x":"Amon a Mission",
+    "Score_x":88.32,
+    "Opponent Score_x":150.38,
+    "Margin_x":-62.06,
+    "Opponent_y":"Amon a Mission",
+    "Score_y":88.32,
+    "Opponent Score_y":150.38,
+    "Margin_y":-62.06,
     "Luck Score":-0.167
   },
   {
     "Week":7,
     "Side":"Away Team",
     "Team":"Hawaii McLovins VIII",
-    "Opponent":"Game of Throws",
-    "Score":108.08,
-    "Opponent Score":96.16,
-    "Margin":11.92,
+    "Top Scorer":[
+      [
+        "Jahmyr Gibbs",
+        32.0
+      ]
+    ],
+    "Opponent_x":"Game of Throws",
+    "Score_x":108.08,
+    "Opponent Score_x":96.16,
+    "Margin_x":11.92,
+    "Opponent_y":"Game of Throws",
+    "Score_y":108.08,
+    "Opponent Score_y":96.16,
+    "Margin_y":11.92,
     "Luck Score":0.539
   },
   {
     "Week":8,
     "Side":"Home Team",
     "Team":"Hawaii McLovins VIII",
-    "Opponent":"The  Left Tacklers",
-    "Score":174.12,
-    "Opponent Score":136.2,
-    "Margin":37.92,
+    "Top Scorer":[
+      [
+        "Ladd McConkey",
+        29.1
+      ]
+    ],
+    "Opponent_x":"The  Left Tacklers",
+    "Score_x":174.12,
+    "Opponent Score_x":136.2,
+    "Margin_x":37.92,
+    "Opponent_y":"The  Left Tacklers",
+    "Score_y":174.12,
+    "Opponent Score_y":136.2,
+    "Margin_y":37.92,
     "Luck Score":0.216
   },
   {
     "Week":9,
     "Side":"Away Team",
     "Team":"Hawaii McLovins VIII",
-    "Opponent":"Team Kareem Pie \ud83e\udd67",
-    "Score":110.3,
-    "Opponent Score":124.4,
-    "Margin":-14.1,
+    "Top Scorer":[
+      [
+        "Travis Kelce",
+        22.0
+      ]
+    ],
+    "Opponent_x":"Team Kareem Pie \ud83e\udd67",
+    "Score_x":110.3,
+    "Opponent Score_x":124.4,
+    "Margin_x":-14.1,
+    "Opponent_y":"Team Kareem Pie \ud83e\udd67",
+    "Score_y":110.3,
+    "Opponent Score_y":124.4,
+    "Margin_y":-14.1,
     "Luck Score":-0.508
   },
   {
     "Week":10,
     "Side":"Away Team",
     "Team":"Hawaii McLovins VIII",
-    "Opponent":"Game of Throws",
-    "Score":105.94,
-    "Opponent Score":123.48,
-    "Margin":-17.54,
+    "Top Scorer":[
+      [
+        "Bills D\/ST",
+        17.0
+      ]
+    ],
+    "Opponent_x":"Game of Throws",
+    "Score_x":105.94,
+    "Opponent Score_x":123.48,
+    "Margin_x":-17.54,
+    "Opponent_y":"Game of Throws",
+    "Score_y":105.94,
+    "Opponent Score_y":123.48,
+    "Margin_y":-17.54,
     "Luck Score":-0.549
   },
   {
     "Week":11,
     "Side":"Home Team",
     "Team":"Hawaii McLovins VIII",
-    "Opponent":"Team Kareem Pie \ud83e\udd67",
-    "Score":155.78,
-    "Opponent Score":143.0,
-    "Margin":12.78,
+    "Top Scorer":[
+      [
+        "Bo Nix",
+        28.78
+      ]
+    ],
+    "Opponent_x":"Team Kareem Pie \ud83e\udd67",
+    "Score_x":155.78,
+    "Opponent Score_x":143.0,
+    "Margin_x":12.78,
+    "Opponent_y":"Team Kareem Pie \ud83e\udd67",
+    "Score_y":155.78,
+    "Opponent Score_y":143.0,
+    "Margin_y":12.78,
     "Luck Score":0.438
   },
   {
     "Week":12,
     "Side":"Home Team",
     "Team":"Hawaii McLovins VIII",
-    "Opponent":"First and Ted",
-    "Score":147.62,
-    "Opponent Score":131.7,
-    "Margin":15.92,
+    "Top Scorer":[
+      [
+        "Josh Jacobs",
+        28.6
+      ]
+    ],
+    "Opponent_x":"First and Ted",
+    "Score_x":147.62,
+    "Opponent Score_x":131.7,
+    "Margin_x":15.92,
+    "Opponent_y":"First and Ted",
+    "Score_y":147.62,
+    "Opponent Score_y":131.7,
+    "Margin_y":15.92,
     "Luck Score":0.297
   },
   {
     "Week":13,
     "Side":"Away Team",
     "Team":"Hawaii McLovins VIII",
-    "Opponent":"To infinity and Bijan",
-    "Score":117.38,
-    "Opponent Score":140.28,
-    "Margin":-22.9,
+    "Top Scorer":[
+      [
+        "Josh Jacobs",
+        21.7
+      ]
+    ],
+    "Opponent_x":"To infinity and Bijan",
+    "Score_x":117.38,
+    "Opponent Score_x":140.28,
+    "Margin_x":-22.9,
+    "Opponent_y":"To infinity and Bijan",
+    "Score_y":117.38,
+    "Opponent Score_y":140.28,
+    "Margin_y":-22.9,
     "Luck Score":-0.394
   },
   {
     "Week":14,
     "Side":"Home Team",
     "Team":"Hawaii McLovins VIII",
-    "Opponent":"Jared's Pack Attack",
-    "Score":110.92,
-    "Opponent Score":130.84,
-    "Margin":-19.92,
+    "Top Scorer":[
+      [
+        "Josh Jacobs",
+        24.6
+      ]
+    ],
+    "Opponent_x":"Jared's Pack Attack",
+    "Score_x":110.92,
+    "Opponent Score_x":130.84,
+    "Margin_x":-19.92,
+    "Opponent_y":"Jared's Pack Attack",
+    "Score_y":110.92,
+    "Opponent Score_y":130.84,
+    "Margin_y":-19.92,
     "Luck Score":-0.504
   }
 ]

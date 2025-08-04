@@ -2,141 +2,281 @@
   {
     "Week":1,
     "Side":"Away Team",
-    "Team":"Hamilton Administration ",
-    "Opponent":null,
-    "Score":null,
-    "Opponent Score":null,
-    "Margin":null,
-    "Luck Score":null
+    "Team":"Hamilton Administration",
+    "Top Scorer":[
+      [
+        "Josh Allen",
+        31.18
+      ]
+    ],
+    "Opponent_x":"Team Kareem Pie \ud83e\udd67",
+    "Score_x":105.08,
+    "Opponent Score_x":113.88,
+    "Margin_x":-8.8,
+    "Opponent_y":"Team Kareem Pie \ud83e\udd67",
+    "Score_y":105.08,
+    "Opponent Score_y":113.88,
+    "Margin_y":-8.8,
+    "Luck Score":-0.559
   },
   {
     "Week":2,
     "Side":"Home Team",
-    "Team":"Hamilton Administration ",
-    "Opponent":null,
-    "Score":null,
-    "Opponent Score":null,
-    "Margin":null,
-    "Luck Score":null
+    "Team":"Hamilton Administration",
+    "Top Scorer":[
+      [
+        "Malik Nabers",
+        28.7
+      ]
+    ],
+    "Opponent_x":"Amon a Mission",
+    "Score_x":141.56,
+    "Opponent Score_x":114.2,
+    "Margin_x":27.36,
+    "Opponent_y":"Amon a Mission",
+    "Score_y":141.56,
+    "Opponent Score_y":114.2,
+    "Margin_y":27.36,
+    "Luck Score":0.396
   },
   {
     "Week":3,
     "Side":"Home Team",
-    "Team":"Hamilton Administration ",
-    "Opponent":null,
-    "Score":null,
-    "Opponent Score":null,
-    "Margin":null,
-    "Luck Score":null
+    "Team":"Hamilton Administration",
+    "Top Scorer":[
+      [
+        "Josh Allen",
+        30.92
+      ]
+    ],
+    "Opponent_x":"Game of Throws",
+    "Score_x":120.92,
+    "Opponent Score_x":121.46,
+    "Margin_x":-0.54,
+    "Opponent_y":"Game of Throws",
+    "Score_y":120.92,
+    "Opponent Score_y":121.46,
+    "Margin_y":-0.54,
+    "Luck Score":-0.854
   },
   {
     "Week":4,
     "Side":"Home Team",
-    "Team":"Hamilton Administration ",
-    "Opponent":null,
-    "Score":null,
-    "Opponent Score":null,
-    "Margin":null,
-    "Luck Score":null
+    "Team":"Hamilton Administration",
+    "Top Scorer":[
+      [
+        "Malik Nabers",
+        23.1
+      ]
+    ],
+    "Opponent_x":"Hawaii McLovins VIII",
+    "Score_x":103.5,
+    "Opponent Score_x":126.14,
+    "Margin_x":-22.64,
+    "Opponent_y":"Hawaii McLovins VIII",
+    "Score_y":103.5,
+    "Opponent Score_y":126.14,
+    "Margin_y":-22.64,
+    "Luck Score":-0.231
   },
   {
     "Week":5,
     "Side":"Home Team",
-    "Team":"Hamilton Administration ",
-    "Opponent":null,
-    "Score":null,
-    "Opponent Score":null,
-    "Margin":null,
-    "Luck Score":null
+    "Team":"Hamilton Administration",
+    "Top Scorer":[
+      [
+        "Drake London",
+        33.4
+      ]
+    ],
+    "Opponent_x":"First and Ted",
+    "Score_x":127.64,
+    "Opponent Score_x":123.52,
+    "Margin_x":4.12,
+    "Opponent_y":"First and Ted",
+    "Score_y":127.64,
+    "Opponent Score_y":123.52,
+    "Margin_y":4.12,
+    "Luck Score":0.658
   },
   {
     "Week":6,
     "Side":"Home Team",
-    "Team":"Hamilton Administration ",
-    "Opponent":null,
-    "Score":null,
-    "Opponent Score":null,
-    "Margin":null,
-    "Luck Score":null
+    "Team":"Hamilton Administration",
+    "Top Scorer":[
+      [
+        "Josh Allen",
+        24.4
+      ]
+    ],
+    "Opponent_x":"To infinity and Bijan",
+    "Score_x":113.0,
+    "Opponent Score_x":114.62,
+    "Margin_x":-1.62,
+    "Opponent_y":"To infinity and Bijan",
+    "Score_y":113.0,
+    "Opponent Score_y":114.62,
+    "Margin_y":-1.62,
+    "Luck Score":-0.704
   },
   {
     "Week":7,
     "Side":"Away Team",
-    "Team":"Hamilton Administration ",
-    "Opponent":null,
-    "Score":null,
-    "Opponent Score":null,
-    "Margin":null,
-    "Luck Score":null
+    "Team":"Hamilton Administration",
+    "Top Scorer":[
+      [
+        "Josh Allen",
+        21.02
+      ]
+    ],
+    "Opponent_x":"The  Left Tacklers",
+    "Score_x":101.12,
+    "Opponent Score_x":106.94,
+    "Margin_x":-5.82,
+    "Opponent_y":"The  Left Tacklers",
+    "Score_y":101.12,
+    "Opponent Score_y":106.94,
+    "Margin_y":-5.82,
+    "Luck Score":-0.498
   },
   {
     "Week":8,
     "Side":"Home Team",
-    "Team":"Hamilton Administration ",
-    "Opponent":null,
-    "Score":null,
-    "Opponent Score":null,
-    "Margin":null,
-    "Luck Score":null
+    "Team":"Hamilton Administration",
+    "Top Scorer":[
+      [
+        "Cade Otton",
+        29.1
+      ]
+    ],
+    "Opponent_x":"Team Kareem Pie \ud83e\udd67",
+    "Score_x":139.92,
+    "Opponent Score_x":129.7,
+    "Margin_x":10.22,
+    "Opponent_y":"Team Kareem Pie \ud83e\udd67",
+    "Score_y":139.92,
+    "Opponent Score_y":129.7,
+    "Margin_y":10.22,
+    "Luck Score":0.634
   },
   {
     "Week":9,
     "Side":"Away Team",
-    "Team":"Hamilton Administration ",
-    "Opponent":null,
-    "Score":null,
-    "Opponent Score":null,
-    "Margin":null,
-    "Luck Score":null
+    "Team":"Hamilton Administration",
+    "Top Scorer":[
+      [
+        "Zay Flowers",
+        29.7
+      ]
+    ],
+    "Opponent_x":"To infinity and Bijan",
+    "Score_x":168.8,
+    "Opponent Score_x":124.5,
+    "Margin_x":44.3,
+    "Opponent_y":"To infinity and Bijan",
+    "Score_y":168.8,
+    "Opponent Score_y":124.5,
+    "Margin_y":44.3,
+    "Luck Score":0.083
   },
   {
     "Week":10,
     "Side":"Home Team",
-    "Team":"Hamilton Administration ",
-    "Opponent":null,
-    "Score":null,
-    "Opponent Score":null,
-    "Margin":null,
-    "Luck Score":null
+    "Team":"Hamilton Administration",
+    "Top Scorer":[
+      [
+        "Chuba Hubbard",
+        24.9
+      ]
+    ],
+    "Opponent_x":"How I Metcalf Your Mother",
+    "Score_x":118.3,
+    "Opponent Score_x":105.0,
+    "Margin_x":13.3,
+    "Opponent_y":"How I Metcalf Your Mother",
+    "Score_y":118.3,
+    "Opponent Score_y":105.0,
+    "Margin_y":13.3,
+    "Luck Score":0.639
   },
   {
     "Week":11,
     "Side":"Away Team",
-    "Team":"Hamilton Administration ",
-    "Opponent":null,
-    "Score":null,
-    "Opponent Score":null,
-    "Margin":null,
-    "Luck Score":null
+    "Team":"Hamilton Administration",
+    "Top Scorer":[
+      [
+        "Josh Allen",
+        23.98
+      ]
+    ],
+    "Opponent_x":"Jared's Pack Attack",
+    "Score_x":101.28,
+    "Opponent Score_x":150.84,
+    "Margin_x":-49.56,
+    "Opponent_y":"Jared's Pack Attack",
+    "Score_y":101.28,
+    "Opponent Score_y":150.84,
+    "Margin_y":-49.56,
+    "Luck Score":-0.217
   },
   {
     "Week":12,
     "Side":"Away Team",
-    "Team":"Hamilton Administration ",
-    "Opponent":null,
-    "Score":null,
-    "Opponent Score":null,
-    "Margin":null,
-    "Luck Score":null
+    "Team":"Hamilton Administration",
+    "Top Scorer":[
+      [
+        "Jordan Addison",
+        30.2
+      ]
+    ],
+    "Opponent_x":"How I Metcalf Your Mother",
+    "Score_x":121.38,
+    "Opponent Score_x":117.16,
+    "Margin_x":4.22,
+    "Opponent_y":"How I Metcalf Your Mother",
+    "Score_y":121.38,
+    "Opponent Score_y":117.16,
+    "Margin_y":4.22,
+    "Luck Score":0.712
   },
   {
     "Week":13,
     "Side":"Home Team",
-    "Team":"Hamilton Administration ",
-    "Opponent":null,
-    "Score":null,
-    "Opponent Score":null,
-    "Margin":null,
-    "Luck Score":null
+    "Team":"Hamilton Administration",
+    "Top Scorer":[
+      [
+        "Josh Allen",
+        28.42
+      ]
+    ],
+    "Opponent_x":"First and Ted",
+    "Score_x":111.02,
+    "Opponent Score_x":146.54,
+    "Margin_x":-35.52,
+    "Opponent_y":"First and Ted",
+    "Score_y":111.02,
+    "Opponent Score_y":146.54,
+    "Margin_y":-35.52,
+    "Luck Score":-0.183
   },
   {
     "Week":14,
     "Side":"Home Team",
-    "Team":"Hamilton Administration ",
-    "Opponent":null,
-    "Score":null,
-    "Opponent Score":null,
-    "Margin":null,
-    "Luck Score":null
+    "Team":"Hamilton Administration",
+    "Top Scorer":[
+      [
+        "Josh Allen",
+        51.88
+      ]
+    ],
+    "Opponent_x":"Game of Throws",
+    "Score_x":188.08,
+    "Opponent Score_x":119.72,
+    "Margin_x":68.36,
+    "Opponent_y":"Game of Throws",
+    "Score_y":188.08,
+    "Opponent Score_y":119.72,
+    "Margin_y":68.36,
+    "Luck Score":0.117
   }
 ]

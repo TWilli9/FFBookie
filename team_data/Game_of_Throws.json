@@ -3,140 +3,280 @@
     "Week":1,
     "Side":"Home Team",
     "Team":"Game of Throws",
-    "Opponent":"First and Ted",
-    "Score":147.08,
-    "Opponent Score":113.88,
-    "Margin":33.2,
+    "Top Scorer":[
+      [
+        "Cooper Kupp",
+        32.0
+      ]
+    ],
+    "Opponent_x":"First and Ted",
+    "Score_x":147.08,
+    "Opponent Score_x":113.88,
+    "Margin_x":33.2,
+    "Opponent_y":"First and Ted",
+    "Score_y":147.08,
+    "Opponent Score_y":113.88,
+    "Margin_y":33.2,
     "Luck Score":0.108
   },
   {
     "Week":2,
     "Side":"Away Team",
     "Team":"Game of Throws",
-    "Opponent":"How I Metcalf Your Mother",
-    "Score":110.68,
-    "Opponent Score":100.74,
-    "Margin":9.94,
+    "Top Scorer":[
+      [
+        "DeVonta Smith",
+        20.6
+      ]
+    ],
+    "Opponent_x":"How I Metcalf Your Mother",
+    "Score_x":110.68,
+    "Opponent Score_x":100.74,
+    "Margin_x":9.94,
+    "Opponent_y":"How I Metcalf Your Mother",
+    "Score_y":110.68,
+    "Opponent Score_y":100.74,
+    "Margin_y":9.94,
     "Luck Score":0.724
   },
   {
     "Week":3,
     "Side":"Away Team",
     "Team":"Game of Throws",
-    "Opponent":"Hamilton Administration",
-    "Score":121.46,
-    "Opponent Score":120.92,
-    "Margin":0.54,
+    "Top Scorer":[
+      [
+        "Rashee Rice",
+        29.1
+      ]
+    ],
+    "Opponent_x":"Hamilton Administration",
+    "Score_x":121.46,
+    "Opponent Score_x":120.92,
+    "Margin_x":0.54,
+    "Opponent_y":"Hamilton Administration",
+    "Score_y":121.46,
+    "Opponent Score_y":120.92,
+    "Margin_y":0.54,
     "Luck Score":0.604
   },
   {
     "Week":4,
     "Side":"Home Team",
     "Team":"Game of Throws",
-    "Opponent":"To infinity and Bijan",
-    "Score":98.92,
-    "Opponent Score":128.24,
-    "Margin":-29.32,
+    "Top Scorer":[
+      [
+        "Mike Evans",
+        23.4
+      ]
+    ],
+    "Opponent_x":"To infinity and Bijan",
+    "Score_x":98.92,
+    "Opponent Score_x":128.24,
+    "Margin_x":-29.32,
+    "Opponent_y":"To infinity and Bijan",
+    "Score_y":98.92,
+    "Opponent Score_y":128.24,
+    "Margin_y":-29.32,
     "Luck Score":-0.117
   },
   {
     "Week":5,
     "Side":"Away Team",
     "Team":"Game of Throws",
-    "Opponent":"Team Kareem Pie \ud83e\udd67",
-    "Score":92.06,
-    "Opponent Score":174.7,
-    "Margin":-82.64,
+    "Top Scorer":[
+      [
+        "Mike Evans",
+        23.2
+      ]
+    ],
+    "Opponent_x":"Team Kareem Pie \ud83e\udd67",
+    "Score_x":92.06,
+    "Opponent Score_x":174.7,
+    "Margin_x":-82.64,
+    "Opponent_y":"Team Kareem Pie \ud83e\udd67",
+    "Score_y":92.06,
+    "Opponent Score_y":174.7,
+    "Margin_y":-82.64,
     "Luck Score":-0.2
   },
   {
     "Week":6,
     "Side":"Away Team",
     "Team":"Game of Throws",
-    "Opponent":"How I Metcalf Your Mother",
-    "Score":155.46,
-    "Opponent Score":101.7,
-    "Margin":53.76,
+    "Top Scorer":[
+      [
+        "Bijan Robinson",
+        25.5
+      ]
+    ],
+    "Opponent_x":"How I Metcalf Your Mother",
+    "Score_x":155.46,
+    "Opponent Score_x":101.7,
+    "Margin_x":53.76,
+    "Opponent_y":"How I Metcalf Your Mother",
+    "Score_y":155.46,
+    "Opponent Score_y":101.7,
+    "Margin_y":53.76,
     "Luck Score":0.184
   },
   {
     "Week":7,
     "Side":"Home Team",
     "Team":"Game of Throws",
-    "Opponent":"Hawaii McLovins VIII",
-    "Score":96.16,
-    "Opponent Score":108.08,
-    "Margin":-11.92,
+    "Top Scorer":[
+      [
+        "Bijan Robinson",
+        23.3
+      ]
+    ],
+    "Opponent_x":"Hawaii McLovins VIII",
+    "Score_x":96.16,
+    "Opponent Score_x":108.08,
+    "Margin_x":-11.92,
+    "Opponent_y":"Hawaii McLovins VIII",
+    "Score_y":96.16,
+    "Opponent Score_y":108.08,
+    "Margin_y":-11.92,
     "Luck Score":-0.339
   },
   {
     "Week":8,
     "Side":"Away Team",
     "Team":"Game of Throws",
-    "Opponent":"First and Ted",
-    "Score":162.34,
-    "Opponent Score":155.58,
-    "Margin":6.76,
+    "Top Scorer":[
+      [
+        "Jalen Hurts",
+        35.14
+      ]
+    ],
+    "Opponent_x":"First and Ted",
+    "Score_x":162.34,
+    "Opponent Score_x":155.58,
+    "Margin_x":6.76,
+    "Opponent_y":"First and Ted",
+    "Score_y":162.34,
+    "Opponent Score_y":155.58,
+    "Margin_y":6.76,
     "Luck Score":0.551
   },
   {
     "Week":9,
     "Side":"Home Team",
     "Team":"Game of Throws",
-    "Opponent":"The  Left Tacklers",
-    "Score":166.6,
-    "Opponent Score":150.34,
-    "Margin":16.26,
+    "Top Scorer":[
+      [
+        "Jalen Hurts",
+        29.9
+      ]
+    ],
+    "Opponent_x":"The  Left Tacklers",
+    "Score_x":166.6,
+    "Opponent Score_x":150.34,
+    "Margin_x":16.26,
+    "Opponent_y":"The  Left Tacklers",
+    "Score_y":166.6,
+    "Opponent Score_y":150.34,
+    "Margin_y":16.26,
     "Luck Score":0.383
   },
   {
     "Week":10,
     "Side":"Home Team",
     "Team":"Game of Throws",
-    "Opponent":"Hawaii McLovins VIII",
-    "Score":123.48,
-    "Opponent Score":105.94,
-    "Margin":17.54,
+    "Top Scorer":[
+      [
+        "Jalen Hurts",
+        29.68
+      ]
+    ],
+    "Opponent_x":"Hawaii McLovins VIII",
+    "Score_x":123.48,
+    "Opponent Score_x":105.94,
+    "Margin_x":17.54,
+    "Opponent_y":"Hawaii McLovins VIII",
+    "Score_y":123.48,
+    "Opponent Score_y":105.94,
+    "Margin_y":17.54,
     "Luck Score":0.549
   },
   {
     "Week":11,
     "Side":"Home Team",
     "Team":"Game of Throws",
-    "Opponent":"To infinity and Bijan",
-    "Score":143.96,
-    "Opponent Score":143.18,
-    "Margin":0.78,
+    "Top Scorer":[
+      [
+        "Taysom Hill",
+        41.52
+      ]
+    ],
+    "Opponent_x":"To infinity and Bijan",
+    "Score_x":143.96,
+    "Opponent Score_x":143.18,
+    "Margin_x":0.78,
+    "Opponent_y":"To infinity and Bijan",
+    "Score_y":143.96,
+    "Opponent Score_y":143.18,
+    "Margin_y":0.78,
     "Luck Score":0.609
   },
   {
     "Week":12,
     "Side":"Away Team",
     "Team":"Game of Throws",
-    "Opponent":"Amon a Mission",
-    "Score":122.36,
-    "Opponent Score":151.88,
-    "Margin":-29.52,
+    "Top Scorer":[
+      [
+        "Bucky Irving",
+        27.2
+      ]
+    ],
+    "Opponent_x":"Amon a Mission",
+    "Score_x":122.36,
+    "Opponent Score_x":151.88,
+    "Margin_x":-29.52,
+    "Opponent_y":"Amon a Mission",
+    "Score_y":122.36,
+    "Opponent Score_y":151.88,
+    "Margin_y":-29.52,
     "Luck Score":-0.367
   },
   {
     "Week":13,
     "Side":"Away Team",
     "Team":"Game of Throws",
-    "Opponent":"Jared's Pack Attack",
-    "Score":143.22,
-    "Opponent Score":116.16,
-    "Margin":27.06,
+    "Top Scorer":[
+      [
+        "Bucky Irving",
+        27.5
+      ]
+    ],
+    "Opponent_x":"Jared's Pack Attack",
+    "Score_x":143.22,
+    "Opponent Score_x":116.16,
+    "Margin_x":27.06,
+    "Opponent_y":"Jared's Pack Attack",
+    "Score_y":143.22,
+    "Opponent Score_y":116.16,
+    "Margin_y":27.06,
     "Luck Score":0.319
   },
   {
     "Week":14,
     "Side":"Away Team",
     "Team":"Game of Throws",
-    "Opponent":"Hamilton Administration",
-    "Score":119.72,
-    "Opponent Score":188.08,
-    "Margin":-68.36,
+    "Top Scorer":[
+      [
+        "Jalen Hurts",
+        24.22
+      ]
+    ],
+    "Opponent_x":"Hamilton Administration",
+    "Score_x":119.72,
+    "Opponent Score_x":188.08,
+    "Margin_x":-68.36,
+    "Opponent_y":"Hamilton Administration",
+    "Score_y":119.72,
+    "Opponent Score_y":188.08,
+    "Margin_y":-68.36,
     "Luck Score":-0.267
   }
 ]
