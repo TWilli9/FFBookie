@@ -394,8 +394,9 @@
             const tr = document.createElement("tr");
 
             const top = Array.isArray(row["Top Scorer"]) && row["Top Scorer"].length > 0
-              ? `${row["Top Scorer"][0]} (${row["Top Scorer"][1]} pts)`
+              ? `${row["Top Scorer"][0][0]}, ${row["Top Scorer"][0][1]} pts`
               : "–";
+
 
             tr.innerHTML = `
               <td>${row.Week}</td>
