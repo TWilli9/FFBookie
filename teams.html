@@ -184,6 +184,39 @@
       height: 400px;
     }
 
+    .roster-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      margin-top: 20px;
+    }
+
+    .roster-column {
+      flex: 1;
+    }
+
+    .roster-column h2 {
+      font-size: 1.3em;
+      border-bottom: 2px solid #ccc;
+      margin-bottom: 10px;
+    }
+
+    .roster-column h3 {
+      margin: 10px 0 5px;
+      font-size: 1.1em;
+      font-weight: bold;
+    }
+
+    .roster-column ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin: 0 0 15px 0;
+    }
+
+    .roster-column li {
+      padding: 2px 0;
+    }
+
 
     @media (max-width: 768px) {
       h1 {
@@ -251,7 +284,7 @@
 
     <div class="section" id="roster-section">
       <h2>Roster</h2>
-      <ul id="roster-list"></ul>
+      <div id="roster-list" class="roster-container"></div>
     </div>
 
     <div class="section" id="matchup-history">
@@ -363,21 +396,59 @@
     }
 
     function updateRoster(teamName) {
-      const rosterList = document.getElementById("roster-list");
-      rosterList.innerHTML = "";
+      const rosterContainer = document.getElementById("roster-list");
+      rosterContainer.innerHTML = "";
       const roster = rosterData[teamName];
-      if (roster && roster.length > 0) {
-        roster.forEach(player => {
-          const li = document.createElement("li");
-          li.textContent = `${player.position} - ${player.name}`;
-          rosterList.appendChild(li);
-        });
-      } else {
-        const li = document.createElement("li");
-        li.textContent = "No roster data available.";
-        rosterList.appendChild(li);
+
+      if (!roster || roster.length === 0) {
+        rosterContainer.innerHTML = "<p>No roster data available.</p>";
+        return;
       }
+
+      const starters = {};
+      const bench = {};
+
+      roster.forEach(player => {
+        const slot = player.lineupSlot || "Other";
+        const target = (slot === "BE" || slot === "IR") ? bench : starters;
+
+        if (!target[slot]) target[slot] = [];
+        target[slot].push(player.name);
+      });
+
+      function createRosterColumn(title, data) {
+        const column = document.createElement("div");
+        column.className = "roster-column";
+
+        const sectionTitle = document.createElement("h2");
+        sectionTitle.textContent = title;
+        column.appendChild(sectionTitle);
+
+        Object.keys(data).forEach(slot => {
+          const slotHeader = document.createElement("h3");
+          slotHeader.textContent = slot;
+          column.appendChild(slotHeader);
+
+          const ul = document.createElement("ul");
+          data[slot].forEach(name => {
+            const li = document.createElement("li");
+            li.textContent = name;
+            ul.appendChild(li);
+          });
+
+          column.appendChild(ul);
+        });
+
+        return column;
+      }
+
+      // Create and append both columns
+      const startersCol = createRosterColumn("Starters", starters);
+      const benchCol = createRosterColumn("Bench / IR", bench);
+      rosterContainer.appendChild(startersCol);
+      rosterContainer.appendChild(benchCol);
     }
+
 
     async function loadTeams() {
       try {
