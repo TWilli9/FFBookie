@@ -249,6 +249,11 @@
       <div id="win-loss-chart"></div>
     </div>
 
+    <div class="section" id="roster-section">
+      <h2>Roster</h2>
+      <ul id="roster-list"></ul>
+    </div>
+
     <div class="section" id="matchup-history">
     <h2>Matchup History</h2>
     <table id="matchup-table" style="width: 100%; border-collapse: collapse;">
@@ -274,6 +279,7 @@
     const teamSelect = document.getElementById("team-select");
     const teamNameHeading = document.getElementById("team-name");
     let standingsData = [];
+    let rosterData = {};
     function updateWinLossChart(data) {
       const weeks = [];
       let wins = 0;
@@ -352,33 +358,51 @@
         document.getElementById("pf-value").textContent = pf.toFixed(2);
         document.getElementById("pa-value").textContent = pa.toFixed(2);
 
-        }
+      }
 
-      } 
+    }
 
-          async function loadTeams() {
-          try {
-            const res = await fetch("teams.json");
-            const teams = await res.json();
+    function updateRoster(teamName) {
+      const rosterList = document.getElementById("roster-list");
+      rosterList.innerHTML = "";
+      const roster = rosterData[teamName];
+      if (roster && roster.length > 0) {
+        roster.forEach(player => {
+          const li = document.createElement("li");
+          li.textContent = `${player.position} - ${player.name}`;
+          rosterList.appendChild(li);
+        });
+      } else {
+        const li = document.createElement("li");
+        li.textContent = "No roster data available.";
+        rosterList.appendChild(li);
+      }
+    }
 
-            teams.forEach(team => {
-              const option = document.createElement("option");
-              option.value = team.replace(/\s+/g, "_");
-              option.text = team;
-              teamSelect.appendChild(option);
-            });
+    async function loadTeams() {
+      try {
+        const res = await fetch("teams.json");
+        const teams = await res.json();
 
-            const urlParams = new URLSearchParams(window.location.search);
-            const defaultTeam = urlParams.get("team") || teamSelect.options[0].value;
-            teamSelect.value = defaultTeam;
+        teams.forEach(team => {
+          const option = document.createElement("option");
+          option.value = team.replace(/\s+/g, "_");
+          option.text = team;
+          teamSelect.appendChild(option);
+        });
 
-            const standingsRes = await fetch("standings.json");
-            standingsData = await standingsRes.json();
-            updateBars(defaultTeam.replace(/_/g, " "));
+        const urlParams = new URLSearchParams(window.location.search);
+        const defaultTeam = urlParams.get("team") || teamSelect.options[0].value;
+        teamSelect.value = defaultTeam;
 
-            loadTeam(defaultTeam, teams);
-      
-          }catch (err) {
+        const standingsRes = await fetch("standings.json");
+        standingsData = await standingsRes.json();
+        const rosterRes = await fetch("rosters.json");
+        rosterData = await rosterRes.json();
+
+        updateBars(defaultTeam.replace(/_/g, " "));
+        loadTeam(defaultTeam, teams);
+      } catch (err) {
         document.getElementById('chart').innerHTML = "<p>Error loading team list</p>";
         console.error(err);
       }
@@ -390,6 +414,7 @@
       }
       const displayName = normalize(teams.find(t => t.replace(/\s+/g, "_") === teamSlug)) || teamSlug.replace(/_/g, " ");
       teamNameHeading.textContent = displayName;
+      updateRoster(displayName);
 
       try {
         const res = await fetch(`team_data/${teamSlug}.json`);

@@ -2,6 +2,7 @@ import pandas as pd
 import os
 from ffLuckModel import calculateLuckScore
 from ffStandMatchData import getMatchups, currentWeek
+from espn_api.football import League
 import json
 
 # Load all weekly matchups
@@ -78,3 +79,28 @@ with open("teams.json", "w") as f:
     json.dump(team_names, f, indent=2)
 
 print("✅ teams.json created successfully.")
+
+# Create a roster JSON for all teams using the ESPN API
+league = League(
+    league_id=42024189,
+    year=2024,
+    espn_s2='AECycM1RSKC9H6KO4Qw7b0ZKIaa417A48498axeqW12XB0VFyWXroqy%2BFzAdJFMJUqxu4t05etxquUZYQ92C7V8N%2BzGT48zFtm4IJM04CG%2FG7zrSRXMBsqrw219pF4k7L0BYwwHr1om5AQNTKViQ5YJhH9SFEmGo03L1NTeuQSPy3Ws6HpQs2pfnZKuddHWxNUwH9HVOxVkOc4nSbCn8LPm2c1lsCAuuH26Z4laiqV2e0MCjMNizTi%2FS8VFHmVCXcPVejE3reh1JRyiHuKp1gE14',
+    swid='{CDA2BA80-43BE-41FB-9AB1-C8BE52DD4C45}'
+)
+
+rosters = {}
+for team in league.teams:
+    clean_team_name = ' '.join(team.team_name.strip().split())
+    roster_list = []
+    for player in team.roster:
+        roster_list.append({
+            "name": player.name,
+            "position": player.position,
+            "lineupSlot": player.lineupSlot
+        })
+    rosters[clean_team_name] = roster_list
+
+with open("rosters.json", "w") as f:
+    json.dump(rosters, f, indent=2)
+
+print("✅ rosters.json created successfully.")
