@@ -95,7 +95,7 @@ for team in league.teams:
     for player in team.roster:
         roster_list.append({
             "name": player.name,
-            "position": player.position,
+            "position": getattr(player, 'slot_position', 'N/A'),
             "lineupSlot": player.lineupSlot
         })
     rosters[clean_team_name] = roster_list
