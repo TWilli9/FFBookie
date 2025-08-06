@@ -208,14 +208,26 @@
     }
 
     .roster-column ul {
-      list-style-type: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
       padding-left: 0;
       margin: 0 0 15px 0;
     }
 
     .roster-column li {
-      padding: 2px 0;
+      list-style: none;
+      background-color: #3498db;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 0.95em;
+      font-weight: 500;
+      text-align: center;
+      white-space: nowrap;
     }
+
 
 
     @media (max-width: 768px) {
@@ -424,20 +436,43 @@
         sectionTitle.textContent = title;
         column.appendChild(sectionTitle);
 
-        Object.keys(data).forEach(slot => {
-          const slotHeader = document.createElement("h3");
-          slotHeader.textContent = slot;
-          column.appendChild(slotHeader);
+        const preferredOrder = ["QB", "RB", "WR", "RB/WR/TE", "TE", "D/ST"];
 
-          const ul = document.createElement("ul");
-          data[slot].forEach(name => {
-            const li = document.createElement("li");
-            li.textContent = name;
-            ul.appendChild(li);
-          });
+        preferredOrder.forEach(slot => {
+          if (data[slot]) {
+            const slotHeader = document.createElement("h3");
+            slotHeader.textContent = slot;
+            column.appendChild(slotHeader);
 
-          column.appendChild(ul);
+            const ul = document.createElement("ul");
+            data[slot].forEach(name => {
+              const li = document.createElement("li");
+              li.textContent = name;
+              ul.appendChild(li);
+            });
+
+            column.appendChild(ul);
+          }
         });
+
+        // Append any remaining slots not in preferred order
+        Object.keys(data).forEach(slot => {
+          if (!preferredOrder.includes(slot)) {
+            const slotHeader = document.createElement("h3");
+            slotHeader.textContent = slot;
+            column.appendChild(slotHeader);
+
+            const ul = document.createElement("ul");
+            data[slot].forEach(name => {
+              const li = document.createElement("li");
+              li.textContent = name;
+              ul.appendChild(li);
+            });
+
+            column.appendChild(ul);
+          }
+        });
+
 
         return column;
       }
