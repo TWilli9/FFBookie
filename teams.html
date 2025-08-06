@@ -184,6 +184,11 @@
       height: 400px;
     }
 
+    #pf-pa-chart {
+      width: 100%;
+      height: 400px;
+    }
+
     .roster-container {
       display: flex;
       justify-content: space-between;
@@ -316,6 +321,7 @@
         <!-- Matchup rows will be injected here -->
       </tbody>
     </table>
+    <div id="pf-pa-chart"></div>
     </div>
 
 
@@ -367,6 +373,38 @@
       };
 
       Plotly.newPlot('win-loss-chart', [winTrace, lossTrace], layout);
+    }
+
+
+    function updatePFPAChart(data) {
+      const weeks = data.map(row => row.Week);
+      const pf = data.map(row => row.Score);
+      const pa = data.map(row => row["Opponent Score"]);
+
+      const pfTrace = {
+        x: weeks,
+        y: pf,
+        mode: 'lines+markers',
+        name: 'PF',
+        line: { color: '#3498db' }
+      };
+
+      const paTrace = {
+        x: weeks,
+        y: pa,
+        mode: 'lines+markers',
+        name: 'PA',
+        line: { color: '#e67e22' }
+      };
+
+      const layout = {
+        margin: { t: 30 },
+        xaxis: { title: 'Week', dtick: 1 },
+        yaxis: { title: 'Points' },
+        legend: { orientation: 'h' }
+      };
+
+      Plotly.newPlot('pf-pa-chart', [pfTrace, paTrace], layout);
     }
 
     function updateBars(teamName) {
@@ -552,6 +590,7 @@
         });
 
         updateWinLossChart(data);
+        updatePFPAChart(data);
 
         // Season highs/lows
         const highWeek = data.reduce((max, r) => (r.Score > max.Score ? r : max), data[0]);
