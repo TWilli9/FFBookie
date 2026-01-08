@@ -2,6 +2,11 @@
 
 Welcome to the **Fantasy Football League Bookie**! This project is designed to provide detailed standings, power rankings, matchup predictions, and advanced analytics for your fantasy football league using the `espn_api.football` library. It's perfect for league commissioners or anyone who loves diving into the numbers behind their league.
 
+
+## 🌐 Live Demo
+
+View the website here:  
+👉 **https://twilli9.github.io/FFBookie/**
 ---
 
 ## **Features**
