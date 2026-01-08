@@ -1,19 +1,19 @@
 [
   {
     "Week":1,
-    "Side":"Home Team",
+    "Side":"Away Team",
     "Team":"Hawaii McLovins VIII",
     "Top Scorer":[
       [
-        "Tyreek Hill",
-        26.0
+        "Zay Flowers",
+        28.1
       ]
     ],
-    "Opponent":"Amon a Mission",
-    "Score":117.12,
-    "Opponent Score":148.56,
-    "Margin":-31.44,
-    "Luck Score":-0.46
+    "Opponent":"Roll Bill (Croskey-Merritt)",
+    "Score":134.02,
+    "Opponent Score":100.92,
+    "Margin":33.1,
+    "Luck Score":0.201
   },
   {
     "Week":2,
@@ -21,31 +21,31 @@
     "Team":"Hawaii McLovins VIII",
     "Top Scorer":[
       [
-        "Jalen Hurts",
-        23.82
+        "Dak Prescott",
+        22.14
       ]
     ],
-    "Opponent":"Jared's Pack Attack",
-    "Score":94.52,
-    "Opponent Score":139.8,
-    "Margin":-45.28,
-    "Luck Score":-0.23
+    "Opponent":"Team Kareem Pie \ud83e\udd67",
+    "Score":114.54,
+    "Opponent Score":113.3,
+    "Margin":1.24,
+    "Luck Score":0.705
   },
   {
     "Week":3,
-    "Side":"Away Team",
+    "Side":"Home Team",
     "Team":"Hawaii McLovins VIII",
     "Top Scorer":[
       [
-        "Chris Olave",
-        20.6
+        "Jordan Mason",
+        23.6
       ]
     ],
-    "Opponent":"How I Metcalf Your Mother",
-    "Score":86.14,
-    "Opponent Score":106.88,
-    "Margin":-20.74,
-    "Luck Score":-0.083
+    "Opponent":"Jared's Pack Attack",
+    "Score":96.14,
+    "Opponent Score":78.52,
+    "Margin":17.62,
+    "Luck Score":0.738
   },
   {
     "Week":4,
@@ -53,15 +53,15 @@
     "Team":"Hawaii McLovins VIII",
     "Top Scorer":[
       [
-        "D'Andre Swift",
-        29.5
+        "Josh Jacobs",
+        31.7
       ]
     ],
-    "Opponent":"Hamilton Administration",
-    "Score":126.14,
-    "Opponent Score":103.5,
-    "Margin":22.64,
-    "Luck Score":0.481
+    "Opponent":"LaPorta Potty",
+    "Score":101.78,
+    "Opponent Score":159.94,
+    "Margin":-58.16,
+    "Luck Score":-0.2
   },
   {
     "Week":5,
@@ -69,31 +69,31 @@
     "Team":"Hawaii McLovins VIII",
     "Top Scorer":[
       [
-        "George Kittle",
-        20.4
+        "Rico Dowdle",
+        32.4
       ]
     ],
-    "Opponent":"The Left Tacklers",
-    "Score":123.88,
-    "Opponent Score":105.16,
-    "Margin":18.72,
-    "Luck Score":0.637
+    "Opponent":"Game of Throws",
+    "Score":162.88,
+    "Opponent Score":133.2,
+    "Margin":29.68,
+    "Luck Score":0.282
   },
   {
     "Week":6,
-    "Side":"Away Team",
+    "Side":"Home Team",
     "Team":"Hawaii McLovins VIII",
     "Top Scorer":[
       [
-        "George Kittle",
-        22.8
+        "Rico Dowdle",
+        33.9
       ]
     ],
-    "Opponent":"Amon a Mission",
-    "Score":88.32,
-    "Opponent Score":150.38,
-    "Margin":-62.06,
-    "Luck Score":-0.167
+    "Opponent":"The Left Tacklers",
+    "Score":174.34,
+    "Opponent Score":150.44,
+    "Margin":23.9,
+    "Luck Score":0.297
   },
   {
     "Week":7,
@@ -101,15 +101,15 @@
     "Team":"Hawaii McLovins VIII",
     "Top Scorer":[
       [
-        "Jahmyr Gibbs",
-        32.0
+        "Jaxon Smith-Njigba",
+        26.3
       ]
     ],
-    "Opponent":"Game of Throws",
-    "Score":108.08,
-    "Opponent Score":96.16,
-    "Margin":11.92,
-    "Luck Score":0.539
+    "Opponent":"Roll Bill (Croskey-Merritt)",
+    "Score":132.36,
+    "Opponent Score":98.74,
+    "Margin":33.62,
+    "Luck Score":0.434
   },
   {
     "Week":8,
@@ -118,14 +118,14 @@
     "Top Scorer":[
       [
         "Ladd McConkey",
-        29.1
+        20.8
       ]
     ],
-    "Opponent":"The Left Tacklers",
-    "Score":174.12,
-    "Opponent Score":136.2,
-    "Margin":37.92,
-    "Luck Score":0.216
+    "Opponent":"Team Kareem Pie \ud83e\udd67",
+    "Score":125.02,
+    "Opponent Score":104.88,
+    "Margin":20.14,
+    "Luck Score":0.585
   },
   {
     "Week":9,
@@ -133,15 +133,15 @@
     "Team":"Hawaii McLovins VIII",
     "Top Scorer":[
       [
-        "Travis Kelce",
+        "Jaxon Smith-Njigba",
         22.0
       ]
     ],
-    "Opponent":"Team Kareem Pie \ud83e\udd67",
-    "Score":110.3,
-    "Opponent Score":124.4,
-    "Margin":-14.1,
-    "Luck Score":-0.508
+    "Opponent":"To infinity and Bijan",
+    "Score":110.8,
+    "Opponent Score":103.76,
+    "Margin":7.04,
+    "Luck Score":0.794
   },
   {
     "Week":10,
@@ -149,31 +149,31 @@
     "Team":"Hawaii McLovins VIII",
     "Top Scorer":[
       [
-        "Bills D\/ST",
-        17.0
+        "George Kittle",
+        23.4
       ]
     ],
-    "Opponent":"Game of Throws",
-    "Score":105.94,
-    "Opponent Score":123.48,
-    "Margin":-17.54,
-    "Luck Score":-0.549
+    "Opponent":"LaPorta Potty",
+    "Score":158.6,
+    "Opponent Score":116.8,
+    "Margin":41.8,
+    "Luck Score":0.117
   },
   {
     "Week":11,
-    "Side":"Home Team",
+    "Side":"Away Team",
     "Team":"Hawaii McLovins VIII",
     "Top Scorer":[
       [
-        "Bo Nix",
-        28.78
+        "George Kittle",
+        24.7
       ]
     ],
-    "Opponent":"Team Kareem Pie \ud83e\udd67",
-    "Score":155.78,
-    "Opponent Score":143.0,
-    "Margin":12.78,
-    "Luck Score":0.438
+    "Opponent":"First and Ted",
+    "Score":137.02,
+    "Opponent Score":94.52,
+    "Margin":42.5,
+    "Luck Score":0.183
   },
   {
     "Week":12,
@@ -181,15 +181,15 @@
     "Team":"Hawaii McLovins VIII",
     "Top Scorer":[
       [
-        "Josh Jacobs",
-        28.6
+        "Jaxon Smith-Njigba",
+        37.1
       ]
     ],
-    "Opponent":"First and Ted",
-    "Score":147.62,
-    "Opponent Score":131.7,
-    "Margin":15.92,
-    "Luck Score":0.297
+    "Opponent":"Hamilton Administration",
+    "Score":140.26,
+    "Opponent Score":72.12,
+    "Margin":68.14,
+    "Luck Score":0.277
   },
   {
     "Week":13,
@@ -197,15 +197,15 @@
     "Team":"Hawaii McLovins VIII",
     "Top Scorer":[
       [
-        "Josh Jacobs",
-        21.7
+        "CeeDee Lamb",
+        24.2
       ]
     ],
-    "Opponent":"To infinity and Bijan",
-    "Score":117.38,
-    "Opponent Score":140.28,
-    "Margin":-22.9,
-    "Luck Score":-0.394
+    "Opponent":"The Left Tacklers",
+    "Score":95.3,
+    "Opponent Score":109.42,
+    "Margin":-14.12,
+    "Luck Score":-0.58
   },
   {
     "Week":14,
@@ -213,14 +213,62 @@
     "Team":"Hawaii McLovins VIII",
     "Top Scorer":[
       [
-        "Josh Jacobs",
-        24.6
+        "Jaxon Smith-Njigba",
+        28.1
       ]
     ],
     "Opponent":"Jared's Pack Attack",
-    "Score":110.92,
-    "Opponent Score":130.84,
-    "Margin":-19.92,
-    "Luck Score":-0.504
+    "Score":141.74,
+    "Opponent Score":123.66,
+    "Margin":18.08,
+    "Luck Score":0.211
+  },
+  {
+    "Week":15,
+    "Side":"Home Team",
+    "Team":"Hawaii McLovins VIII",
+    "Top Scorer":[
+      [
+        "Josh Jacobs",
+        23.2
+      ]
+    ],
+    "Opponent":"N\/A",
+    "Score":129.66,
+    "Opponent Score":0.0,
+    "Margin":129.66,
+    "Luck Score":0.243
+  },
+  {
+    "Week":16,
+    "Side":"Home Team",
+    "Team":"Hawaii McLovins VIII",
+    "Top Scorer":[
+      [
+        "George Kittle",
+        24.5
+      ]
+    ],
+    "Opponent":"The Left Tacklers",
+    "Score":144.76,
+    "Opponent Score":176.38,
+    "Margin":-31.62,
+    "Luck Score":-0.612
+  },
+  {
+    "Week":17,
+    "Side":"Home Team",
+    "Team":"Hawaii McLovins VIII",
+    "Top Scorer":[
+      [
+        "Dak Prescott",
+        22.68
+      ]
+    ],
+    "Opponent":"First and Ted",
+    "Score":110.48,
+    "Opponent Score":103.98,
+    "Margin":6.5,
+    "Luck Score":0.773
   }
 ]

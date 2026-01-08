@@ -5,15 +5,15 @@
     "Team":"First and Ted",
     "Top Scorer":[
       [
-        "De'Von Achane",
-        23.0
+        "Jayden Daniels",
+        20.12
       ]
     ],
     "Opponent":"Game of Throws",
-    "Score":113.88,
-    "Opponent Score":147.08,
-    "Margin":-33.2,
-    "Luck Score":-0.333
+    "Score":89.72,
+    "Opponent Score":124.78,
+    "Margin":-35.06,
+    "Luck Score":-0.224
   },
   {
     "Week":2,
@@ -22,14 +22,14 @@
     "Top Scorer":[
       [
         "De'Von Achane",
-        29.5
+        26.2
       ]
     ],
-    "Opponent":"To infinity and Bijan",
-    "Score":133.24,
-    "Opponent Score":159.68,
-    "Margin":-26.44,
-    "Luck Score":-0.621
+    "Opponent":"Roll Bill (Croskey-Merritt)",
+    "Score":102.5,
+    "Opponent Score":116.18,
+    "Margin":-13.68,
+    "Luck Score":-0.554
   },
   {
     "Week":3,
@@ -37,15 +37,15 @@
     "Team":"First and Ted",
     "Top Scorer":[
       [
-        "Kyren Williams",
-        31.6
+        "Vikings D\/ST",
+        32.0
       ]
     ],
-    "Opponent":"Amon a Mission",
-    "Score":113.38,
-    "Opponent Score":107.1,
-    "Margin":6.28,
-    "Luck Score":0.582
+    "Opponent":"Hamilton Administration",
+    "Score":154.92,
+    "Opponent Score":94.32,
+    "Margin":60.6,
+    "Luck Score":0.2
   },
   {
     "Week":4,
@@ -53,31 +53,31 @@
     "Team":"First and Ted",
     "Top Scorer":[
       [
-        "Jayden Daniels",
-        24.02
+        "Ashton Jeanty",
+        33.5
       ]
     ],
-    "Opponent":"Jared's Pack Attack",
-    "Score":137.92,
-    "Opponent Score":127.76,
-    "Margin":10.16,
-    "Luck Score":0.46
+    "Opponent":"Roll Bill (Croskey-Merritt)",
+    "Score":114.68,
+    "Opponent Score":118.9,
+    "Margin":-4.22,
+    "Luck Score":-0.68
   },
   {
     "Week":5,
-    "Side":"Away Team",
+    "Side":"Home Team",
     "Team":"First and Ted",
     "Top Scorer":[
       [
-        "Brian Thomas Jr.",
-        23.2
+        "Courtland Sutton",
+        17.9
       ]
     ],
-    "Opponent":"Hamilton Administration",
-    "Score":123.52,
-    "Opponent Score":127.64,
-    "Margin":-4.12,
-    "Luck Score":-0.758
+    "Opponent":"The Left Tacklers",
+    "Score":111.04,
+    "Opponent Score":138.12,
+    "Margin":-27.08,
+    "Luck Score":-0.427
   },
   {
     "Week":6,
@@ -85,15 +85,15 @@
     "Team":"First and Ted",
     "Top Scorer":[
       [
-        "Jayden Daniels",
-        20.96
+        "De'Von Achane",
+        31.0
       ]
     ],
-    "Opponent":"The Left Tacklers",
-    "Score":101.26,
-    "Opponent Score":120.0,
-    "Margin":-18.74,
-    "Luck Score":-0.516
+    "Opponent":"Jared's Pack Attack",
+    "Score":142.24,
+    "Opponent Score":87.96,
+    "Margin":54.28,
+    "Luck Score":0.217
   },
   {
     "Week":7,
@@ -101,15 +101,15 @@
     "Team":"First and Ted",
     "Top Scorer":[
       [
-        "Tank Bigsby",
-        23.8
+        "A.J. Brown",
+        28.1
       ]
     ],
-    "Opponent":"Team Kareem Pie \ud83e\udd67",
-    "Score":135.64,
-    "Opponent Score":134.8,
-    "Margin":0.84,
-    "Luck Score":0.497
+    "Opponent":"To infinity and Bijan",
+    "Score":129.64,
+    "Opponent Score":125.42,
+    "Margin":4.22,
+    "Luck Score":0.7
   },
   {
     "Week":8,
@@ -117,15 +117,15 @@
     "Team":"First and Ted",
     "Top Scorer":[
       [
-        "De'Von Achane",
-        26.7
+        "Rashee Rice",
+        25.5
       ]
     ],
     "Opponent":"Game of Throws",
-    "Score":155.58,
-    "Opponent Score":162.34,
-    "Margin":-6.76,
-    "Luck Score":-0.801
+    "Score":127.6,
+    "Opponent Score":120.76,
+    "Margin":6.84,
+    "Luck Score":0.66
   },
   {
     "Week":9,
@@ -133,31 +133,31 @@
     "Team":"First and Ted",
     "Top Scorer":[
       [
-        "De'Von Achane",
-        32.1
+        "Caleb Williams",
+        38.7
       ]
     ],
-    "Opponent":"How I Metcalf Your Mother",
-    "Score":145.42,
-    "Opponent Score":103.24,
-    "Margin":42.18,
-    "Luck Score":0.274
+    "Opponent":"Hamilton Administration",
+    "Score":157.5,
+    "Opponent Score":126.12,
+    "Margin":31.38,
+    "Luck Score":0.26
   },
   {
     "Week":10,
-    "Side":"Away Team",
+    "Side":"Home Team",
     "Team":"First and Ted",
     "Top Scorer":[
       [
-        "James Conner",
-        22.3
+        "De'Von Achane",
+        40.5
       ]
     ],
-    "Opponent":"The Left Tacklers",
-    "Score":93.88,
-    "Opponent Score":146.12,
-    "Margin":-52.24,
-    "Luck Score":-0.2
+    "Opponent":"Jared's Pack Attack",
+    "Score":102.8,
+    "Opponent Score":85.8,
+    "Margin":17.0,
+    "Luck Score":0.713
   },
   {
     "Week":11,
@@ -166,14 +166,14 @@
     "Top Scorer":[
       [
         "De'Von Achane",
-        20.5
+        21.5
       ]
     ],
-    "Opponent":"How I Metcalf Your Mother",
-    "Score":108.64,
-    "Opponent Score":101.08,
-    "Margin":7.56,
-    "Luck Score":0.807
+    "Opponent":"Hawaii McLovins VIII",
+    "Score":94.52,
+    "Opponent Score":137.02,
+    "Margin":-42.5,
+    "Luck Score":-0.183
   },
   {
     "Week":12,
@@ -181,31 +181,31 @@
     "Team":"First and Ted",
     "Top Scorer":[
       [
-        "Jayden Daniels",
-        30.4
+        "A.J. Brown",
+        25.0
       ]
     ],
-    "Opponent":"Hawaii McLovins VIII",
-    "Score":131.7,
-    "Opponent Score":147.62,
-    "Margin":-15.92,
-    "Luck Score":-0.647
+    "Opponent":"Team Kareem Pie \ud83e\udd67",
+    "Score":148.16,
+    "Opponent Score":77.74,
+    "Margin":70.42,
+    "Luck Score":0.212
   },
   {
     "Week":13,
-    "Side":"Away Team",
+    "Side":"Home Team",
     "Team":"First and Ted",
     "Top Scorer":[
       [
-        "Jayden Daniels",
-        27.64
+        "A.J. Brown",
+        35.2
       ]
     ],
-    "Opponent":"Hamilton Administration",
-    "Score":146.54,
-    "Opponent Score":111.02,
-    "Margin":35.52,
-    "Luck Score":0.183
+    "Opponent":"LaPorta Potty",
+    "Score":142.76,
+    "Opponent Score":91.08,
+    "Margin":51.68,
+    "Luck Score":0.253
   },
   {
     "Week":14,
@@ -213,14 +213,62 @@
     "Team":"First and Ted",
     "Top Scorer":[
       [
-        "Justin Jefferson",
-        32.2
+        "De'Von Achane",
+        17.5
       ]
     ],
     "Opponent":"To infinity and Bijan",
-    "Score":177.46,
-    "Opponent Score":164.6,
-    "Margin":12.86,
-    "Luck Score":0.473
+    "Score":109.54,
+    "Opponent Score":134.76,
+    "Margin":-25.22,
+    "Luck Score":-0.344
+  },
+  {
+    "Week":15,
+    "Side":"Home Team",
+    "Team":"First and Ted",
+    "Top Scorer":[
+      [
+        "Brock Purdy",
+        26.2
+      ]
+    ],
+    "Opponent":"N\/A",
+    "Score":133.4,
+    "Opponent Score":0.0,
+    "Margin":133.4,
+    "Luck Score":0.201
+  },
+  {
+    "Week":16,
+    "Side":"Home Team",
+    "Team":"First and Ted",
+    "Top Scorer":[
+      [
+        "Ashton Jeanty",
+        31.8
+      ]
+    ],
+    "Opponent":"Game of Throws",
+    "Score":141.82,
+    "Opponent Score":162.9,
+    "Margin":-21.08,
+    "Luck Score":-0.658
+  },
+  {
+    "Week":17,
+    "Side":"Away Team",
+    "Team":"First and Ted",
+    "Top Scorer":[
+      [
+        "Giants D\/ST",
+        19.0
+      ]
+    ],
+    "Opponent":"Hawaii McLovins VIII",
+    "Score":103.98,
+    "Opponent Score":110.48,
+    "Margin":-6.5,
+    "Luck Score":-0.623
   }
 ]

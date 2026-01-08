@@ -1,35 +1,35 @@
 [
   {
     "Week":1,
-    "Side":"Away Team",
-    "Team":"Hamilton Administration",
-    "Top Scorer":[
-      [
-        "Josh Allen",
-        31.18
-      ]
-    ],
-    "Opponent":"Team Kareem Pie \ud83e\udd67",
-    "Score":105.08,
-    "Opponent Score":113.88,
-    "Margin":-8.8,
-    "Luck Score":-0.559
-  },
-  {
-    "Week":2,
     "Side":"Home Team",
     "Team":"Hamilton Administration",
     "Top Scorer":[
       [
-        "Malik Nabers",
-        28.7
+        "Josh Allen",
+        38.76
       ]
     ],
-    "Opponent":"Amon a Mission",
-    "Score":141.56,
-    "Opponent Score":114.2,
-    "Margin":27.36,
-    "Luck Score":0.396
+    "Opponent":"LaPorta Potty",
+    "Score":144.26,
+    "Opponent Score":107.42,
+    "Margin":36.84,
+    "Luck Score":0.083
+  },
+  {
+    "Week":2,
+    "Side":"Away Team",
+    "Team":"Hamilton Administration",
+    "Top Scorer":[
+      [
+        "Malik Nabers",
+        37.7
+      ]
+    ],
+    "Opponent":"To infinity and Bijan",
+    "Score":149.42,
+    "Opponent Score":118.6,
+    "Margin":30.82,
+    "Luck Score":0.243
   },
   {
     "Week":3,
@@ -38,30 +38,30 @@
     "Top Scorer":[
       [
         "Josh Allen",
-        30.92
+        23.02
       ]
     ],
-    "Opponent":"Game of Throws",
-    "Score":120.92,
-    "Opponent Score":121.46,
-    "Margin":-0.54,
-    "Luck Score":-0.854
+    "Opponent":"First and Ted",
+    "Score":94.32,
+    "Opponent Score":154.92,
+    "Margin":-60.6,
+    "Luck Score":-0.2
   },
   {
     "Week":4,
-    "Side":"Home Team",
+    "Side":"Away Team",
     "Team":"Hamilton Administration",
     "Top Scorer":[
       [
-        "Malik Nabers",
-        23.1
+        "Bijan Robinson",
+        28.1
       ]
     ],
-    "Opponent":"Hawaii McLovins VIII",
-    "Score":103.5,
-    "Opponent Score":126.14,
-    "Margin":-22.64,
-    "Luck Score":-0.231
+    "Opponent":"Team Kareem Pie \ud83e\udd67",
+    "Score":149.86,
+    "Opponent Score":122.42,
+    "Margin":27.44,
+    "Luck Score":0.364
   },
   {
     "Week":5,
@@ -69,15 +69,15 @@
     "Team":"Hamilton Administration",
     "Top Scorer":[
       [
-        "Drake London",
-        33.4
+        "Josh Allen",
+        19.42
       ]
     ],
-    "Opponent":"First and Ted",
-    "Score":127.64,
-    "Opponent Score":123.52,
-    "Margin":4.12,
-    "Luck Score":0.658
+    "Opponent":"To infinity and Bijan",
+    "Score":105.52,
+    "Opponent Score":130.7,
+    "Margin":-25.18,
+    "Luck Score":-0.347
   },
   {
     "Week":6,
@@ -85,15 +85,15 @@
     "Team":"Hamilton Administration",
     "Top Scorer":[
       [
-        "Josh Allen",
-        24.4
+        "Bijan Robinson",
+        35.8
       ]
     ],
-    "Opponent":"To infinity and Bijan",
-    "Score":113.0,
-    "Opponent Score":114.62,
-    "Margin":-1.62,
-    "Luck Score":-0.704
+    "Opponent":"Roll Bill (Croskey-Merritt)",
+    "Score":135.2,
+    "Opponent Score":116.88,
+    "Margin":18.32,
+    "Luck Score":0.498
   },
   {
     "Week":7,
@@ -101,15 +101,15 @@
     "Team":"Hamilton Administration",
     "Top Scorer":[
       [
-        "Josh Allen",
-        21.02
+        "Bijan Robinson",
+        21.2
       ]
     ],
-    "Opponent":"The Left Tacklers",
-    "Score":101.12,
-    "Opponent Score":106.94,
-    "Margin":-5.82,
-    "Luck Score":-0.498
+    "Opponent":"Game of Throws",
+    "Score":126.14,
+    "Opponent Score":166.04,
+    "Margin":-39.9,
+    "Luck Score":-0.501
   },
   {
     "Week":8,
@@ -117,15 +117,15 @@
     "Team":"Hamilton Administration",
     "Top Scorer":[
       [
-        "Cade Otton",
-        29.1
+        "Josh Allen",
+        23.22
       ]
     ],
-    "Opponent":"Team Kareem Pie \ud83e\udd67",
-    "Score":139.92,
-    "Opponent Score":129.7,
-    "Margin":10.22,
-    "Luck Score":0.634
+    "Opponent":"The Left Tacklers",
+    "Score":104.92,
+    "Opponent Score":128.26,
+    "Margin":-23.34,
+    "Luck Score":-0.468
   },
   {
     "Week":9,
@@ -133,15 +133,15 @@
     "Team":"Hamilton Administration",
     "Top Scorer":[
       [
-        "Zay Flowers",
-        29.7
+        "Drake London",
+        38.8
       ]
     ],
-    "Opponent":"To infinity and Bijan",
-    "Score":168.8,
-    "Opponent Score":124.5,
-    "Margin":44.3,
-    "Luck Score":0.083
+    "Opponent":"First and Ted",
+    "Score":126.12,
+    "Opponent Score":157.5,
+    "Margin":-31.38,
+    "Luck Score":-0.51
   },
   {
     "Week":10,
@@ -149,15 +149,15 @@
     "Team":"Hamilton Administration",
     "Top Scorer":[
       [
-        "Chuba Hubbard",
-        24.9
+        "Drake London",
+        24.4
       ]
     ],
-    "Opponent":"How I Metcalf Your Mother",
-    "Score":118.3,
-    "Opponent Score":105.0,
-    "Margin":13.3,
-    "Luck Score":0.639
+    "Opponent":"Team Kareem Pie \ud83e\udd67",
+    "Score":125.74,
+    "Opponent Score":125.1,
+    "Margin":0.64,
+    "Luck Score":0.759
   },
   {
     "Week":11,
@@ -166,14 +166,14 @@
     "Top Scorer":[
       [
         "Josh Allen",
-        23.98
+        42.68
       ]
     ],
-    "Opponent":"Jared's Pack Attack",
-    "Score":101.28,
-    "Opponent Score":150.84,
-    "Margin":-49.56,
-    "Luck Score":-0.217
+    "Opponent":"Roll Bill (Croskey-Merritt)",
+    "Score":146.78,
+    "Opponent Score":125.64,
+    "Margin":21.14,
+    "Luck Score":0.301
   },
   {
     "Week":12,
@@ -181,15 +181,15 @@
     "Team":"Hamilton Administration",
     "Top Scorer":[
       [
-        "Jordan Addison",
-        30.2
+        "Bijan Robinson",
+        14.7
       ]
     ],
-    "Opponent":"How I Metcalf Your Mother",
-    "Score":121.38,
-    "Opponent Score":117.16,
-    "Margin":4.22,
-    "Luck Score":0.712
+    "Opponent":"Hawaii McLovins VIII",
+    "Score":72.12,
+    "Opponent Score":140.26,
+    "Margin":-68.14,
+    "Luck Score":-0.177
   },
   {
     "Week":13,
@@ -197,15 +197,15 @@
     "Team":"Hamilton Administration",
     "Top Scorer":[
       [
-        "Josh Allen",
-        28.42
+        "Bijan Robinson",
+        30.3
       ]
     ],
-    "Opponent":"First and Ted",
-    "Score":111.02,
-    "Opponent Score":146.54,
-    "Margin":-35.52,
-    "Luck Score":-0.183
+    "Opponent":"Jared's Pack Attack",
+    "Score":128.52,
+    "Opponent Score":113.76,
+    "Margin":14.76,
+    "Luck Score":0.525
   },
   {
     "Week":14,
@@ -214,13 +214,61 @@
     "Top Scorer":[
       [
         "Josh Allen",
-        51.88
+        37.84
       ]
     ],
     "Opponent":"Game of Throws",
-    "Score":188.08,
-    "Opponent Score":119.72,
-    "Margin":68.36,
-    "Luck Score":0.117
+    "Score":117.94,
+    "Opponent Score":94.0,
+    "Margin":23.94,
+    "Luck Score":0.301
+  },
+  {
+    "Week":15,
+    "Side":"Away Team",
+    "Team":"Hamilton Administration",
+    "Top Scorer":[
+      [
+        "Bijan Robinson",
+        29.5
+      ]
+    ],
+    "Opponent":"Game of Throws",
+    "Score":127.52,
+    "Opponent Score":139.5,
+    "Margin":-11.98,
+    "Luck Score":-0.802
+  },
+  {
+    "Week":16,
+    "Side":"Home Team",
+    "Team":"Hamilton Administration",
+    "Top Scorer":[
+      [
+        "Bijan Robinson",
+        29.8
+      ]
+    ],
+    "Opponent":"To infinity and Bijan",
+    "Score":123.8,
+    "Opponent Score":114.92,
+    "Margin":8.88,
+    "Luck Score":0.686
+  },
+  {
+    "Week":17,
+    "Side":"Home Team",
+    "Team":"Hamilton Administration",
+    "Top Scorer":[
+      [
+        "Bijan Robinson",
+        39.9
+      ]
+    ],
+    "Opponent":"To infinity and Bijan",
+    "Score":151.88,
+    "Opponent Score":77.48,
+    "Margin":74.4,
+    "Luck Score":0.15
   }
 ]

@@ -1,19 +1,19 @@
 [
   {
     "Week":1,
-    "Side":"Away Team",
+    "Side":"Home Team",
     "Team":"The Left Tacklers",
     "Top Scorer":[
       [
-        "Alvin Kamara",
-        22.0
+        "Kyren Williams",
+        13.9
       ]
     ],
-    "Opponent":"Jared's Pack Attack",
-    "Score":103.36,
-    "Opponent Score":115.6,
-    "Margin":-12.24,
-    "Luck Score":-0.499
+    "Opponent":"To infinity and Bijan",
+    "Score":84.32,
+    "Opponent Score":114.06,
+    "Margin":-29.74,
+    "Luck Score":-0.23
   },
   {
     "Week":2,
@@ -21,47 +21,47 @@
     "Team":"The Left Tacklers",
     "Top Scorer":[
       [
-        "Alvin Kamara",
-        44.0
-      ]
-    ],
-    "Opponent":"Team Kareem Pie \ud83e\udd67",
-    "Score":149.26,
-    "Opponent Score":95.36,
-    "Margin":53.9,
-    "Luck Score":0.167
-  },
-  {
-    "Week":3,
-    "Side":"Home Team",
-    "Team":"The Left Tacklers",
-    "Top Scorer":[
-      [
-        "Joe Burrow",
-        25.36
+        "Amon-Ra St. Brown",
+        39.2
       ]
     ],
     "Opponent":"Jared's Pack Attack",
-    "Score":112.16,
-    "Opponent Score":105.78,
-    "Margin":6.38,
-    "Luck Score":0.646
+    "Score":106.84,
+    "Opponent Score":102.58,
+    "Margin":4.26,
+    "Luck Score":0.777
   },
   {
-    "Week":4,
-    "Side":"Home Team",
+    "Week":3,
+    "Side":"Away Team",
     "Team":"The Left Tacklers",
     "Top Scorer":[
       [
-        "Alvin Kamara",
-        24.9
+        "Amon-Ra St. Brown",
+        20.7
       ]
     ],
-    "Opponent":"How I Metcalf Your Mother",
-    "Score":132.26,
-    "Opponent Score":133.5,
-    "Margin":-1.24,
-    "Luck Score":-0.796
+    "Opponent":"Roll Bill (Croskey-Merritt)",
+    "Score":147.18,
+    "Opponent Score":101.46,
+    "Margin":45.72,
+    "Luck Score":0.306
+  },
+  {
+    "Week":4,
+    "Side":"Away Team",
+    "Team":"The Left Tacklers",
+    "Top Scorer":[
+      [
+        "George Pickens",
+        33.4
+      ]
+    ],
+    "Opponent":"Game of Throws",
+    "Score":148.2,
+    "Opponent Score":149.7,
+    "Margin":-1.5,
+    "Luck Score":-0.854
   },
   {
     "Week":5,
@@ -69,15 +69,15 @@
     "Team":"The Left Tacklers",
     "Top Scorer":[
       [
-        "Rashid Shaheed",
-        18.6
+        "Kyren Williams",
+        31.1
       ]
     ],
-    "Opponent":"Hawaii McLovins VIII",
-    "Score":105.16,
-    "Opponent Score":123.88,
-    "Margin":-18.72,
-    "Luck Score":-0.587
+    "Opponent":"First and Ted",
+    "Score":138.12,
+    "Opponent Score":111.04,
+    "Margin":27.08,
+    "Luck Score":0.427
   },
   {
     "Week":6,
@@ -85,15 +85,15 @@
     "Team":"The Left Tacklers",
     "Top Scorer":[
       [
-        "Brock Purdy",
-        24.1
+        "George Pickens",
+        31.8
       ]
     ],
-    "Opponent":"First and Ted",
-    "Score":120.0,
-    "Opponent Score":101.26,
-    "Margin":18.74,
-    "Luck Score":0.616
+    "Opponent":"Hawaii McLovins VIII",
+    "Score":150.44,
+    "Opponent Score":174.34,
+    "Margin":-23.9,
+    "Luck Score":-0.747
   },
   {
     "Week":7,
@@ -101,15 +101,15 @@
     "Team":"The Left Tacklers",
     "Top Scorer":[
       [
-        "Amon-Ra St. Brown",
-        25.2
+        "DeVonta Smith",
+        33.3
       ]
     ],
-    "Opponent":"Hamilton Administration",
-    "Score":106.94,
-    "Opponent Score":101.12,
-    "Margin":5.82,
-    "Luck Score":0.698
+    "Opponent":"Team Kareem Pie \ud83e\udd67",
+    "Score":194.68,
+    "Opponent Score":131.42,
+    "Margin":63.26,
+    "Luck Score":0.05
   },
   {
     "Week":8,
@@ -117,15 +117,15 @@
     "Team":"The Left Tacklers",
     "Top Scorer":[
       [
-        "Brock Purdy",
-        26.0
+        "Chase Brown",
+        25.5
       ]
     ],
-    "Opponent":"Hawaii McLovins VIII",
-    "Score":136.2,
-    "Opponent Score":174.12,
-    "Margin":-37.92,
-    "Luck Score":-0.466
+    "Opponent":"Hamilton Administration",
+    "Score":128.26,
+    "Opponent Score":104.92,
+    "Margin":23.34,
+    "Luck Score":0.468
   },
   {
     "Week":9,
@@ -133,15 +133,15 @@
     "Team":"The Left Tacklers",
     "Top Scorer":[
       [
-        "Jaxon Smith-Njigba",
-        37.0
+        "Matthew Stafford",
+        26.84
       ]
     ],
-    "Opponent":"Game of Throws",
-    "Score":150.34,
-    "Opponent Score":166.6,
-    "Margin":-16.26,
-    "Luck Score":-0.733
+    "Opponent":"LaPorta Potty",
+    "Score":150.14,
+    "Opponent Score":144.66,
+    "Margin":5.48,
+    "Luck Score":0.51
   },
   {
     "Week":10,
@@ -149,15 +149,15 @@
     "Team":"The Left Tacklers",
     "Top Scorer":[
       [
-        "Joe Burrow",
-        33.72
+        "Trey McBride",
+        27.7
       ]
     ],
-    "Opponent":"First and Ted",
-    "Score":146.12,
-    "Opponent Score":93.88,
-    "Margin":52.24,
-    "Luck Score":0.15
+    "Opponent":"Game of Throws",
+    "Score":141.9,
+    "Opponent Score":127.82,
+    "Margin":14.08,
+    "Luck Score":0.432
   },
   {
     "Week":11,
@@ -165,15 +165,15 @@
     "Team":"The Left Tacklers",
     "Top Scorer":[
       [
-        "Amon-Ra St. Brown",
-        38.7
+        "George Pickens",
+        29.4
       ]
     ],
-    "Opponent":"Amon a Mission",
-    "Score":135.04,
-    "Opponent Score":116.18,
-    "Margin":18.86,
-    "Luck Score":0.576
+    "Opponent":"LaPorta Potty",
+    "Score":129.7,
+    "Opponent Score":107.04,
+    "Margin":22.66,
+    "Luck Score":0.383
   },
   {
     "Week":12,
@@ -181,15 +181,15 @@
     "Team":"The Left Tacklers",
     "Top Scorer":[
       [
-        "Trey McBride",
-        25.3
+        "Amon-Ra St. Brown",
+        29.9
       ]
     ],
-    "Opponent":"To infinity and Bijan",
-    "Score":112.56,
-    "Opponent Score":130.08,
-    "Margin":-17.52,
-    "Luck Score":-0.387
+    "Opponent":"Jared's Pack Attack",
+    "Score":165.72,
+    "Opponent Score":136.36,
+    "Margin":29.36,
+    "Luck Score":0.363
   },
   {
     "Week":13,
@@ -198,14 +198,14 @@
     "Top Scorer":[
       [
         "Trey McBride",
-        21.6
+        22.2
       ]
     ],
-    "Opponent":"Amon a Mission",
-    "Score":126.56,
-    "Opponent Score":133.18,
-    "Margin":-6.62,
-    "Luck Score":-0.623
+    "Opponent":"Hawaii McLovins VIII",
+    "Score":109.42,
+    "Opponent Score":95.3,
+    "Margin":14.12,
+    "Luck Score":0.68
   },
   {
     "Week":14,
@@ -213,14 +213,62 @@
     "Team":"The Left Tacklers",
     "Top Scorer":[
       [
-        "Jauan Jennings",
-        28.0
+        "Matthew Stafford",
+        23.24
       ]
     ],
     "Opponent":"Team Kareem Pie \ud83e\udd67",
-    "Score":159.86,
-    "Opponent Score":146.0,
-    "Margin":13.86,
-    "Luck Score":0.565
+    "Score":123.74,
+    "Opponent Score":97.06,
+    "Margin":26.68,
+    "Luck Score":0.167
+  },
+  {
+    "Week":15,
+    "Side":"Home Team",
+    "Team":"The Left Tacklers",
+    "Top Scorer":[
+      [
+        "Amon-Ra St. Brown",
+        41.4
+      ]
+    ],
+    "Opponent":"To infinity and Bijan",
+    "Score":171.42,
+    "Opponent Score":128.54,
+    "Margin":42.88,
+    "Luck Score":0.395
+  },
+  {
+    "Week":16,
+    "Side":"Away Team",
+    "Team":"The Left Tacklers",
+    "Top Scorer":[
+      [
+        "Chase Brown",
+        32.9
+      ]
+    ],
+    "Opponent":"Hawaii McLovins VIII",
+    "Score":176.38,
+    "Opponent Score":144.76,
+    "Margin":31.62,
+    "Luck Score":0.262
+  },
+  {
+    "Week":17,
+    "Side":"Home Team",
+    "Team":"The Left Tacklers",
+    "Top Scorer":[
+      [
+        "Chase Brown",
+        29.1
+      ]
+    ],
+    "Opponent":"Game of Throws",
+    "Score":131.36,
+    "Opponent Score":137.62,
+    "Margin":-6.26,
+    "Luck Score":-0.791
   }
 ]

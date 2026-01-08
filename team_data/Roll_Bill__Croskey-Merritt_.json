@@ -1,0 +1,274 @@
+[
+  {
+    "Week":1,
+    "Side":"Home Team",
+    "Team":"Roll Bill (Croskey-Merritt)",
+    "Top Scorer":[
+      [
+        "Patrick Mahomes",
+        26.02
+      ]
+    ],
+    "Opponent":"Hawaii McLovins VIII",
+    "Score":100.92,
+    "Opponent Score":134.02,
+    "Margin":-33.1,
+    "Luck Score":-0.301
+  },
+  {
+    "Week":2,
+    "Side":"Away Team",
+    "Team":"Roll Bill (Croskey-Merritt)",
+    "Top Scorer":[
+      [
+        "Ja'Marr Chase",
+        36.5
+      ]
+    ],
+    "Opponent":"First and Ted",
+    "Score":116.18,
+    "Opponent Score":102.5,
+    "Margin":13.68,
+    "Luck Score":0.604
+  },
+  {
+    "Week":3,
+    "Side":"Home Team",
+    "Team":"Roll Bill (Croskey-Merritt)",
+    "Top Scorer":[
+      [
+        "Nico Collins",
+        22.4
+      ]
+    ],
+    "Opponent":"The Left Tacklers",
+    "Score":101.46,
+    "Opponent Score":147.18,
+    "Margin":-45.72,
+    "Luck Score":-0.406
+  },
+  {
+    "Week":4,
+    "Side":"Home Team",
+    "Team":"Roll Bill (Croskey-Merritt)",
+    "Top Scorer":[
+      [
+        "Patrick Mahomes",
+        27.3
+      ]
+    ],
+    "Opponent":"First and Ted",
+    "Score":118.9,
+    "Opponent Score":114.68,
+    "Margin":4.22,
+    "Luck Score":0.73
+  },
+  {
+    "Week":5,
+    "Side":"Away Team",
+    "Team":"Roll Bill (Croskey-Merritt)",
+    "Top Scorer":[
+      [
+        "Ja'Marr Chase",
+        29.0
+      ]
+    ],
+    "Opponent":"Team Kareem Pie \ud83e\udd67",
+    "Score":164.82,
+    "Opponent Score":129.74,
+    "Margin":35.08,
+    "Luck Score":0.225
+  },
+  {
+    "Week":6,
+    "Side":"Away Team",
+    "Team":"Roll Bill (Croskey-Merritt)",
+    "Top Scorer":[
+      [
+        "Patrick Mahomes",
+        31.48
+      ]
+    ],
+    "Opponent":"Hamilton Administration",
+    "Score":116.88,
+    "Opponent Score":135.2,
+    "Margin":-18.32,
+    "Luck Score":-0.648
+  },
+  {
+    "Week":7,
+    "Side":"Home Team",
+    "Team":"Roll Bill (Croskey-Merritt)",
+    "Top Scorer":[
+      [
+        "Ja'Marr Chase",
+        38.1
+      ]
+    ],
+    "Opponent":"Hawaii McLovins VIII",
+    "Score":98.74,
+    "Opponent Score":132.36,
+    "Margin":-33.62,
+    "Luck Score":-0.434
+  },
+  {
+    "Week":8,
+    "Side":"Away Team",
+    "Team":"Roll Bill (Croskey-Merritt)",
+    "Top Scorer":[
+      [
+        "Tucker Kraft",
+        33.3
+      ]
+    ],
+    "Opponent":"Jared's Pack Attack",
+    "Score":170.52,
+    "Opponent Score":132.48,
+    "Margin":38.04,
+    "Luck Score":0.128
+  },
+  {
+    "Week":9,
+    "Side":"Away Team",
+    "Team":"Roll Bill (Croskey-Merritt)",
+    "Top Scorer":[
+      [
+        "Marvin Harrison Jr.",
+        22.6
+      ]
+    ],
+    "Opponent":"Game of Throws",
+    "Score":93.9,
+    "Opponent Score":142.5,
+    "Margin":-48.6,
+    "Luck Score":-0.15
+  },
+  {
+    "Week":10,
+    "Side":"Away Team",
+    "Team":"Roll Bill (Croskey-Merritt)",
+    "Top Scorer":[
+      [
+        "Jared Goff",
+        24.8
+      ]
+    ],
+    "Opponent":"To infinity and Bijan",
+    "Score":141.6,
+    "Opponent Score":134.54,
+    "Margin":7.06,
+    "Luck Score":0.532
+  },
+  {
+    "Week":11,
+    "Side":"Home Team",
+    "Team":"Roll Bill (Croskey-Merritt)",
+    "Top Scorer":[
+      [
+        "Nico Collins",
+        24.2
+      ]
+    ],
+    "Opponent":"Hamilton Administration",
+    "Score":125.64,
+    "Opponent Score":146.78,
+    "Margin":-21.14,
+    "Luck Score":-0.651
+  },
+  {
+    "Week":12,
+    "Side":"Home Team",
+    "Team":"Roll Bill (Croskey-Merritt)",
+    "Top Scorer":[
+      [
+        "Patrick Mahomes",
+        17.08
+      ]
+    ],
+    "Opponent":"Game of Throws",
+    "Score":77.88,
+    "Opponent Score":149.96,
+    "Margin":-72.08,
+    "Luck Score":-0.25
+  },
+  {
+    "Week":13,
+    "Side":"Away Team",
+    "Team":"Roll Bill (Croskey-Merritt)",
+    "Top Scorer":[
+      [
+        "Patrick Mahomes",
+        29.44
+      ]
+    ],
+    "Opponent":"To infinity and Bijan",
+    "Score":132.54,
+    "Opponent Score":64.54,
+    "Margin":68.0,
+    "Luck Score":0.183
+  },
+  {
+    "Week":14,
+    "Side":"Away Team",
+    "Team":"Roll Bill (Croskey-Merritt)",
+    "Top Scorer":[
+      [
+        "Blake Corum",
+        26.1
+      ]
+    ],
+    "Opponent":"LaPorta Potty",
+    "Score":87.76,
+    "Opponent Score":72.2,
+    "Margin":15.56,
+    "Luck Score":0.625
+  },
+  {
+    "Week":15,
+    "Side":"Home Team",
+    "Team":"Roll Bill (Croskey-Merritt)",
+    "Top Scorer":[
+      [
+        "Nico Collins",
+        23.5
+      ]
+    ],
+    "Opponent":"Team Kareem Pie \ud83e\udd67",
+    "Score":108.66,
+    "Opponent Score":99.3,
+    "Margin":9.36,
+    "Luck Score":0.812
+  },
+  {
+    "Week":16,
+    "Side":"Home Team",
+    "Team":"Roll Bill (Croskey-Merritt)",
+    "Top Scorer":[
+      [
+        "Jared Goff",
+        26.46
+      ]
+    ],
+    "Opponent":"Jared's Pack Attack",
+    "Score":102.76,
+    "Opponent Score":78.58,
+    "Margin":24.18,
+    "Luck Score":0.663
+  },
+  {
+    "Week":17,
+    "Side":"Home Team",
+    "Team":"Roll Bill (Croskey-Merritt)",
+    "Top Scorer":[
+      [
+        "Ja'Marr Chase",
+        25.0
+      ]
+    ],
+    "Opponent":"Team Kareem Pie \ud83e\udd67",
+    "Score":90.58,
+    "Opponent Score":136.84,
+    "Margin":-46.26,
+    "Luck Score":-0.372
+  }
+]

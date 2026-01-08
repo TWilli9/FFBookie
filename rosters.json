@@ -1,24 +1,8 @@
 {
   "Game of Throws": [
     {
-      "name": "Bijan Robinson",
-      "lineupSlot": "RB"
-    },
-    {
       "name": "Mike Evans",
       "lineupSlot": "WR"
-    },
-    {
-      "name": "Cooper Kupp",
-      "lineupSlot": "WR"
-    },
-    {
-      "name": "DeVonta Smith",
-      "lineupSlot": "BE"
-    },
-    {
-      "name": "Rashee Rice",
-      "lineupSlot": "IR"
     },
     {
       "name": "Bucky Irving",
@@ -29,573 +13,27 @@
       "lineupSlot": "BE"
     },
     {
-      "name": "Tyler Allgeier",
-      "lineupSlot": "BE"
-    },
-    {
-      "name": "Cedric Tillman",
-      "lineupSlot": "BE"
-    },
-    {
-      "name": "Hunter Henry",
-      "lineupSlot": "TE"
-    },
-    {
-      "name": "Alvin Kamara",
+      "name": "Christian McCaffrey",
       "lineupSlot": "RB/WR/TE"
     },
     {
-      "name": "Jaylen Warren",
-      "lineupSlot": "BE"
-    },
-    {
-      "name": "Adam Thielen",
-      "lineupSlot": "RB/WR/TE"
-    },
-    {
-      "name": "Kendre Miller",
-      "lineupSlot": "BE"
-    },
-    {
-      "name": "Titans D/ST",
-      "lineupSlot": "D/ST"
-    },
-    {
-      "name": "Bryce Young",
-      "lineupSlot": "QB"
-    }
-  ],
-  "Team Kareem Pie \ud83e\udd67": [
-    {
-      "name": "Ja'Marr Chase",
-      "lineupSlot": "WR"
-    },
-    {
-      "name": "Isiah Pacheco",
-      "lineupSlot": "BE"
-    },
-    {
-      "name": "Derrick Henry",
+      "name": "James Cook III",
       "lineupSlot": "RB"
     },
     {
-      "name": "Joe Mixon",
-      "lineupSlot": "RB"
-    },
-    {
-      "name": "Tee Higgins",
-      "lineupSlot": "WR"
-    },
-    {
-      "name": "Evan Engram",
+      "name": "Davante Adams",
       "lineupSlot": "BE"
     },
-    {
-      "name": "Rome Odunze",
-      "lineupSlot": "BE"
-    },
-    {
-      "name": "Darnell Mooney",
-      "lineupSlot": "BE"
-    },
-    {
-      "name": "Dalton Schultz",
-      "lineupSlot": "BE"
-    },
-    {
-      "name": "Baker Mayfield",
-      "lineupSlot": "QB"
-    },
-    {
-      "name": "Russell Wilson",
-      "lineupSlot": "BE"
-    },
-    {
-      "name": "Keenan Allen",
-      "lineupSlot": "RB/WR/TE"
-    },
-    {
-      "name": "Isaac Guerendo",
-      "lineupSlot": "RB/WR/TE"
-    },
-    {
-      "name": "Dolphins D/ST",
-      "lineupSlot": "D/ST"
-    },
-    {
-      "name": "Kyle Pitts",
-      "lineupSlot": "TE"
-    }
-  ],
-  "Hawaii McLovins VIII": [
     {
       "name": "Chris Olave",
-      "lineupSlot": "IR"
-    },
-    {
-      "name": "Josh Jacobs",
-      "lineupSlot": "RB"
-    },
-    {
-      "name": "D'Andre Swift",
-      "lineupSlot": "RB/WR/TE"
-    },
-    {
-      "name": "George Kittle",
-      "lineupSlot": "TE"
-    },
-    {
-      "name": "Xavier Worthy",
-      "lineupSlot": "BE"
-    },
-    {
-      "name": "Bills D/ST",
-      "lineupSlot": "D/ST"
-    },
-    {
-      "name": "Jahmyr Gibbs",
-      "lineupSlot": "RB"
-    },
-    {
-      "name": "Ladd McConkey",
-      "lineupSlot": "BE"
-    },
-    {
-      "name": "T.J. Hockenson",
-      "lineupSlot": "BE"
-    },
-    {
-      "name": "CeeDee Lamb",
-      "lineupSlot": "BE"
-    },
-    {
-      "name": "Marvin Harrison Jr.",
       "lineupSlot": "WR"
-    },
-    {
-      "name": "James Cook",
-      "lineupSlot": "RB/WR/TE"
-    },
-    {
-      "name": "Bo Nix",
-      "lineupSlot": "QB"
-    },
-    {
-      "name": "Justin Herbert",
-      "lineupSlot": "BE"
     },
     {
       "name": "Ricky Pearsall",
-      "lineupSlot": "WR"
-    },
-    {
-      "name": "Jordan Mason",
       "lineupSlot": "BE"
-    }
-  ],
-  "To infinity and Bijan": [
-    {
-      "name": "Kenneth Walker III",
-      "lineupSlot": "BE"
-    },
-    {
-      "name": "Lamar Jackson",
-      "lineupSlot": "QB"
-    },
-    {
-      "name": "David Montgomery",
-      "lineupSlot": "BE"
-    },
-    {
-      "name": "Amari Cooper",
-      "lineupSlot": "BE"
-    },
-    {
-      "name": "J.K. Dobbins",
-      "lineupSlot": "RB"
-    },
-    {
-      "name": "Zach Charbonnet",
-      "lineupSlot": "RB"
-    },
-    {
-      "name": "Tucker Kraft",
-      "lineupSlot": "BE"
-    },
-    {
-      "name": "DeAndre Hopkins",
-      "lineupSlot": "RB/WR/TE"
-    },
-    {
-      "name": "Jerry Jeudy",
-      "lineupSlot": "WR"
-    },
-    {
-      "name": "Travis Kelce",
-      "lineupSlot": "TE"
-    },
-    {
-      "name": "Xavier Legette",
-      "lineupSlot": "BE"
-    },
-    {
-      "name": "Tyreek Hill",
-      "lineupSlot": "WR"
-    },
-    {
-      "name": "Gus Edwards",
-      "lineupSlot": "BE"
-    },
-    {
-      "name": "Nick Westbrook-Ikhine",
-      "lineupSlot": "RB/WR/TE"
-    },
-    {
-      "name": "Commanders D/ST",
-      "lineupSlot": "D/ST"
-    }
-  ],
-  "The Left Tacklers": [
-    {
-      "name": "Amon-Ra St. Brown",
-      "lineupSlot": "WR"
-    },
-    {
-      "name": "Travis Etienne Jr.",
-      "lineupSlot": "BE"
-    },
-    {
-      "name": "Deebo Samuel Sr.",
-      "lineupSlot": "BE"
-    },
-    {
-      "name": "Trey McBride",
-      "lineupSlot": "TE"
-    },
-    {
-      "name": "George Pickens",
-      "lineupSlot": "RB/WR/TE"
-    },
-    {
-      "name": "Joe Burrow",
-      "lineupSlot": "QB"
-    },
-    {
-      "name": "Jaxon Smith-Njigba",
-      "lineupSlot": "RB/WR/TE"
-    },
-    {
-      "name": "Brock Purdy",
-      "lineupSlot": "BE"
-    },
-    {
-      "name": "Jauan Jennings",
-      "lineupSlot": "WR"
-    },
-    {
-      "name": "Pat Freiermuth",
-      "lineupSlot": "BE"
-    },
-    {
-      "name": "Tyrone Tracy Jr.",
-      "lineupSlot": "RB"
-    },
-    {
-      "name": "Chase Brown",
-      "lineupSlot": "RB"
-    },
-    {
-      "name": "Alexander Mattison",
-      "lineupSlot": "BE"
-    },
-    {
-      "name": "Jalen McMillan",
-      "lineupSlot": "BE"
-    },
-    {
-      "name": "Raiders D/ST",
-      "lineupSlot": "D/ST"
-    }
-  ],
-  "Hamilton Administration": [
-    {
-      "name": "Davante Adams",
-      "lineupSlot": "WR"
-    },
-    {
-      "name": "Drake London",
-      "lineupSlot": "RB/WR/TE"
-    },
-    {
-      "name": "Josh Allen",
-      "lineupSlot": "BE"
-    },
-    {
-      "name": "Malik Nabers",
-      "lineupSlot": "WR"
-    },
-    {
-      "name": "Zay Flowers",
-      "lineupSlot": "BE"
-    },
-    {
-      "name": "Rhamondre Stevenson",
-      "lineupSlot": "RB"
     },
     {
       "name": "Jake Ferguson",
-      "lineupSlot": "BE"
-    },
-    {
-      "name": "Jordan Addison",
-      "lineupSlot": "RB/WR/TE"
-    },
-    {
-      "name": "Chuba Hubbard",
-      "lineupSlot": "IR"
-    },
-    {
-      "name": "Cade Otton",
-      "lineupSlot": "TE"
-    },
-    {
-      "name": "Keon Coleman",
-      "lineupSlot": "BE"
-    },
-    {
-      "name": "Eagles D/ST",
-      "lineupSlot": "D/ST"
-    },
-    {
-      "name": "Tank Bigsby",
-      "lineupSlot": "BE"
-    },
-    {
-      "name": "Michael Penix Jr.",
-      "lineupSlot": "QB"
-    },
-    {
-      "name": "Jerome Ford",
-      "lineupSlot": "RB"
-    }
-  ],
-  "Jared's Pack Attack": [
-    {
-      "name": "Breece Hall",
-      "lineupSlot": "RB"
-    },
-    {
-      "name": "Puka Nacua",
-      "lineupSlot": "WR"
-    },
-    {
-      "name": "DK Metcalf",
-      "lineupSlot": "WR"
-    },
-    {
-      "name": "Aaron Jones",
-      "lineupSlot": "RB"
-    },
-    {
-      "name": "Calvin Ridley",
-      "lineupSlot": "RB/WR/TE"
-    },
-    {
-      "name": "Jordan Love",
-      "lineupSlot": "BE"
-    },
-    {
-      "name": "Brock Bowers",
-      "lineupSlot": "TE"
-    },
-    {
-      "name": "Jayden Reed",
-      "lineupSlot": "BE"
-    },
-    {
-      "name": "Jakobi Meyers",
-      "lineupSlot": "RB/WR/TE"
-    },
-    {
-      "name": "Tony Pollard",
-      "lineupSlot": "BE"
-    },
-    {
-      "name": "Christian Watson",
-      "lineupSlot": "BE"
-    },
-    {
-      "name": "Mark Andrews",
-      "lineupSlot": "BE"
-    },
-    {
-      "name": "Quentin Johnston",
-      "lineupSlot": "BE"
-    },
-    {
-      "name": "Sam Darnold",
-      "lineupSlot": "QB"
-    },
-    {
-      "name": "Packers D/ST",
-      "lineupSlot": "D/ST"
-    }
-  ],
-  "Amon a Mission": [
-    {
-      "name": "Garrett Wilson",
-      "lineupSlot": "WR"
-    },
-    {
-      "name": "Saquon Barkley",
-      "lineupSlot": "RB"
-    },
-    {
-      "name": "Rachaad White",
-      "lineupSlot": "RB"
-    },
-    {
-      "name": "Sam LaPorta",
-      "lineupSlot": "TE"
-    },
-    {
-      "name": "Tank Dell",
-      "lineupSlot": "BE"
-    },
-    {
-      "name": "C.J. Stroud",
-      "lineupSlot": "QB"
-    },
-    {
-      "name": "Chris Godwin",
-      "lineupSlot": "IR"
-    },
-    {
-      "name": "Jameson Williams",
-      "lineupSlot": "RB/WR/TE"
-    },
-    {
-      "name": "Khalil Shakir",
-      "lineupSlot": "RB/WR/TE"
-    },
-    {
-      "name": "Romeo Doubs",
-      "lineupSlot": "BE"
-    },
-    {
-      "name": "Terry McLaurin",
-      "lineupSlot": "WR"
-    },
-    {
-      "name": "Jonnu Smith",
-      "lineupSlot": "BE"
-    },
-    {
-      "name": "Cardinals D/ST",
-      "lineupSlot": "D/ST"
-    },
-    {
-      "name": "Kenneth Gainwell",
-      "lineupSlot": "BE"
-    },
-    {
-      "name": "Ameer Abdullah",
-      "lineupSlot": "BE"
-    },
-    {
-      "name": "Patrick Taylor Jr.",
-      "lineupSlot": "BE"
-    }
-  ],
-  "How I Metcalf Your Mother": [
-    {
-      "name": "A.J. Brown",
-      "lineupSlot": "WR"
-    },
-    {
-      "name": "Jonathan Taylor",
-      "lineupSlot": "RB"
-    },
-    {
-      "name": "Nico Collins",
-      "lineupSlot": "RB/WR/TE"
-    },
-    {
-      "name": "DJ Moore",
-      "lineupSlot": "WR"
-    },
-    {
-      "name": "Patrick Mahomes",
-      "lineupSlot": "BE"
-    },
-    {
-      "name": "Najee Harris",
-      "lineupSlot": "BE"
-    },
-    {
-      "name": "Rico Dowdle",
-      "lineupSlot": "RB"
-    },
-    {
-      "name": "Kareem Hunt",
-      "lineupSlot": "BE"
-    },
-    {
-      "name": "Michael Pittman Jr.",
-      "lineupSlot": "BE"
-    },
-    {
-      "name": "Jared Goff",
-      "lineupSlot": "QB"
-    },
-    {
-      "name": "Dallas Goedert",
-      "lineupSlot": "IR"
-    },
-    {
-      "name": "Dalton Kincaid",
-      "lineupSlot": "TE"
-    },
-    {
-      "name": "Ravens D/ST",
-      "lineupSlot": "D/ST"
-    },
-    {
-      "name": "Marvin Mims Jr.",
-      "lineupSlot": "RB/WR/TE"
-    },
-    {
-      "name": "Kimani Vidal",
-      "lineupSlot": "BE"
-    },
-    {
-      "name": "Stefon Diggs",
-      "lineupSlot": "BE"
-    }
-  ],
-  "First and Ted": [
-    {
-      "name": "Justin Jefferson",
-      "lineupSlot": "WR"
-    },
-    {
-      "name": "Kyren Williams",
-      "lineupSlot": "RB"
-    },
-    {
-      "name": "De'Von Achane",
-      "lineupSlot": "RB"
-    },
-    {
-      "name": "Jaylen Waddle",
-      "lineupSlot": "BE"
-    },
-    {
-      "name": "James Conner",
-      "lineupSlot": "RB/WR/TE"
-    },
-    {
-      "name": "Kyler Murray",
       "lineupSlot": "BE"
     },
     {
@@ -603,39 +41,613 @@
       "lineupSlot": "BE"
     },
     {
-      "name": "Jayden Daniels",
+      "name": "Juwan Johnson",
+      "lineupSlot": "TE"
+    },
+    {
+      "name": "Christian Watson",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "Jakobi Meyers",
+      "lineupSlot": "RB/WR/TE"
+    },
+    {
+      "name": "Lions D/ST",
+      "lineupSlot": "D/ST"
+    },
+    {
+      "name": "Trevor Lawrence",
+      "lineupSlot": "QB"
+    }
+  ],
+  "Team Kareem Pie \ud83e\udd67": [
+    {
+      "name": "Baker Mayfield",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "Derrick Henry",
+      "lineupSlot": "RB"
+    },
+    {
+      "name": "Tee Higgins",
+      "lineupSlot": "WR"
+    },
+    {
+      "name": "Puka Nacua",
+      "lineupSlot": "WR"
+    },
+    {
+      "name": "Jonathan Taylor",
+      "lineupSlot": "RB"
+    },
+    {
+      "name": "Xavier Worthy",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "T.J. Hockenson",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "Chris Godwin Jr.",
+      "lineupSlot": "RB/WR/TE"
+    },
+    {
+      "name": "Jordan Addison",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "Mark Andrews",
+      "lineupSlot": "TE"
+    },
+    {
+      "name": "Justin Herbert",
       "lineupSlot": "QB"
     },
     {
+      "name": "Hassan Haskins",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "Tyler Allgeier",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "Malik Washington",
+      "lineupSlot": "RB/WR/TE"
+    },
+    {
+      "name": "Bears D/ST",
+      "lineupSlot": "D/ST"
+    }
+  ],
+  "Hawaii McLovins VIII": [
+    {
+      "name": "Josh Jacobs",
+      "lineupSlot": "RB"
+    },
+    {
+      "name": "George Kittle",
+      "lineupSlot": "TE"
+    },
+    {
+      "name": "Ladd McConkey",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "CeeDee Lamb",
+      "lineupSlot": "WR"
+    },
+    {
+      "name": "Jaxon Smith-Njigba",
+      "lineupSlot": "WR"
+    },
+    {
+      "name": "Zay Flowers",
+      "lineupSlot": "RB/WR/TE"
+    },
+    {
+      "name": "RJ Harvey",
+      "lineupSlot": "RB"
+    },
+    {
+      "name": "Stefon Diggs",
+      "lineupSlot": "RB/WR/TE"
+    },
+    {
+      "name": "Dak Prescott",
+      "lineupSlot": "QB"
+    },
+    {
+      "name": "Broncos D/ST",
+      "lineupSlot": "D/ST"
+    },
+    {
+      "name": "Rico Dowdle",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "Malik Nabers",
+      "lineupSlot": "IR"
+    },
+    {
+      "name": "Emanuel Wilson",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "Chuba Hubbard",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "Patriots D/ST",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "AJ Barner",
+      "lineupSlot": "BE"
+    }
+  ],
+  "To infinity and Bijan": [
+    {
+      "name": "Jerry Jeudy",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "Lamar Jackson",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "Kenneth Walker III",
+      "lineupSlot": "RB/WR/TE"
+    },
+    {
+      "name": "Jahmyr Gibbs",
+      "lineupSlot": "RB"
+    },
+    {
+      "name": "Garrett Wilson",
+      "lineupSlot": "IR"
+    },
+    {
+      "name": "TreVeyon Henderson",
+      "lineupSlot": "RB/WR/TE"
+    },
+    {
+      "name": "Jaylen Waddle",
+      "lineupSlot": "WR"
+    },
+    {
+      "name": "David Montgomery",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "Zach Charbonnet",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "Jaxson Dart",
+      "lineupSlot": "QB"
+    },
+    {
+      "name": "Oronde Gadsden",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "Troy Franklin",
+      "lineupSlot": "WR"
+    },
+    {
+      "name": "Dalton Schultz",
+      "lineupSlot": "TE"
+    },
+    {
+      "name": "Saquon Barkley",
+      "lineupSlot": "RB"
+    },
+    {
+      "name": "Darnell Mooney",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "Eagles D/ST",
+      "lineupSlot": "D/ST"
+    }
+  ],
+  "The Left Tacklers": [
+    {
+      "name": "Trey McBride",
+      "lineupSlot": "TE"
+    },
+    {
+      "name": "Joe Burrow",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "Chase Brown",
+      "lineupSlot": "RB"
+    },
+    {
+      "name": "Amon-Ra St. Brown",
+      "lineupSlot": "RB/WR/TE"
+    },
+    {
+      "name": "Kyren Williams",
+      "lineupSlot": "RB"
+    },
+    {
+      "name": "George Pickens",
+      "lineupSlot": "WR"
+    },
+    {
+      "name": "DeVonta Smith",
+      "lineupSlot": "WR"
+    },
+    {
+      "name": "Keenan Allen",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "Michael Pittman Jr.",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "Cam Skattebo",
+      "lineupSlot": "IR"
+    },
+    {
+      "name": "Kyle Pitts Sr.",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "Matthew Stafford",
+      "lineupSlot": "QB"
+    },
+    {
+      "name": "Kenneth Gainwell",
+      "lineupSlot": "RB/WR/TE"
+    },
+    {
+      "name": "Parker Washington",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "Dolphins D/ST",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "Saints D/ST",
+      "lineupSlot": "D/ST"
+    }
+  ],
+  "Hamilton Administration": [
+    {
+      "name": "Josh Allen",
+      "lineupSlot": "QB"
+    },
+    {
+      "name": "Drake London",
+      "lineupSlot": "WR"
+    },
+    {
+      "name": "Bijan Robinson",
+      "lineupSlot": "RB"
+    },
+    {
+      "name": "Alvin Kamara",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "Rome Odunze",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "Jaylen Warren",
+      "lineupSlot": "RB"
+    },
+    {
+      "name": "Tyler Warren",
+      "lineupSlot": "TE"
+    },
+    {
+      "name": "Rhamondre Stevenson",
+      "lineupSlot": "RB/WR/TE"
+    },
+    {
+      "name": "Tyrone Tracy Jr.",
+      "lineupSlot": "RB/WR/TE"
+    },
+    {
+      "name": "Alec Pierce",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "Texans D/ST",
+      "lineupSlot": "D/ST"
+    },
+    {
+      "name": "Luther Burden III",
+      "lineupSlot": "WR"
+    },
+    {
+      "name": "Travis Hunter",
+      "lineupSlot": "IR"
+    },
+    {
+      "name": "Jalen Coker",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "Trey Benson",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "Bhayshul Tuten",
+      "lineupSlot": "BE"
+    }
+  ],
+  "Jared's Pack Attack": [
+    {
+      "name": "Aaron Jones Sr.",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "Brock Bowers",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "DK Metcalf",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "Tetairoa McMillan",
+      "lineupSlot": "RB/WR/TE"
+    },
+    {
+      "name": "Bo Nix",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "Jauan Jennings",
+      "lineupSlot": "WR"
+    },
+    {
+      "name": "Wan'Dale Robinson",
+      "lineupSlot": "RB/WR/TE"
+    },
+    {
+      "name": "Jordan Love",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "DJ Moore",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "J.K. Dobbins",
+      "lineupSlot": "IR"
+    },
+    {
+      "name": "Tony Pollard",
+      "lineupSlot": "RB"
+    },
+    {
+      "name": "Javonte Williams",
+      "lineupSlot": "RB"
+    },
+    {
+      "name": "Michael Wilson",
+      "lineupSlot": "WR"
+    },
+    {
+      "name": "Seahawks D/ST",
+      "lineupSlot": "D/ST"
+    },
+    {
+      "name": "Brock Purdy",
+      "lineupSlot": "QB"
+    },
+    {
+      "name": "Colby Parkinson",
+      "lineupSlot": "TE"
+    }
+  ],
+  "LaPorta Potty": [
+    {
+      "name": "Terry McLaurin",
+      "lineupSlot": "WR"
+    },
+    {
+      "name": "Jameson Williams",
+      "lineupSlot": "RB/WR/TE"
+    },
+    {
+      "name": "Sam LaPorta",
+      "lineupSlot": "IR"
+    },
+    {
+      "name": "Justin Jefferson",
+      "lineupSlot": "WR"
+    },
+    {
+      "name": "Omarion Hampton",
+      "lineupSlot": "RB"
+    },
+    {
+      "name": "D'Andre Swift",
+      "lineupSlot": "RB/WR/TE"
+    },
+    {
+      "name": "Quinshon Judkins",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "Emeka Egbuka",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "Travis Etienne Jr.",
+      "lineupSlot": "RB"
+    },
+    {
+      "name": "Quentin Johnston",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "Drake Maye",
+      "lineupSlot": "QB"
+    },
+    {
+      "name": "Theo Johnson",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "Kyle Monangai",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "Brenton Strange",
+      "lineupSlot": "TE"
+    },
+    {
+      "name": "Marcus Mariota",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "Buccaneers D/ST",
+      "lineupSlot": "D/ST"
+    }
+  ],
+  "Roll Bill (Croskey-Merritt)": [
+    {
+      "name": "Patrick Mahomes",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "Nico Collins",
+      "lineupSlot": "WR"
+    },
+    {
+      "name": "Breece Hall",
+      "lineupSlot": "RB"
+    },
+    {
+      "name": "Marvin Harrison Jr.",
+      "lineupSlot": "RB/WR/TE"
+    },
+    {
+      "name": "Travis Kelce",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "Deebo Samuel",
+      "lineupSlot": "RB/WR/TE"
+    },
+    {
+      "name": "Dallas Goedert",
+      "lineupSlot": "TE"
+    },
+    {
+      "name": "Jacory Croskey-Merritt",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "Tucker Kraft",
+      "lineupSlot": "IR"
+    },
+    {
+      "name": "Jared Goff",
+      "lineupSlot": "QB"
+    },
+    {
+      "name": "Bam Knight",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "Ja'Marr Chase",
+      "lineupSlot": "WR"
+    },
+    {
+      "name": "Blake Corum",
+      "lineupSlot": "RB"
+    },
+    {
+      "name": "Jayden Reed",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "Devin Singletary",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "Steelers D/ST",
+      "lineupSlot": "D/ST"
+    }
+  ],
+  "First and Ted": [
+    {
       "name": "Brian Thomas Jr.",
+      "lineupSlot": "RB/WR/TE"
+    },
+    {
+      "name": "De'Von Achane",
+      "lineupSlot": "RB"
+    },
+    {
+      "name": "Jayden Daniels",
+      "lineupSlot": "IR"
+    },
+    {
+      "name": "Ashton Jeanty",
+      "lineupSlot": "RB"
+    },
+    {
+      "name": "A.J. Brown",
       "lineupSlot": "WR"
     },
     {
       "name": "Courtland Sutton",
-      "lineupSlot": "RB/WR/TE"
+      "lineupSlot": "WR"
     },
     {
-      "name": "Josh Downs",
+      "name": "Rashee Rice",
       "lineupSlot": "BE"
     },
     {
-      "name": "Zach Ertz",
+      "name": "Caleb Williams",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "Woody Marks",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "Harold Fannin Jr.",
       "lineupSlot": "TE"
     },
     {
-      "name": "Colts D/ST",
-      "lineupSlot": "D/ST"
-    },
-    {
-      "name": "Chig Okonkwo",
+      "name": "Hunter Henry",
       "lineupSlot": "BE"
     },
     {
-      "name": "Brandon Aiyuk",
-      "lineupSlot": "IR"
+      "name": "Jacoby Brissett",
+      "lineupSlot": "QB"
     },
     {
-      "name": "Tyjae Spears",
+      "name": "Michael Carter",
+      "lineupSlot": "RB/WR/TE"
+    },
+    {
+      "name": "Colston Loveland",
+      "lineupSlot": "BE"
+    },
+    {
+      "name": "Giants D/ST",
+      "lineupSlot": "D/ST"
+    },
+    {
+      "name": "Brandon Aiyuk",
       "lineupSlot": "BE"
     }
   ]

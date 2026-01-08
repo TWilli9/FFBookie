@@ -7,12 +7,12 @@ import json
 
 league = League(
     league_id=42024189,
-    year=2024,
-    espn_s2='AECycM1RSKC9H6KO4Qw7b0ZKIaa417A48498axeqW12XB0VFyWXroqy%2BFzAdJFMJUqxu4t05etxquUZYQ92C7V8N%2BzGT48zFtm4IJM04CG%2FG7zrSRXMBsqrw219pF4k7L0BYwwHr1om5AQNTKViQ5YJhH9SFEmGo03L1NTeuQSPy3Ws6HpQs2pfnZKuddHWxNUwH9HVOxVkOc4nSbCn8LPm2c1lsCAuuH26Z4laiqV2e0MCjMNizTi%2FS8VFHmVCXcPVejE3reh1JRyiHuKp1gE14',
+    year=2025,
+    espn_s2='AECfjwyt%2BaNeo%2BVJXBu5%2BGWDg3KzkvJ%2FmUcffo7x3ZSeeGTuwpdQJ%2B3W%2FNvG0J5J9hvYHZR%2B9NRSKFx4CC9kGKSdSGNKLkUpgSyQ2vxBzAculFDfSBpU%2BlYebExtCZ0ZXNxxZwEiDXy5oIsO4OFHyK%2BzZGJ%2BlEYGjfi%2BZvwUhS30YQN4cuP7qwt3I1jX4Kp3EP%2FFu%2FOywdHlYNF9UrI0YMJPn5hy9r%2F%2FSyoUQrs%2B2rhs0YDb%2Fpooiz2YnNwWFxztH4P1mB2uIlJb8yffDHGU38pk',
     swid='{CDA2BA80-43BE-41FB-9AB1-C8BE52DD4C45}'
 )
 
-currentWeek = 14 # change to league.current_week when season is active
+currentWeek = league.current_week # change to league.current_week when season is active
 
 def calculateSOS(league,currentWeek):
     #Calculates the Strength of Schedule (SOS) for each team
@@ -23,10 +23,16 @@ def calculateSOS(league,currentWeek):
         matchups = []
         for week in range(1, currentWeek + 1):
             for matchup in league.scoreboard(week=week):
-                if matchup.home_team == team:
-                    matchups.append(matchup.away_team)
-                elif matchup.away_team == team:
-                    matchups.append(matchup.home_team)
+                home = getattr(matchup, 'home_team', None)
+                away = getattr(matchup, 'away_team', None)
+
+                # Compare by team_id when possible to avoid attribute errors
+                if home and getattr(home, 'team_id', None) == getattr(team, 'team_id', None):
+                    if away:
+                        matchups.append(away)
+                elif away and getattr(away, 'team_id', None) == getattr(team, 'team_id', None):
+                    if home:
+                        matchups.append(home)
 
         totalOppPoints = sum(opponent.points_for for opponent in matchups)
         avgOppPoints = totalOppPoints / len(matchups) if matchups else 0
@@ -40,7 +46,7 @@ def calculateSOS(league,currentWeek):
     return pd.DataFrame(sosData)
 
 
-def getLuckScoresAcrossWeeks(startweek = 1, endweek = 14): #change endweek to league.current_week when season is active
+def getLuckScoresAcrossWeeks(startweek = 1, endweek = league.current_week): #change endweek to league.current_week when season is active
     #Calculates the luck scores for each team across multiple weeks
     allWeeks = []
 
@@ -126,12 +132,12 @@ def getMatchups(week):
 
     for matchup in matchups:
 
-        homeTeam = matchup.home_team
+        homeTeam = getattr(matchup, 'home_team', None)
         homeTeamName = homeTeam.team_name if homeTeam else "N/A"
         homeProj = projectedScores.get(homeTeamName, "N/A")
         homeActual = getattr(matchup, 'home_score', None)
 
-        awayTeam = matchup.away_team
+        awayTeam = getattr(matchup, 'away_team', None)
         awayTeamName = awayTeam.team_name if awayTeam else "N/A"
         awayProj = projectedScores.get(awayTeamName, "N/A")
         awayActual = getattr(matchup, 'away_score', None)
@@ -177,12 +183,15 @@ def getMatchups(week):
 
             boxScores = league.box_scores(week=week)
 
-            for matchup in boxScores:
-                if matchup.home_team.team_id == team.team_id:
-                    players = matchup.home_lineup
+            for bmatch in boxScores:
+                bhome = getattr(bmatch, 'home_team', None)
+                baway = getattr(bmatch, 'away_team', None)
+
+                if bhome and getattr(bhome, 'team_id', None) == getattr(team, 'team_id', None):
+                    players = getattr(bmatch, 'home_lineup', []) or []
                     break
-                elif matchup.away_team.team_id == team.team_id:
-                    players = matchup.away_lineup
+                elif baway and getattr(baway, 'team_id', None) == getattr(team, 'team_id', None):
+                    players = getattr(bmatch, 'away_lineup', []) or []
                     break
             
             if not players:

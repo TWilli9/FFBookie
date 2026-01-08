@@ -1,126 +1,126 @@
 [
   {
     "Week": 6,
-    "Home Team": "Hamilton Administration ",
-    "Away Team": "To infinity and Bijan",
+    "Home Team": "Hamilton Administration",
+    "Away Team": "Roll Bill (Croskey-Merritt)",
     "Home Projected Score": 0,
     "Away Projected Score": 0,
-    "Home Actual Score": 113.0,
-    "Away Actual Score": 114.62,
+    "Home Actual Score": 135.2,
+    "Away Actual Score": 116.88,
     "Predicted Winner": "N/A",
     "Projected Margin": "N/A",
-    "Actual Winner": "To infinity and Bijan",
-    "Actual Margin": 1.62,
+    "Actual Winner": "Hamilton Administration",
+    "Actual Margin": 18.32,
     "Home Top Player": [
       [
-        "Josh Allen",
-        24.4
+        "Bijan Robinson",
+        35.8
       ]
     ],
     "Away Top Player": [
       [
-        "David Montgomery",
-        21.0
+        "Patrick Mahomes",
+        31.48
       ]
     ]
   },
   {
     "Week": 6,
-    "Home Team": "First and Ted",
+    "Home Team": "Hawaii McLovins VIII",
     "Away Team": "The  Left Tacklers ",
     "Home Projected Score": 0,
     "Away Projected Score": 0,
-    "Home Actual Score": 101.26,
-    "Away Actual Score": 120.0,
+    "Home Actual Score": 174.34,
+    "Away Actual Score": 150.44,
     "Predicted Winner": "N/A",
     "Projected Margin": "N/A",
-    "Actual Winner": "The  Left Tacklers ",
-    "Actual Margin": 18.74,
+    "Actual Winner": "Hawaii McLovins VIII",
+    "Actual Margin": 23.9,
     "Home Top Player": [
       [
-        "Jayden Daniels",
-        20.96
+        "Rico Dowdle",
+        33.9
       ]
     ],
     "Away Top Player": [
       [
-        "Brock Purdy",
+        "George Pickens",
+        31.8
+      ]
+    ]
+  },
+  {
+    "Week": 6,
+    "Home Team": "To infinity and Bijan",
+    "Away Team": "Game of Throws",
+    "Home Projected Score": 0,
+    "Away Projected Score": 0,
+    "Home Actual Score": 90.12,
+    "Away Actual Score": 114.92,
+    "Predicted Winner": "N/A",
+    "Projected Margin": "N/A",
+    "Actual Winner": "Game of Throws",
+    "Actual Margin": 24.8,
+    "Home Top Player": [
+      [
+        "Jaxson Dart",
+        23.6
+      ]
+    ],
+    "Away Top Player": [
+      [
+        "Christian McCaffrey",
         24.1
       ]
     ]
   },
   {
     "Week": 6,
-    "Home Team": "How I Metcalf Your Mother",
-    "Away Team": "Game of Throws",
-    "Home Projected Score": 0,
-    "Away Projected Score": 0,
-    "Home Actual Score": 101.7,
-    "Away Actual Score": 155.46,
-    "Predicted Winner": "N/A",
-    "Projected Margin": "N/A",
-    "Actual Winner": "Game of Throws",
-    "Actual Margin": 53.76,
-    "Home Top Player": [
-      [
-        "A.J. Brown",
-        23.6
-      ]
-    ],
-    "Away Top Player": [
-      [
-        "Bijan Robinson",
-        25.5
-      ]
-    ]
-  },
-  {
-    "Week": 6,
-    "Home Team": "Team Kareem Pie \ud83e\udd67",
+    "Home Team": "First and Ted",
     "Away Team": "Jared's Pack Attack",
     "Home Projected Score": 0,
     "Away Projected Score": 0,
-    "Home Actual Score": 150.9,
-    "Away Actual Score": 135.92,
+    "Home Actual Score": 142.24,
+    "Away Actual Score": 87.96,
     "Predicted Winner": "N/A",
     "Projected Margin": "N/A",
-    "Actual Winner": "Team Kareem Pie \ud83e\udd67",
-    "Actual Margin": 14.98,
+    "Actual Winner": "First and Ted",
+    "Actual Margin": 54.28,
     "Home Top Player": [
       [
-        "Joe Mixon",
-        27.2
+        "De'Von Achane",
+        31.0
       ]
     ],
     "Away Top Player": [
       [
-        "Jordan Love",
-        25.62
+        "DK Metcalf",
+        19.5
       ]
     ]
   },
   {
     "Week": 6,
-    "Home Team": "Amon a Mission",
-    "Away Team": "Hawaii McLovins VIII",
+    "Home Team": "LaPorta Potty",
+    "Away Team": "Team Kareem Pie \ud83e\udd67",
     "Home Projected Score": 0,
     "Away Projected Score": 0,
-    "Home Actual Score": 150.38,
-    "Away Actual Score": 88.32,
+    "Home Actual Score": 97.34,
+    "Away Actual Score": 91.96,
     "Predicted Winner": "N/A",
     "Projected Margin": "N/A",
-    "Actual Winner": "Amon a Mission",
-    "Actual Margin": 62.06,
+    "Actual Winner": "LaPorta Potty",
+    "Actual Margin": 5.38,
     "Home Top Player": [
       [
-        "Chris Godwin",
-        35.5
+        "Drake Maye",
+        27.24
       ]
     ],
     "Away Top Player": [
       [
-        "George Kittle",
-        22.8
+        "Jonathan Taylor",
+        23.7
       ]
     ]
   }

@@ -1,5 +1,6 @@
 import pandas as pd
 import os
+import re
 from ffLuckModel import calculateLuckScore
 from ffStandMatchData import getMatchups, currentWeek
 from espn_api.football import League
@@ -60,10 +61,23 @@ os.makedirs("team_data", exist_ok=True)
 # Export one JSON per team
 for team in merged["Team"].unique():
     team_df = merged[merged["Team"] == team].sort_values(by="Week")
-    clean_team = ' '.join(team.split())  # removes extra/multiple spaces
-    team_df["Team"] = team_df["Team"].apply(lambda x: ' '.join(x.split()))
-    team_df["Opponent"] = team_df["Opponent"].apply(lambda x: ' '.join(x.split()))
-    filename = f"team_data/{clean_team.replace(' ', '_')}.json"
+
+    # Ensure team and opponent are strings and normalize spacing
+    clean_team = ' '.join(str(team).split())  # removes extra/multiple spaces and handles non-strings
+    team_df["Team"] = team_df["Team"].apply(lambda x: ' '.join(str(x).split()))
+    team_df["Opponent"] = team_df["Opponent"].apply(lambda x: ' '.join(str(x).split()))
+
+    # Sanitize filename: replace unsafe characters (like "/" from "N/A") with '_'
+    safe_name = re.sub(r"[^A-Za-z0-9 _-]", "_", clean_team)
+    safe_name = safe_name.replace(' ', '_') or 'team'
+
+    filename = os.path.join("team_data", f"{safe_name}.json")
+
+    # Ensure parent directory exists (handles cases where safe_name contains path separators)
+    parent = os.path.dirname(filename)
+    if parent:
+        os.makedirs(parent, exist_ok=True)
+
     team_df.to_json(filename, orient="records", indent=2)
     print(f"Exported {filename}")
 
@@ -83,7 +97,7 @@ print("✅ teams.json created successfully.")
 # Create a roster JSON for all teams using the ESPN API
 league = League(
     league_id=42024189,
-    year=2024,
+    year=2025,
     espn_s2='AECycM1RSKC9H6KO4Qw7b0ZKIaa417A48498axeqW12XB0VFyWXroqy%2BFzAdJFMJUqxu4t05etxquUZYQ92C7V8N%2BzGT48zFtm4IJM04CG%2FG7zrSRXMBsqrw219pF4k7L0BYwwHr1om5AQNTKViQ5YJhH9SFEmGo03L1NTeuQSPy3Ws6HpQs2pfnZKuddHWxNUwH9HVOxVkOc4nSbCn8LPm2c1lsCAuuH26Z4laiqV2e0MCjMNizTi%2FS8VFHmVCXcPVejE3reh1JRyiHuKp1gE14',
     swid='{CDA2BA80-43BE-41FB-9AB1-C8BE52DD4C45}'
 )

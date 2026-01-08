@@ -1,0 +1,274 @@
+[
+  {
+    "Week":1,
+    "Side":"Away Team",
+    "Team":"LaPorta Potty",
+    "Top Scorer":[
+      [
+        "Emeka Egbuka",
+        23.6
+      ]
+    ],
+    "Opponent":"Hamilton Administration",
+    "Score":107.42,
+    "Opponent Score":144.26,
+    "Margin":-36.84,
+    "Luck Score":-0.333
+  },
+  {
+    "Week":2,
+    "Side":"Home Team",
+    "Team":"LaPorta Potty",
+    "Top Scorer":[
+      [
+        "Travis Etienne Jr.",
+        16.9
+      ]
+    ],
+    "Opponent":"Game of Throws",
+    "Score":82.68,
+    "Opponent Score":135.74,
+    "Margin":-53.06,
+    "Luck Score":-0.183
+  },
+  {
+    "Week":3,
+    "Side":"Home Team",
+    "Team":"LaPorta Potty",
+    "Top Scorer":[
+      [
+        "Drake Maye",
+        19.22
+      ]
+    ],
+    "Opponent":"Team Kareem Pie \ud83e\udd67",
+    "Score":99.02,
+    "Opponent Score":143.22,
+    "Margin":-44.2,
+    "Luck Score":-0.369
+  },
+  {
+    "Week":4,
+    "Side":"Home Team",
+    "Team":"LaPorta Potty",
+    "Top Scorer":[
+      [
+        "Omarion Hampton",
+        27.5
+      ]
+    ],
+    "Opponent":"Hawaii McLovins VIII",
+    "Score":159.94,
+    "Opponent Score":101.78,
+    "Margin":58.16,
+    "Luck Score":0.15
+  },
+  {
+    "Week":5,
+    "Side":"Home Team",
+    "Team":"LaPorta Potty",
+    "Top Scorer":[
+      [
+        "Emeka Egbuka",
+        31.3
+      ]
+    ],
+    "Opponent":"Jared's Pack Attack",
+    "Score":155.22,
+    "Opponent Score":108.48,
+    "Margin":46.74,
+    "Luck Score":0.2
+  },
+  {
+    "Week":6,
+    "Side":"Home Team",
+    "Team":"LaPorta Potty",
+    "Top Scorer":[
+      [
+        "Drake Maye",
+        27.24
+      ]
+    ],
+    "Opponent":"Team Kareem Pie \ud83e\udd67",
+    "Score":97.34,
+    "Opponent Score":91.96,
+    "Margin":5.38,
+    "Luck Score":0.767
+  },
+  {
+    "Week":7,
+    "Side":"Away Team",
+    "Team":"LaPorta Potty",
+    "Top Scorer":[
+      [
+        "Quinshon Judkins",
+        26.4
+      ]
+    ],
+    "Opponent":"Jared's Pack Attack",
+    "Score":109.18,
+    "Opponent Score":81.06,
+    "Margin":28.12,
+    "Luck Score":0.661
+  },
+  {
+    "Week":8,
+    "Side":"Away Team",
+    "Team":"LaPorta Potty",
+    "Top Scorer":[
+      [
+        "Drake Maye",
+        26.28
+      ]
+    ],
+    "Opponent":"To infinity and Bijan",
+    "Score":93.38,
+    "Opponent Score":140.32,
+    "Margin":-46.94,
+    "Luck Score":-0.183
+  },
+  {
+    "Week":9,
+    "Side":"Home Team",
+    "Team":"LaPorta Potty",
+    "Top Scorer":[
+      [
+        "Kyle Monangai",
+        22.8
+      ]
+    ],
+    "Opponent":"The Left Tacklers",
+    "Score":144.66,
+    "Opponent Score":150.14,
+    "Margin":-5.48,
+    "Luck Score":-0.86
+  },
+  {
+    "Week":10,
+    "Side":"Home Team",
+    "Team":"LaPorta Potty",
+    "Top Scorer":[
+      [
+        "Emeka Egbuka",
+        23.5
+      ]
+    ],
+    "Opponent":"Hawaii McLovins VIII",
+    "Score":116.8,
+    "Opponent Score":158.6,
+    "Margin":-41.8,
+    "Luck Score":-0.267
+  },
+  {
+    "Week":11,
+    "Side":"Home Team",
+    "Team":"LaPorta Potty",
+    "Top Scorer":[
+      [
+        "Jameson Williams",
+        19.7
+      ]
+    ],
+    "Opponent":"The Left Tacklers",
+    "Score":107.04,
+    "Opponent Score":129.7,
+    "Margin":-22.66,
+    "Luck Score":-0.533
+  },
+  {
+    "Week":12,
+    "Side":"Away Team",
+    "Team":"LaPorta Potty",
+    "Top Scorer":[
+      [
+        "Travis Etienne Jr.",
+        20.6
+      ]
+    ],
+    "Opponent":"To infinity and Bijan",
+    "Score":85.86,
+    "Opponent Score":131.32,
+    "Margin":-45.46,
+    "Luck Score":-0.401
+  },
+  {
+    "Week":13,
+    "Side":"Away Team",
+    "Team":"LaPorta Potty",
+    "Top Scorer":[
+      [
+        "D'Andre Swift",
+        20.8
+      ]
+    ],
+    "Opponent":"First and Ted",
+    "Score":91.08,
+    "Opponent Score":142.76,
+    "Margin":-51.68,
+    "Luck Score":-0.353
+  },
+  {
+    "Week":14,
+    "Side":"Home Team",
+    "Team":"LaPorta Potty",
+    "Top Scorer":[
+      [
+        "Travis Etienne Jr.",
+        21.2
+      ]
+    ],
+    "Opponent":"Roll Bill (Croskey-Merritt)",
+    "Score":72.2,
+    "Opponent Score":87.76,
+    "Margin":-15.56,
+    "Luck Score":-0.275
+  },
+  {
+    "Week":15,
+    "Side":"Home Team",
+    "Team":"LaPorta Potty",
+    "Top Scorer":[
+      [
+        "Travis Etienne Jr.",
+        31.5
+      ]
+    ],
+    "Opponent":"Jared's Pack Attack",
+    "Score":120.8,
+    "Opponent Score":112.04,
+    "Margin":8.76,
+    "Luck Score":0.731
+  },
+  {
+    "Week":16,
+    "Side":"Away Team",
+    "Team":"LaPorta Potty",
+    "Top Scorer":[
+      [
+        "Drake Maye",
+        23.7
+      ]
+    ],
+    "Opponent":"Team Kareem Pie \ud83e\udd67",
+    "Score":102.4,
+    "Opponent Score":157.3,
+    "Margin":-54.9,
+    "Luck Score":-0.2
+  },
+  {
+    "Week":17,
+    "Side":"Home Team",
+    "Team":"LaPorta Potty",
+    "Top Scorer":[
+      [
+        "Drake Maye",
+        32.44
+      ]
+    ],
+    "Opponent":"Jared's Pack Attack",
+    "Score":121.94,
+    "Opponent Score":139.02,
+    "Margin":-17.08,
+    "Luck Score":-0.702
+  }
+]

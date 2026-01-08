@@ -8,7 +8,7 @@ def initializeLeague(year):
     league = League(
         league_id=42024189,
         year=year,
-        espn_s2='AECycM1RSKC9H6KO4Qw7b0ZKIaa417A48498axeqW12XB0VFyWXroqy%2BFzAdJFMJUqxu4t05etxquUZYQ92C7V8N%2BzGT48zFtm4IJM04CG%2FG7zrSRXMBsqrw219pF4k7L0BYwwHr1om5AQNTKViQ5YJhH9SFEmGo03L1NTeuQSPy3Ws6HpQs2pfnZKuddHWxNUwH9HVOxVkOc4nSbCn8LPm2c1lsCAuuH26Z4laiqV2e0MCjMNizTi%2FS8VFHmVCXcPVejE3reh1JRyiHuKp1gE14',
+        espn_s2='AECfjwyt%2BaNeo%2BVJXBu5%2BGWDg3KzkvJ%2FmUcffo7x3ZSeeGTuwpdQJ%2B3W%2FNvG0J5J9hvYHZR%2B9NRSKFx4CC9kGKSdSGNKLkUpgSyQ2vxBzAculFDfSBpU%2BlYebExtCZ0ZXNxxZwEiDXy5oIsO4OFHyK%2BzZGJ%2BlEYGjfi%2BZvwUhS30YQN4cuP7qwt3I1jX4Kp3EP%2FFu%2FOywdHlYNF9UrI0YMJPn5hy9r%2F%2FSyoUQrs%2B2rhs0YDb%2Fpooiz2YnNwWFxztH4P1mB2uIlJb8yffDHGU38pk',
         swid='{CDA2BA80-43BE-41FB-9AB1-C8BE52DD4C45}'
     )
     return league
@@ -25,7 +25,7 @@ def cleanTeamName(name):
     return name    
 
 def getAllTimeData():
-    currentLeague = initializeLeague(2024)          #Change for current year
+    currentLeague = initializeLeague(2025)          #Change for current year
     previousSeasons = currentLeague.previousSeasons
 
     members = currentLeague.members
@@ -33,7 +33,7 @@ def getAllTimeData():
 
     allTimeData = {}
 
-    for year in previousSeasons + [2024]:
+    for year in previousSeasons + [2025]:
         try:
             league = initializeLeague(year)
             standings = getStandings(league)

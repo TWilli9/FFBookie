@@ -5,15 +5,15 @@
     "Team":"Game of Throws",
     "Top Scorer":[
       [
-        "Cooper Kupp",
-        32.0
+        "Jalen Hurts",
+        24.28
       ]
     ],
     "Opponent":"First and Ted",
-    "Score":147.08,
-    "Opponent Score":113.88,
-    "Margin":33.2,
-    "Luck Score":0.108
+    "Score":124.78,
+    "Opponent Score":89.72,
+    "Margin":35.06,
+    "Luck Score":0.224
   },
   {
     "Week":2,
@@ -21,15 +21,15 @@
     "Team":"Game of Throws",
     "Top Scorer":[
       [
-        "DeVonta Smith",
-        20.6
+        "James Cook III",
+        26.5
       ]
     ],
-    "Opponent":"How I Metcalf Your Mother",
-    "Score":110.68,
-    "Opponent Score":100.74,
-    "Margin":9.94,
-    "Luck Score":0.724
+    "Opponent":"LaPorta Potty",
+    "Score":135.74,
+    "Opponent Score":82.68,
+    "Margin":53.06,
+    "Luck Score":0.183
   },
   {
     "Week":3,
@@ -37,15 +37,15 @@
     "Team":"Game of Throws",
     "Top Scorer":[
       [
-        "Rashee Rice",
-        29.1
+        "Jalen Hurts",
+        29.04
       ]
     ],
-    "Opponent":"Hamilton Administration",
-    "Score":121.46,
-    "Opponent Score":120.92,
-    "Margin":0.54,
-    "Luck Score":0.604
+    "Opponent":"To infinity and Bijan",
+    "Score":160.54,
+    "Opponent Score":166.72,
+    "Margin":-6.18,
+    "Luck Score":-0.916
   },
   {
     "Week":4,
@@ -53,15 +53,15 @@
     "Team":"Game of Throws",
     "Top Scorer":[
       [
-        "Mike Evans",
-        23.4
+        "Christian McCaffrey",
+        26.1
       ]
     ],
-    "Opponent":"To infinity and Bijan",
-    "Score":98.92,
-    "Opponent Score":128.24,
-    "Margin":-29.32,
-    "Luck Score":-0.117
+    "Opponent":"The Left Tacklers",
+    "Score":149.7,
+    "Opponent Score":148.2,
+    "Margin":1.5,
+    "Luck Score":0.604
   },
   {
     "Week":5,
@@ -69,15 +69,15 @@
     "Team":"Game of Throws",
     "Top Scorer":[
       [
-        "Mike Evans",
-        23.2
+        "Christian McCaffrey",
+        27.9
       ]
     ],
-    "Opponent":"Team Kareem Pie \ud83e\udd67",
-    "Score":92.06,
-    "Opponent Score":174.7,
-    "Margin":-82.64,
-    "Luck Score":-0.2
+    "Opponent":"Hawaii McLovins VIII",
+    "Score":133.2,
+    "Opponent Score":162.88,
+    "Margin":-29.68,
+    "Luck Score":-0.532
   },
   {
     "Week":6,
@@ -85,15 +85,15 @@
     "Team":"Game of Throws",
     "Top Scorer":[
       [
-        "Bijan Robinson",
-        25.5
+        "Christian McCaffrey",
+        24.1
       ]
     ],
-    "Opponent":"How I Metcalf Your Mother",
-    "Score":155.46,
-    "Opponent Score":101.7,
-    "Margin":53.76,
-    "Luck Score":0.184
+    "Opponent":"To infinity and Bijan",
+    "Score":114.92,
+    "Opponent Score":90.12,
+    "Margin":24.8,
+    "Luck Score":0.572
   },
   {
     "Week":7,
@@ -101,15 +101,15 @@
     "Team":"Game of Throws",
     "Top Scorer":[
       [
-        "Bijan Robinson",
-        23.3
+        "Christian McCaffrey",
+        39.1
       ]
     ],
-    "Opponent":"Hawaii McLovins VIII",
-    "Score":96.16,
-    "Opponent Score":108.08,
-    "Margin":-11.92,
-    "Luck Score":-0.339
+    "Opponent":"Hamilton Administration",
+    "Score":166.04,
+    "Opponent Score":126.14,
+    "Margin":39.9,
+    "Luck Score":0.301
   },
   {
     "Week":8,
@@ -117,15 +117,15 @@
     "Team":"Game of Throws",
     "Top Scorer":[
       [
-        "Jalen Hurts",
-        35.14
+        "James Cook III",
+        33.6
       ]
     ],
     "Opponent":"First and Ted",
-    "Score":162.34,
-    "Opponent Score":155.58,
-    "Margin":6.76,
-    "Luck Score":0.551
+    "Score":120.76,
+    "Opponent Score":127.6,
+    "Margin":-6.84,
+    "Luck Score":-0.66
   },
   {
     "Week":9,
@@ -133,31 +133,31 @@
     "Team":"Game of Throws",
     "Top Scorer":[
       [
-        "Jalen Hurts",
-        29.9
+        "Christian McCaffrey",
+        34.3
       ]
     ],
-    "Opponent":"The Left Tacklers",
-    "Score":166.6,
-    "Opponent Score":150.34,
-    "Margin":16.26,
-    "Luck Score":0.383
+    "Opponent":"Roll Bill (Croskey-Merritt)",
+    "Score":142.5,
+    "Opponent Score":93.9,
+    "Margin":48.6,
+    "Luck Score":0.25
   },
   {
     "Week":10,
-    "Side":"Home Team",
+    "Side":"Away Team",
     "Team":"Game of Throws",
     "Top Scorer":[
       [
-        "Jalen Hurts",
-        29.68
+        "Chris Olave",
+        21.4
       ]
     ],
-    "Opponent":"Hawaii McLovins VIII",
-    "Score":123.48,
-    "Opponent Score":105.94,
-    "Margin":17.54,
-    "Luck Score":0.549
+    "Opponent":"The Left Tacklers",
+    "Score":127.82,
+    "Opponent Score":141.9,
+    "Margin":-14.08,
+    "Luck Score":-0.682
   },
   {
     "Week":11,
@@ -165,15 +165,15 @@
     "Team":"Game of Throws",
     "Top Scorer":[
       [
-        "Taysom Hill",
-        41.52
+        "Christian McCaffrey",
+        35.1
       ]
     ],
-    "Opponent":"To infinity and Bijan",
-    "Score":143.96,
-    "Opponent Score":143.18,
-    "Margin":0.78,
-    "Luck Score":0.609
+    "Opponent":"Jared's Pack Attack",
+    "Score":105.6,
+    "Opponent Score":119.16,
+    "Margin":-13.56,
+    "Luck Score":-0.574
   },
   {
     "Week":12,
@@ -181,15 +181,15 @@
     "Team":"Game of Throws",
     "Top Scorer":[
       [
-        "Bucky Irving",
-        27.2
+        "Jalen Hurts",
+        30.86
       ]
     ],
-    "Opponent":"Amon a Mission",
-    "Score":122.36,
-    "Opponent Score":151.88,
-    "Margin":-29.52,
-    "Luck Score":-0.367
+    "Opponent":"Roll Bill (Croskey-Merritt)",
+    "Score":149.96,
+    "Opponent Score":77.88,
+    "Margin":72.08,
+    "Luck Score":0.15
   },
   {
     "Week":13,
@@ -197,15 +197,15 @@
     "Team":"Game of Throws",
     "Top Scorer":[
       [
-        "Bucky Irving",
-        27.5
+        "Davante Adams",
+        21.8
       ]
     ],
-    "Opponent":"Jared's Pack Attack",
-    "Score":143.22,
-    "Opponent Score":116.16,
-    "Margin":27.06,
-    "Luck Score":0.319
+    "Opponent":"Team Kareem Pie \ud83e\udd67",
+    "Score":127.4,
+    "Opponent Score":99.24,
+    "Margin":28.16,
+    "Luck Score":0.493
   },
   {
     "Week":14,
@@ -213,14 +213,62 @@
     "Team":"Game of Throws",
     "Top Scorer":[
       [
-        "Jalen Hurts",
-        24.22
+        "Christian Watson",
+        24.9
       ]
     ],
     "Opponent":"Hamilton Administration",
-    "Score":119.72,
-    "Opponent Score":188.08,
-    "Margin":-68.36,
-    "Luck Score":-0.267
+    "Score":94.0,
+    "Opponent Score":117.94,
+    "Margin":-23.94,
+    "Luck Score":-0.251
+  },
+  {
+    "Week":15,
+    "Side":"Home Team",
+    "Team":"Game of Throws",
+    "Top Scorer":[
+      [
+        "James Cook III",
+        31.1
+      ]
+    ],
+    "Opponent":"Hamilton Administration",
+    "Score":139.5,
+    "Opponent Score":127.52,
+    "Margin":11.98,
+    "Luck Score":0.552
+  },
+  {
+    "Week":16,
+    "Side":"Away Team",
+    "Team":"Game of Throws",
+    "Top Scorer":[
+      [
+        "Chris Olave",
+        36.8
+      ]
+    ],
+    "Opponent":"First and Ted",
+    "Score":162.9,
+    "Opponent Score":141.82,
+    "Margin":21.08,
+    "Luck Score":0.408
+  },
+  {
+    "Week":17,
+    "Side":"Away Team",
+    "Team":"Game of Throws",
+    "Top Scorer":[
+      [
+        "Christian McCaffrey",
+        28.1
+      ]
+    ],
+    "Opponent":"The Left Tacklers",
+    "Score":137.62,
+    "Opponent Score":131.36,
+    "Margin":6.26,
+    "Luck Score":0.591
   }
 ]
